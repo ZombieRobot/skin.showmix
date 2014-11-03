@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="699">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<controls>
+		<control type="group">
+			<animation effect="fade" time="600">WindowOpen</animation>
+			<animation effect="fade" time="600">WindowClose</animation>
+			<include condition="Window.IsActive(home)">HomeFanart</include>
+			<include condition="!Window.IsActive(home)">GlobalFanart</include>
+			<control type="visualisation">
+				<include>FullscreenDimensions</include>
+				<visible>Player.HasAudio</visible>
+				<visible>!Skin.HasSetting(Disable.ShowBackgroundVis)</visible>
+				<visible>!Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+				<visible>IsEmpty(Window(Videos).Property(TvTunesIsAlive))</visible>
+			</control>
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture>black.png</texture>
+				<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)] | Control.IsVisible(502)</visible>
+				<animation effect="fade" start="100" end="70" time="300" condition="Control.IsVisible(502)">conditional</animation>
+			</control>
+			<control type="videowindow">
+				<include>FullscreenDimensions</include>
+				<visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<include>FullscreenDimensions</include>
+			<animation type="WindowOpen" reversible="false" condition="!Window.Previous(12) + !Window.Previous(13) + !Window.Previous(14) + !Window.Previous(15) + !Window.Previous(16) + !Window.Previous(18) + !Window.Previous(19) + !Window.Previous(17) + !Window.Previous(604) + !Window.Previous(56) | Skin.HasSetting(bmtransit)">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false" condition="Window.Next(AppearanceSettings) | Window.Next(Home) | Window.Next(25) | Window.Next(24) | Window.Next(1) | Window.Next(2) | Window.Next(500) | Window.Next(501) | Window.Next(502)">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+			<control type="image">
+				<description>background image</description>
+				<left>120</left>
+				<top>80</top>
+				<width>1665</width>
+				<height>909</height>
+				<texture>showmix/settings_panelback.png</texture>
+				<include>SettingsPanelAnimation</include>
+			</control>
+			<control type="image">
+				<left>391</left>
+				<top>113</top>
+				<width>1397</width>
+				<height>837</height>
+				<texture>showmix/settings_intframe_bottom.png</texture>
+				<include>SettingsPanelAnimation</include>
+			</control>
+			<control type="group">
+				<include>SettingsPanelAnimation</include>
+				<control type="label">
+					<description>sectiontitle</description>
+					<left>167</left>
+					<top>125</top>
+					<width>1433</width>
+					<height>73</height>
+					<textcolor>FFbec0c2</textcolor>
+					<font>font_settings15</font>
+					<label>$LOCALIZE[31972]</label>
+				</control>
+				<control type="label">
+					<description>sectiontitle</description>
+					<description>section subtitle</description>
+					<left>167</left>
+					<top>165</top>
+					<width>1404</width>
+					<height>73</height>
+					<textcolor>FFbec0c2</textcolor>
+					<font>font_settings10</font>
+					<label>$LOCALIZE[31973]</label>
+				</control>
+			</control>	
+			<control type="group">
+				<left>-5</left>
+				<top>197</top>
+				<include>SettingsPanelAnimation</include>
+				<control type="panel" id="9000">
+					<left>148</left>
+					<top>32</top>
+					<width>291</width>
+					<height>707</height>
+					<onleft>61</onleft>
+					<onright>61</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<pagecontrol>61</pagecontrol>
+					<scrolltime tween="quadratic">300</scrolltime>
+					<itemlayout height="70" width="289">
+						<control type="label">
+							<top>-13</top>
+							<width>286</width>
+							<height>70</height>
+							<font>font_settings14</font>
+							<textoffsetx>26</textoffsetx>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<top>17</top>
+							<width>286</width>
+							<height>70</height>
+							<font>font_settings10</font>
+							<textoffsetx>26</textoffsetx>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="70" width="289">
+						<control type="image">
+							<width>291</width>
+							<height>70</height>
+							<texture border="4">showmix/listselect_fo_settings.png</texture>
+							<visible>Control.HasFocus(9000)</visible>
+							<include>VisibleFadeEffect</include>
+						</control>
+						<control type="label">
+							<top>-13</top>
+							<width>286</width>
+							<height>70</height>
+							<font>font_settings14</font>
+							<textoffsetx>26</textoffsetx>
+							<textcolor>FF262728</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+						</control>
+						<control type="label">
+							<top>17</top>
+							<width>286</width>
+							<height>70</height>
+							<font>font_settings10</font>
+							<textoffsetx>26</textoffsetx>
+							<textcolor>FF262728</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label2]</label>
+							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="6">
+							<label>31979</label>
+							<label2>31980</label2>
+							<property name="description">-</property>
+							<onclick>-</onclick>
+							<icon>-</icon>
+						</item>
+						<item id="7">
+							<label>31981</label>
+							<label2>31982</label2>
+							<property name="description">-</property>
+							<onclick>ActivateWindow(SystemInfo)</onclick>
+							<icon>-</icon>
+						</item>
+						<item id="8">
+							<label>31983</label>
+							<label2>31984</label2>
+							<property name="description">-</property>
+							<onclick>-</onclick>
+							<icon>-</icon>
+						</item>
+						<item id="9">
+							<label>31978</label>
+							<label2>31985</label2>
+							<property name="description">31975</property>			
+							<onclick>ActivateWindow(AppearanceSettings)</onclick>
+							<onclick>SetFocus(600)</onclick>
+							<icon>-</icon>
+						</item>
+					</content>
+				</control>
+			</control>
+			<control type="group">
+				<left>498</left>
+				<top>87</top>
+				<width>1260</width>
+				<height>870</height>
+				<include>SettingsPanelAnimation</include>
+				<control type="image">
+					<left>23</left>
+					<top>43</top>
+					<width>1135</width>
+					<height>810</height>
+					<texture>showmix/assistant_transmit.png</texture>
+					<visible>Control.HasFocus(6)</visible>
+				</control>
+				
+				<control type="label">
+					<left>0</left>
+					<top>450</top>
+					<width>1260</width>
+					<label>31524</label>
+					<align>center</align>
+					<include>Colour_Grey</include>
+					<font>Font_ProgressLabelMid</font>					
+					<visible>Control.HasFocus(6)</visible>
+				</control>
+<!--Need Website Image-->				
+				<control type="image">
+					<left>23</left>
+					<top>43</top>
+					<width>1135</width>
+					<height>810</height>
+					<texture>showmix/assistant_transmit.png</texture>
+					<visible>Container(9000).HasFocus(6)</visible>
+				</control>
+				<control type="largeimage">
+					<left>23</left>
+					<top>43</top>
+					<width>1135</width>
+					<height>810</height>
+					<texture>http://farm7.static.flickr.com/6056/6301038873_584031691e_b.jpg</texture>
+					<visible>Container(9000).HasFocus(6)</visible>
+					<fadetime>400</fadetime>
+				</control>
+				<control type="image">
+					<left>23</left>
+					<top>43</top>
+					<width>1135</width>
+					<height>810</height>
+					<texture>showmix/assistant_vitalsback.png</texture>
+					<visible>Container(9000).HasFocus(7)</visible>
+				</control>
+				
+				<control type="label">
+					<top>20</top>
+					<left>35</left>
+					<width>428</width>
+					<height>796</height>
+					<font>Font_Vitals</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>15</textoffsetx>
+					<textcolor>ff888888</textcolor>
+					<visible>Container(9000).HasFocus(7)</visible>
+					<label>31986</label>
+				</control>
+				
+				<control type="label">
+					<top>20</top>
+					<left>458</left>
+					<width>830</width>
+					<height>796</height>
+					<font>Font_Vitals</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>15</textoffsetx>
+					<include>FFececec</include>
+					<visible>Container(9000).HasFocus(7)</visible>
+					<label>$INFO[System.BuildVersion][CR]$INFO[System.BuildDate][CR]$LOCALIZE[31000][CR]$INFO[Skin.CurrentTheme][CR]$INFO[System.Language][CR]$INFO[System.ScreenResolution][CR]$INFO[System.FreeMemory][CR]$INFO[System.UsedspacePercent][CR]$INFO[System.CPUTemperature][CR]$INFO[System.GPUTemperature][CR]$INFO[System.Uptime][CR]$INFO[System.Internetstate][CR]$INFO[Network.IPAddress][CR]$INFO[System.DVDLabel]</label>
+				</control>
+				
+				<control type="image">
+					<left>23</left>
+					<top>43</top>
+					<width>1135</width>
+					<height>810</height>
+					<texture>showmix/credits.jpg</texture>
+					<visible>Container(9000).HasFocus(8)</visible>
+					<animation type="Visible" reversible="false">
+						<effect type="fade" start="0" end="100" time="200" />
+						<effect type="fade" start="100" end="0" time="200" delay="10000" />
+					</animation>
+				</control>
+
+				<control type="image">
+					<left>23</left>
+					<top>43</top>
+					<width>1135</width>
+					<height>810</height>
+					<texture>showmix/credits2.jpg</texture>
+					<visible>Container(9000).HasFocus(8)</visible>
+					<animation type="Visible">
+						<effect type="fade" start="0" end="100" time="200" delay="6000" />
+					</animation>
+				</control>
+
+				<control type="textbox">
+					<left>557</left>
+					<top>44</top>
+					<width>630</width>
+					<height>805</height>
+					<label>[CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31900][/COLOR][CR]DUNCAN HARRIS[CR]EMILIO AYALA[CR]ANDYBLAC[CR]ZOMBIE ROBOT[CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31901][/COLOR][CR]BIDE CUI[CR](PETERCUI.DEVIANTART.COM)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31910][/COLOR][CR]JAVIER OCASIO[CR](STUDIOTWENTYEIGHT.COM)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31902][/COLOR][CR]JORDAN MICHAEL[CR](JORDAN-MICHAEL.COM)[CR]ROBERTO ABRIL[CR](TESKOSTUDIO.COM)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31903][/COLOR][CR]THE BOXHEAD (NORWEGIAN)[CR]JULIEN CINGOZ (FRENCH)[CR]LEANDRO DISCACIATE (B. PORTUGUESE)[CR]MARKUS KAHLE (GERMAN)[CR]MELY (ITALIAN)[CR]CARLOS NABB (SWEDISH)[CR]ALBERT PI (SPANISH)[CR]CRISTIANO SILVA (E. PORTUGUESE)[CR]JOHN T (TRAD. CHINESE)[CR]SANDER VAN DER VEER (DUTCH)[CR]KWANGHO YUN (KOREAN)[CR][CR][COLOR ff6a6a6a]$LOCALIZE[31904][/COLOR][CR]KEVIN GOFFE[CR]MATT GRIMES[CR]PETER HARTMAN[CR]STEVE LOFTUS[CR]GIULIANO MACIOCCI[CR]NATHAN MARCONI[CR]SEBASTIAN NIEROP[CR]SKUNKM0NKEE[CR]STEVE MCNALLY[CR]STEVE SAUNDERS[CR]MARCO SCHACHE[CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31905][/COLOR][CR]XBMCNEWZ.COM[CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[32100][/COLOR][CR]DUNCAN HARRIS[CR]EMILIO AYALA[CR]ANDYBLAC[CR]AZIDO[CR]ZOMBIE ROBOT[CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31906][/COLOR][CR]BUTCHABAY[CR]ANDYBLAC[CR]AZIDO[CR]PHIL65[CR]EKIM232[CR]BIG_NOID[CR]MARCOSQUI[CR]HITCHER[CR]MCBORZU[CR]JEROEN[CR]RONIE[CR]JMARSHALL[CR]JEZZ X[CR]TEAM XBMC[CR]SMOKEHEAD[CR]MIKE BEECHAM[CR]TEAM RAZORFISH[CR]PARTHIBAN MOHANRAJ[CR]JOHAN ABADIE (NEUROS)[CR]DAVID MCLEOD (ELISA)[CR]ELAN FEINGOLD (PLEX)[CR]CS GOH (SELECT-TV)[CR]$LOCALIZE[31907][CR][CR]$LOCALIZE[31908][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][COLOR ff6a6a6a]$LOCALIZE[31909][/COLOR][CR]"AEON SHOWMIX 3.3"[CR][CR][CR][CR][CR][CR][CR][CR][CR][CR][CR]</label>
+					<visible>Container(9000).HasFocus(8)</visible>
+					<font>Font_ProgressLabelMid</font>
+					<autoscroll delay="3000" time="1000" repeat="10000">true</autoscroll>
+					<align>center</align>
+					<animation type="Visible">
+						<effect type="fade" start="0" end="100" time="1000" delay="7000" />
+					</animation>
+				</control>				
+				<control type="multiimage">
+					<left>23</left>
+					<top>43</top>
+					<width>1133</width>
+					<height>637</height>	
+					<timeperimage>10000</timeperimage>
+					<fadetime>200</fadetime>
+					<include>Animation_CommonFade</include>
+					<imagepath>showmix/assistant_welcome.jpg</imagepath>
+					<visible>Container(9000).HasFocus(9)</visible>
+				</control>
+			</control>
+			<control type="textbox">
+				<description>description area</description>
+				<left>552</left>
+				<top>800</top>
+				<width>1256</width>
+				<height>400</height>
+				<font>font14</font>
+				<align>left</align>
+				<textcolor>FFbec0c2</textcolor>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<label>$INFO[Container(9000).ListItem.Property(description)]</label>
+				<include>SettingsPanelAnimation</include>
+			</control>
+				<control type="image">
+					<description>background image</description>
+					<left>143</left>
+					<top>89</top>
+					<width>1615</width>
+					<height>879</height>
+					<texture>showmix/settings_panelfront.png</texture>
+					<include>SettingsPanelAnimation</include>
+				</control> 
+				<control type="image">
+					<left>520</left>
+					<top>108</top>
+					<width>1137</width>
+					<height>856</height>
+					<texture>showmix/settings_intframe_top.png</texture>
+					<visible>![Container(9000).HasFocus(6) | Container(9000).HasFocus(7) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9)]</visible>
+					<include>SettingsPanelAnimation</include>
+				</control>
+				<control type="image">
+					<left>520</left>
+					<top>108</top>
+					<width>1137</width>
+					<height>856</height>
+					<texture>showmix/settings_intframebig_top.png</texture>
+					<visible>Container(9000).HasFocus(6) | Container(9000).HasFocus(7) | Container(9000).HasFocus(8) | Container(9000).HasFocus(9)</visible>
+					<include>SettingsPanelAnimation</include>
+				</control>
+
+			<control type="group">	
+				<description>Main instruction labels</description>
+				<include>FullscreenDimensions</include>
+				<include>Animation_CommonFade</include>
+				<visible>Control.HasFocus(9)</visible>
+				<control type="label">
+					<left>548</left>
+					<top>550</top>
+					<width>1200</width>
+					<textcolor>d0f5f5f5</textcolor>
+					<font>font_settings14</font>
+					<label>31976</label>
+				</control>
+				<control type="label">
+					<left>548</left>
+					<top>620</top>
+					<width>1200</width>
+					<textcolor>d0f5f5f5</textcolor>
+					<font>font_settings10</font>
+					<label>31975</label>
+				</control>
+			</control>
+		</control>
+		<control type="image">
+			<left>1990</left>
+			<top>975</top>
+			<width>154</width>
+			<height>135</height>
+			<texture>showmix/welcome_xbmclogo.png</texture>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>	
+		</control>
+	</controls>
+</window>

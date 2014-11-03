@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<control type="group">
+			<animation effect="fade" time="600">WindowOpen</animation>
+			<animation effect="fade" time="600">WindowClose</animation>
+			<include condition="Window.IsActive(home)">HomeFanart</include>
+			<include condition="!Window.IsActive(home)">GlobalFanart</include>
+			
+			<control type="visualisation">
+				<include>FullscreenDimensions</include>
+				<visible>Player.HasAudio</visible>
+				<visible>!Skin.HasSetting(Disable.ShowBackgroundVis)</visible>
+				<visible>!Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+				<visible>IsEmpty(Window(Videos).Property(TvTunesIsAlive))</visible>
+			</control>
+			<control type="image">
+				<include>FullscreenDimensions</include>
+				<texture>black.png</texture>
+				<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)] | Control.IsVisible(502)</visible>
+				<animation effect="fade" start="100" end="70" time="300" condition="Control.IsVisible(502)">conditional</animation>
+			</control>
+			<control type="videowindow">
+				<include>FullscreenDimensions</include>
+				<visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			</control>
+		</control>
+		<include name="Animation_SettingsInternalPanel">
+			<animation effect="fade" time="125">Visible</animation>
+			<animation effect="fade" time="125">Hidden</animation>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</include>
+		<control type="image">
+			<description>background image</description>
+			<left>120</left>
+			<top>80</top>
+			<width>1665</width>
+			<height>909</height>
+			<texture>showmix/settings_panelback.png</texture>
+			<include>SettingsPanelAnimation</include>
+		</control>
+		<control type="image">
+			<left>391</left>
+			<top>113</top>
+			<width>1397</width>
+			<height>837</height>
+			<texture>showmix/settings_intframe_bottom.png</texture>
+			<include>SettingsPanelAnimation</include>
+		</control>
+		<control type="group">
+			<include>SettingsPanelAnimation</include>
+			<control type="label">
+				<description>sectiontitle</description>
+				<label>$LOCALIZE[31962]</label>
+				<left>167</left>
+				<top>125</top>
+				<width>1404</width>
+				<height>73</height>
+				<textcolor>FFbec0c2</textcolor>
+				<font>font_settings15</font>
+			</control>
+			<control type="label">
+				<description>section subtitle</description>
+				<left>167</left>
+				<top>165</top>
+				<width>1404</width>
+				<height>73</height>
+				<textcolor>FFbec0c2</textcolor>
+				<font>font_settings10</font>
+				<label>$LOCALIZE[31961]</label>
+			</control>
+		</control>
+		<control type="group">
+			<left>-5</left>
+			<top>197</top>
+			<include>SettingsPanelAnimation</include>
+			<control type="panel" id="9000">
+				<left>148</left>
+				<top>32</top>
+				<width>291</width>
+				<height>707</height>
+				<onleft>61</onleft>
+				<onright>61</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<pagecontrol>61</pagecontrol>
+				<scrolltime tween="quadratic">300</scrolltime>
+				<itemlayout height="70" width="289">
+					<control type="label">
+						<top>-13</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings14</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>white</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<top>17</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings10</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>white</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="70" width="289">
+					<control type="image">
+						<width>291</width>
+						<height>70</height>
+						<texture border="4">showmix/listselect_fo_settings.png</texture>
+						<visible>Control.HasFocus(9000)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="label">
+						<top>-13</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings14</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>FF262728</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+					<control type="label">
+						<top>17</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings10</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>FF262728</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
+						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+						<label>480</label>
+						<label2>31963</label2>
+						<property name="description">31400</property>
+						<onclick>ActivateWindow(AppearanceSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="2">
+						<label>157</label>
+						<label2>31964</label2>
+						<property name="description">31401</property>
+						<onclick>ActivateWindow(VideosSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="3">
+						<label>31502</label>
+						<label2>31965</label2>
+						<property name="description">31409</property>
+						<onclick>ActivateWindow(PVRSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="4">
+						<label>2</label>
+						<label2>31963</label2>
+						<property name="description">31402</property>
+						<onclick>ActivateWindow(MusicSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="5">
+						<label>1</label>
+						<label2>31966</label2>
+						<property name="description">31403</property>
+						<onclick>ActivateWindow(PicturesSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="6">
+						<label>8</label>
+						<label2>31967</label2>
+						<property name="description">31404</property>
+						<onclick>ActivateWindow(WeatherSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="7">
+						<label>24001</label>
+						<label2>31971</label2>
+						<property name="description">31408</property>
+						<onclick>ActivateWindow(AddonBrowser)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="11">
+						<label>13200</label>
+						<label2>31969</label2>
+						<property name="description">31407</property>
+						<onclick>ActivateWindow(Profiles)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="8">
+						<label>14036</label>
+						<label2>31968</label2>
+						<property name="description">31410</property>
+						<onclick>ActivateWindow(ServiceSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="9">
+						<label>13000</label>
+						<label2>31970</label2>
+						<property name="description">31406</property>
+						<onclick>ActivateWindow(SystemSettings)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="10">
+						<label>10511</label>
+						<label2>31963</label2>
+						<property name="description">31405</property>
+						<onclick>ActivateWindow(SystemInfo)</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="12">
+						<label>31972</label>
+						<label2>31974</label2>
+						<property name="description">31405</property>
+						<onclick>ActivateWindow(699)</onclick>
+						<icon>-</icon>
+					</item>
+				</content>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_appearance.jpg</texture>
+				<visible>Container(9000).HasFocus(1)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_video.jpg</texture>
+				<visible>Container(9000).HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_pvr.jpg</texture>
+				<visible>Container(9000).HasFocus(3)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_music.jpg</texture>
+				<visible>Container(9000).HasFocus(4)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_pictures.jpg</texture>
+				<visible>Container(9000).HasFocus(5)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_weather.jpg</texture>
+				<visible>Container(9000).HasFocus(6)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_addons.jpg</texture>
+				<visible>Container(9000).HasFocus(7)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_services.jpg</texture>
+				<visible>Container(9000).HasFocus(8)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_settings.jpg</texture>
+				<visible>Container(9000).HasFocus(9)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_settingsold.jpg</texture>
+				<visible>Container(9000).HasFocus(10)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_profiles.jpg</texture>
+				<visible>Container(9000).HasFocus(11)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_assistant.jpg</texture>
+				<visible>Container(9000).HasFocus(12)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>description area</description>
+				<left>552</left>
+				<top>600</top>
+				<width>1256</width>
+				<height>400</height>
+				<font>font14</font>
+				<align>left</align>
+				<textcolor>FFbec0c2</textcolor>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<label>$INFO[Container(9000).ListItem.Property(description)]</label>
+				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
+			</control>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<left>143</left>
+			<top>89</top>
+			<width>1615</width>
+			<height>879</height>
+			<texture>showmix/settings_panelfront.png</texture>
+			<include>SettingsPanelAnimation</include>
+		</control> 
+		<control type="image">
+			<left>520</left>
+			<top>108</top>
+			<width>1137</width>
+			<height>856</height>
+			<texture>showmix/settings_intframe_top.png</texture>
+			<include>SettingsPanelAnimation</include>
+		</control>
+		<control type="image">
+			<left>1990</left>
+			<top>975</top>
+			<width>154</width>
+			<height>135</height>
+			<texture>showmix/welcome_xbmclogo.png</texture>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>	
+		</control>
+	</controls>
+</window>
