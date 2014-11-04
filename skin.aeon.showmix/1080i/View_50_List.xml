@@ -129,9 +129,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -142,6 +142,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture fallback="flags/studios/default-studio.png">$VAR[StudioIconVar]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
@@ -163,8 +164,8 @@
 							<width>760</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$VAR[VideoListLabel2Var]</label>
@@ -176,6 +177,7 @@
 							<width>42</width>
 							<height>28</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture>$VAR[UnFocusHDIndicator]</texture>
 							<animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
 							<visible>StringCompare(ListItem.Label2,ListItem.Rating) | StringCompare(ListItem.Label2,ListItem.Year)</visible>
@@ -185,8 +187,8 @@
 							<height>116</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -198,8 +200,8 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -210,6 +212,7 @@
 							<top>28</top>
 							<width>64</width>
 							<height>64</height>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<aspectratio>keep</aspectratio>
 							<texture>$VAR[ListItem.Overlay]</texture>
 						</control>
@@ -247,9 +250,8 @@
 							<top>0</top>
 							<width>790</width>
 							<height>70</height>
-							<font>font30</font>
-							<textcolor>grey2</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -260,8 +262,8 @@
 							<width>760</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey3</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$VAR[VideoListLabel2Var]</label>
@@ -281,8 +283,8 @@
 							<height>116</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>StringCompare(ListItem.Label2,ListItem.Rating)</visible>
@@ -293,8 +295,8 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!StringCompare(ListItem.Label2,ListItem.Rating)</visible>
@@ -317,9 +319,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -330,6 +332,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
@@ -340,6 +343,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>!SubString(ListItem.Icon,Default,left)</visible>
@@ -363,8 +367,8 @@
 							<width>760</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$VAR[VideoListLabel2Var]</label>
@@ -376,6 +380,7 @@
 							<width>42</width>
 							<height>28</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture>$VAR[UnFocusHDIndicator]</texture>
 							<animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
 							<visible>StringCompare(ListItem.Label2,ListItem.Rating)</visible>
@@ -385,8 +390,8 @@
 							<height>116</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -398,8 +403,8 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -411,6 +416,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture>$VAR[ListItem.Overlay]</texture>
 						</control>
 					</focusedlayout>
@@ -509,9 +515,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -544,8 +550,8 @@
 							<width>790</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$VAR[VideoListLabel2Var]</label>
@@ -556,8 +562,8 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -591,7 +597,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$VAR[ListOverlayEpisodesVar]</label>
-								<textcolor>white</textcolor>
+								<textcolor>ff2e2e2e</textcolor>
 								<textoffsetx>18</textoffsetx>
 								<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
 							</control>
@@ -690,9 +696,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -734,8 +740,8 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -769,7 +775,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<label>$VAR[ListOverlayEpisodesVar]</label>
-								<textcolor>white</textcolor>
+								<textcolor>ff2e2e2e</textcolor>
 								<textoffsetx>18</textoffsetx>
 								<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
 							</control>
@@ -848,9 +854,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -894,8 +900,8 @@
 							<width>905</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(Addon.Summary)]</label>
@@ -907,8 +913,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -994,9 +1000,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -1050,8 +1056,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -1345,9 +1351,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -1390,8 +1396,8 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$VAR[MusicListLabel3Var]</label>
@@ -1404,8 +1410,8 @@
 							<width>810</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Artist]</label>
@@ -1417,8 +1423,8 @@
 							<height>70</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label fallback="• • • •">$VAR[MusicListLabel4Var]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -1430,6 +1436,7 @@
 							<width>180</width>
 							<height>70</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
 							<visible>!IsEmpty(ListItem.Title)</visible>
 						</control>
@@ -1507,9 +1514,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -1553,8 +1560,8 @@
 							<width>905</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(Addon.Summary)]</label>
@@ -1566,8 +1573,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -1634,9 +1641,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -1680,8 +1687,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -1848,9 +1855,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -1895,8 +1902,8 @@
 							<width>985</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(Addon.Summary)]</label>
@@ -1909,8 +1916,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2061,9 +2068,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -2108,8 +2115,8 @@
 							<width>985</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Property(Addon.Summary)]</label>
@@ -2122,8 +2129,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2191,9 +2198,9 @@
 						</control>
 						<control type="image">
 							<left>0</left>
-							<top>0</top>
+							<top>-4</top>
 							<width>1140</width>
-							<height>120</height>
+							<height>136</height>
 							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
@@ -2238,8 +2245,8 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2424,6 +2431,7 @@
 							<height>28</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$VAR[UnFocusHDIndicator]</texture>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<animation effect="fade" start="100" end="60" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
 							<visible>StringCompare(ListItem.Label2,ListItem.Rating)</visible>
 						</control>
@@ -2433,8 +2441,8 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2537,8 +2545,8 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2684,6 +2692,7 @@
 							<width>180</width>
 							<height>50</height>
 							<aspectratio align="right">keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
 							<visible>!IsEmpty(ListItem.Title)</visible>
 						</control>
@@ -2705,8 +2714,8 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2775,8 +2784,8 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
@@ -2916,8 +2925,8 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
