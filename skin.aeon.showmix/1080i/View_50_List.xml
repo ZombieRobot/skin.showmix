@@ -132,7 +132,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -150,8 +150,8 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -320,7 +320,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -350,8 +350,8 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -512,7 +512,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -531,8 +531,8 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -693,7 +693,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -722,8 +722,8 @@
 							<width>960</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -851,7 +851,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -880,8 +880,8 @@
 							<width>905</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -997,7 +997,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1037,8 +1037,8 @@
 							<width>960</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -1067,9 +1067,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -1111,7 +1111,7 @@
 				<left>1288</left>
 				<top>129</top>
 				<visible>Container.Content(genres)</visible>
-				<include>VisibleFadeEffect</include>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
@@ -1215,18 +1215,26 @@
 	<include name="MusicList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_mask_poster_window.png</texture>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_poster_window.png</texture>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-32</left>
-					<top>148</top>
-					<width>1204</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="list" id="50">
 					<left>0</left>
 					<top>180</top>
@@ -1340,7 +1348,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1370,8 +1378,8 @@
 							<width>105</width>
 							<height>105</height>
 							<font>font45caps_title</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>[B]$INFO[ListItem.Tracknumber][/B]</label>
@@ -1502,7 +1510,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1531,8 +1539,8 @@
 							<width>905</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -1629,7 +1637,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1659,8 +1667,8 @@
 							<width>1005</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -1681,9 +1689,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -1700,6 +1708,7 @@
 				<left>1288</left>
 				<top>129</top>
 				<visible>!Container.Content(genres)</visible>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
@@ -1714,6 +1723,7 @@
 				<left>1288</left>
 				<top>129</top>
 				<visible>Container.Content(genres)</visible>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
@@ -1730,18 +1740,26 @@
 	<include name="AddonList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_mask_poster_window.png</texture>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_poster_window.png</texture>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-32</left>
-					<top>148</top>
-					<width>1204</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="list" id="50">
 					<left>0</left>
 					<top>180</top>
@@ -1833,7 +1851,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -1863,8 +1881,8 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -1900,9 +1918,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -1918,6 +1936,7 @@
 			<control type="group">
 				<left>1288</left>
 				<top>129</top>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
@@ -1934,18 +1953,26 @@
 	<include name="PictureList">
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
-			<include>ViewAnimation</include>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_mask_poster_window.png</texture>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_poster_window.png</texture>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-32</left>
-					<top>148</top>
-					<width>1204</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="list" id="50">
 					<left>0</left>
 					<top>180</top>
@@ -2037,7 +2064,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2067,8 +2094,8 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -2167,7 +2194,7 @@
 							<top>0</top>
 							<width>1140</width>
 							<height>120</height>
-							<texture border="4">listselect_fo.png</texture>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2197,8 +2224,8 @@
 							<width>1005</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -2220,9 +2247,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -2238,6 +2265,7 @@
 			<control type="group">
 				<left>1288</left>
 				<top>129</top>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
@@ -2254,18 +2282,26 @@
 	<include name="SlimVideoList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_mask_poster_window.png</texture>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_poster_window.png</texture>
+			</control>			
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-32</left>
-					<top>148</top>
-					<width>1204</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="list" id="50">
 					<left>0</left>
 					<top>180</top>
@@ -2298,7 +2334,7 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="image">
-							<left>460</left>
+							<left>935</left>
 							<top>17</top>
 							<width>42</width>
 							<height>28</height>
@@ -2362,9 +2398,10 @@
 							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
-							<width>1140</width>
-							<height>60</height>
-							<texture border="4">listselect_fo.png</texture>
+							<top>-4</top>
+							<width>1142</width>
+							<height>73</height>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2373,15 +2410,15 @@
 							<width>895</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
 						<control type="image">
-							<left>960</left>
+							<left>935</left>
 							<top>17</top>
 							<width>42</width>
 							<height>28</height>
@@ -2475,9 +2512,10 @@
 							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
-							<width>1140</width>
-							<height>60</height>
-							<texture border="4">listselect_fo.png</texture>
+							<top>-4</top>
+							<width>1142</width>
+							<height>73</height>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2486,8 +2524,8 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -2508,9 +2546,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -2525,16 +2563,25 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1258</left>
-				<top>120</top>
+				<left>1288</left>
+				<top>129</top>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture background="true">$VAR[PosterThumb]</texture>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<texture  diffuse="showmix/movie_thumb_mask.png" background="true">$VAR[PosterThumb]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
+					<bordertexture>thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-6</left>
+					<top>-5</top>
+					<width>520</width>
+					<height>761</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>showmix/movie_thumb_glass.png</texture>
 				</control>
 			</control>
 		</control>
@@ -2543,18 +2590,26 @@
 	<include name="SlimMusicList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_mask_poster_window.png</texture>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_poster_window.png</texture>
+			</control>			
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-32</left>
-					<top>148</top>
-					<width>1204</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="list" id="50">
 					<left>0</left>
 					<top>180</top>
@@ -2616,9 +2671,10 @@
 							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
-							<width>1140</width>
-							<height>60</height>
-							<texture border="4">listselect_fo.png</texture>
+							<top>-4</top>
+							<width>1142</width>
+							<height>73</height>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2636,8 +2692,8 @@
 							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -2694,9 +2750,10 @@
 							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
-							<width>1140</width>
-							<height>60</height>
-							<texture border="4">listselect_fo.png</texture>
+							<top>-4</top>
+							<width>1142</width>
+							<height>73</height>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2705,8 +2762,8 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -2727,9 +2784,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -2744,8 +2801,9 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1258</left>
-				<top>120</top>
+				<left>1288</left>
+				<top>129</top>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
@@ -2762,18 +2820,26 @@
 	<include name="SlimList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_mask_poster_window.png</texture>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>49</left>
+				<top>77</top>
+				<width>1820</width>
+				<height>1024</height>
+				<texture>showmix/listpanel_poster_window.png</texture>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
-				<control type="image">
-					<description>background image</description>
-					<left>-32</left>
-					<top>148</top>
-					<width>1204</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="list" id="50">
 					<left>0</left>
 					<top>180</top>
@@ -2825,9 +2891,10 @@
 							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
-							<width>1140</width>
-							<height>60</height>
-							<texture border="4">listselect_fo.png</texture>
+							<top>-4</top>
+							<width>1142</width>
+							<height>73</height>
+							<texture border="4">showmix/listpanel_selectbar.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -2836,8 +2903,8 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
-							<selectedcolor>selected</selectedcolor>
+							<textcolor>ff2e2e2e</textcolor>
+							<selectedcolor>ff2e2e2e</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -2858,9 +2925,9 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1140</left>
+					<left>1136</left>
 					<top>180</top>
-					<width>14</width>
+					<width>25</width>
 					<height>840</height>
 					<onup>60</onup>
 					<ondown>60</ondown>
@@ -2875,8 +2942,9 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1258</left>
-				<top>120</top>
+				<left>1288</left>
+				<top>129</top>
+				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
