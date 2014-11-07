@@ -231,6 +231,9 @@
 		<control type="group">
 			<animation effect="slide" start="0,-90" end="0,0" delay="800" time="480" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="slide" end="0,-90" start="0,0" time="480" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="slide" start="0,-90" end="0,0" delay="800" time="480">VisibleChange</animation>
+			<animation effect="slide" end="0,-90" start="0,0" time="480">VisibleChange</animation>
+			<visible>!Skin.HasSetting(topbar)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>

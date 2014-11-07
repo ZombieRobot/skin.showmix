@@ -231,7 +231,7 @@
 						<label>31972</label>
 						<label2>31974</label2>
 						<property name="description">31405</property>
-						<onclick>ActivateWindow(699)</onclick>
+						<onclick>ActivateWindow(1200)</onclick>
 						<icon>-</icon>
 					</item>
 				</content>

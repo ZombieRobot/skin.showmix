@@ -22,6 +22,70 @@
 				<texture>showmix/listpanel_poster_window.png</texture>
 			</control>
 			<control type="group">
+				<left>1769</left>
+				<top>163</top>
+				<include>Animation_CommonFade</include>		
+				<control type="image">
+					<left>-329</left>
+					<top>709</top>
+					<width>213</width>
+					<height>45</height>
+					<align>center</align>
+					<texture>showmix/oldschool_progress_back.png</texture>
+					<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
+					<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+				</control>
+				<control type="label">
+					<left>-428</left>
+					<top>521</top>
+					<width>408</width>
+					<height>420</height>
+					<align>center</align>
+					<font>font9</font>
+					<label>$LOCALIZE[32001]</label>
+					<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+				</control>
+				<control type="image">
+					<left>-329</left>
+					<top>709</top>
+					<align>center</align>
+					<width>213</width>
+					<height>45</height>
+					<texture>showmix/oldschool_progress_back.png</texture>
+					<visible>Player.Playing</visible>
+					<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+				</control>
+				<control type="label">
+					<left>-428</left>
+					<top>521</top>
+					<align>center</align>
+					<width>408</width>
+					<height>420</height>
+					<font>font9</font>
+					<label>$LOCALIZE[32002]</label>
+					<visible>Player.Playing</visible>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+				</control>
+			</control>
+			<control type="label">
+				<visible>Skin.HasSetting(topbar)</visible>
+				<top>984</top>
+				<left>1000</left>
+				<width>200</width>
+				<height>90</height>
+				<font>font13_title</font>
+				<textoffsetx>15</textoffsetx>
+				<textcolor>grey2</textcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<textoffsety>-2</textoffsety>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,[COLOR grey3] | ,]$INFO[Container.NumPages,/,[/COLOR]]</label>
+				<include>Animation_CommonFade</include>
+			</control>
+			<control type="group">
 				<left>69</left>
 				<top>-41</top>
 				<control type="list" id="50">
@@ -212,7 +276,6 @@
 							<top>28</top>
 							<width>64</width>
 							<height>64</height>
-							<colordiffuse>ff2e2e2e</colordiffuse>
 							<aspectratio>keep</aspectratio>
 							<texture>$VAR[ListItem.Overlay]</texture>
 						</control>
@@ -1083,6 +1146,7 @@
 					<onright condition="!Control.IsVisible(62)">SetProperty(MediaMenu,True,home)</onright>
 					<onright condition="!Control.IsVisible(62)">SetFocus(9050)</onright>
 					<onright condition="Control.IsVisible(62)">62</onright>
+					<onright>PlayMedia($ESCINFO[ListItem.Trailer])</onright>
 					<texturesliderbackground>-</texturesliderbackground>
 					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
 					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
