@@ -676,18 +676,14 @@
 			<animation effect="slide" end="0,340" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<top>612</top>
 			<control type="group">
-				<control type="image" id="90101">
-					<left>50</left>
-					<width>90</width>
-					<height>87</height>
-					<texture>submenu_end.png</texture>
-				</control>
+				
 				<control type="image">
-					<left>140</left>
-					<width>1780</width>
+					<left>62</left>
+					<width>1880</width>
 					<height>87</height>
-					<texture>submenu_bar.png</texture>
+					<texture>showmix/rssbar_mid.png</texture>
 				</control>
+				
 			</control>
 			<control type="group">
 				<control type="label">
@@ -711,6 +707,12 @@
 					<titlecolor>themecolor</titlecolor>
 					<headlinecolor>grey</headlinecolor>
 					<shadowcolor>shadow</shadowcolor>
+				</control>
+				<control type="image" id="90101">
+					<left>100</left>
+					<width>157</width>
+					<height>41</height>
+					<texture>showmix/rssbar_mid_fade.png</texture>
 				</control>
 			</control>
 		</control>

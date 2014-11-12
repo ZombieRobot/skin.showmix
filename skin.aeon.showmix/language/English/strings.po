@@ -994,3 +994,15 @@ msgstr ""
 msgctxt "#31999"
 msgid "Gone are the days when user customisation came at a price, and when[CR]high quality art was anything but. The Aeon Project website provides hundreds[CR]of the best wallpapers for all of Aeon's windows, free of charge and annoying[CR]adverts. Check the Aeon Assistant for live updates on new content."
 msgstr ""
+
+msgctxt "#32000"
+msgid "Toggle topbar on/off"
+msgstr ""
+
+msgctxt "#32001"
+msgid "PRESS RIGHT TO VIEW TRAILER"
+msgstr ""
+
+msgctxt "#32002"
+msgid "PRESS X TO STOP"
+msgstr ""

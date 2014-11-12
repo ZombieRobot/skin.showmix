@@ -159,17 +159,13 @@
 				<include condition="system.getbool(lookandfeel.enablerssfeeds)">SubMenuAnimation</include>
 				<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!window.previous(startup)">WindowOpen</animation>
 				<animation effect="slide" start="1870,0" end="0,0" delay="800" time="480" condition="window.previous(startup)">WindowOpen</animation>
-				<control type="image" id="90101">
-					<left>50</left>
-					<width>90</width>
-					<height>87</height>
-					<texture>submenu_end.png</texture>
-				</control>
+				
 				<control type="image">
-					<left>140</left>
-					<width>1780</width>
-					<height>87</height>
-					<texture>submenu_bar.png</texture>
+					<left>125</left>
+					<top>-10</top>
+					<width>1668</width>
+					<height>50</height>
+					<texture>showmix/submenubar.png</texture>
 				</control>
 				<control type="fixedlist" id="9010">
 					<left>210</left>
@@ -200,7 +196,8 @@
 						<control type="group">
 							<visible>Control.HasFocus(9010)</visible>
 							<control type="image">
-								<width>300</width>
+								<left>-5</left>
+								<width>308</width>
 								<height>41</height>
 								<texture>listselect_fo.png</texture>
 							</control>
@@ -232,7 +229,7 @@
 					<include condition="System.HasAddon(script.skinshortcuts)">CustomSubMenu</include>
 				</control>
 				<control type="button">
-					<left>130</left>
+					<left>165</left>
 					<top>6</top>
 					<width>30</width>
 					<height>30</height>
@@ -242,7 +239,7 @@
 					<onclick>Control.Move(9010,-1)</onclick>
 				</control>
 				<control type="button">
-					<left>1800</left>
+					<left>1725</left>
 					<top>6</top>
 					<width>30</width>
 					<height>30</height>
@@ -261,27 +258,6 @@
 			<!-- Main Menu (Includes_Home.xml) -->
 			<include condition="Skin.HasSetting(HorizontalListNav)">MainMenuListFixed</include>
 			<include condition="!Skin.HasSetting(HorizontalListNav)">MainMenuListWrapped</include>
-			<!--<control type="group">
-				<visible>IsEmpty(Container(9000).ListItem.Label)</visible>
-				<left>912</left>
-				<top>64</top>
-				<control type="image">
-					<description>Busy animation</description>
-					<width>96</width>
-					<height>96</height>
-					<texture>android/spinner_48_inner_holo.png</texture>
-					<aspectratio>keep</aspectratio>
-					<animation effect="rotate" start="0" end="360" center="auto" time="2000" loop="true" condition="true">conditional</animation>
-				</control>
-				<control type="image">
-					<description>Busy animation</description>
-					<width>96</width>
-					<height>96</height>
-					<texture>android/spinner_48_outer_holo.png</texture>
-					<aspectratio>keep</aspectratio>
-					<animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="true">conditional</animation>
-				</control>
-			</control>-->
 			<control type="label">
 				<left>0</left>
 				<top>17</top>
@@ -294,14 +270,14 @@
 				<label>[UPPERCASE]$INFO[Container(9000).ListItem.Label][/UPPERCASE]</label>
 				<visible>Skin.HasSetting(mainmenuicons)</visible>
 			</control>
-			<control type="image">
+			<control tye="image">
 				<left>0</left>
 				<top>58</top>
 				<width>100</width>
 				<height>104</height>
 				<texture border="1">side_fade.png</texture>
 			</control>
-			<control type="image">
+			<control tye="image">
 				<left>1820</left>
 				<top>58</top>
 				<width>100</width>

@@ -277,7 +277,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture>$VAR[ListItem.OverlayFocus]</texture>
 						</control>
 					</focusedlayout>
 					<itemlayout height="120" width="1140" condition="Container.Content(episodes)">
@@ -313,8 +313,8 @@
 							<top>0</top>
 							<width>790</width>
 							<height>70</height>
-							<textcolor>ff2e2e2e</textcolor>
-							<selectedcolor>ff2e2e2e</selectedcolor>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
@@ -325,8 +325,8 @@
 							<width>760</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>ff2e2e2e</textcolor>
-							<selectedcolor>ff2e2e2e</selectedcolor>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$VAR[VideoListLabel2Var]</label>
@@ -346,8 +346,8 @@
 							<height>116</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>ff2e2e2e</textcolor>
-							<selectedcolor>ff2e2e2e</selectedcolor>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>selected</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>StringCompare(ListItem.Label2,ListItem.Rating)</visible>
@@ -358,8 +358,8 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>ff2e2e2e</textcolor>
-							<selectedcolor>ff2e2e2e</selectedcolor>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>selected</selectedcolor>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!StringCompare(ListItem.Label2,ListItem.Rating)</visible>
@@ -406,7 +406,6 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
-							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>!SubString(ListItem.Icon,Default,left)</visible>
@@ -479,8 +478,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<colordiffuse>ff2e2e2e</colordiffuse>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture>$VAR[ListItem.OverlayFocus]</texture>
 						</control>
 					</focusedlayout>
 					<itemlayout height="120" width="1140" condition="Container.Content(tvshows)">
@@ -591,6 +589,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture fallback="flags/studios/default-studio.png">$VAR[StudioIconVar]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 						</control>
@@ -637,7 +636,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture>$VAR[ListItem.OverlayFocus]</texture>
 						</control>
 						<control type="group">
 							<description>Unwatched episodes</description>
@@ -648,7 +647,7 @@
 								<top>28</top>
 								<width>64</width>
 								<height>64</height>
-								<texture>overlays/list/OverlayUnWatched.png</texture>
+								<texture>overlays/list/Focus/OverlayUnWatched.png</texture>
 								<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="label">
@@ -783,6 +782,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
 						</control>
@@ -815,7 +815,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture>$VAR[ListItem.OverlayFocus]</texture>
 						</control>
 						<control type="group">
 							<description>Unwatched episodes</description>
@@ -826,7 +826,7 @@
 								<top>28</top>
 								<width>64</width>
 								<height>64</height>
-								<texture>overlays/list/OverlayUnWatched.png</texture>
+								<texture>overlays/list/Focus/OverlayUnWatched.png</texture>
 								<visible>IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="label">
@@ -930,6 +930,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
@@ -1076,6 +1077,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left) + !Container.Content(studios)</visible>
@@ -1086,6 +1088,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Label,flags/studios/,.png]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left) + Container.Content(studios)</visible>
@@ -1096,6 +1099,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>!SubString(ListItem.Icon,Default,left)</visible>
@@ -1131,7 +1135,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture>$VAR[ListItem.Overlay]</texture>
+							<texture>$VAR[ListItem.OverlayFocus]</texture>
 						</control>
 					</focusedlayout>
 				</control>
