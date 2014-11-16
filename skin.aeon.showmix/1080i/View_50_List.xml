@@ -1432,6 +1432,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>!Container.Content(songs) + SubString(ListItem.Icon,Default,left)</visible>
@@ -1595,6 +1596,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
@@ -1722,6 +1724,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
@@ -1936,6 +1939,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
@@ -2521,7 +2525,7 @@
 							<width>64</width>
 							<height>64</height>
 							<aspectratio>keep</aspectratio>
-							<texture fallback="overlays/list/">$VAR[ListItem.Overlay]</texture>
+							<texture fallback="overlays/list/">$VAR[ListItem.OverlayFocus]</texture>
 						</control>
 						<control type="group">
 							<description>Unwatched episodes</description>

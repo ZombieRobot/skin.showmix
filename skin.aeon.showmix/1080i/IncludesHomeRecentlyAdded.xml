@@ -693,7 +693,7 @@
 					<height>41</height>
 					<label></label>
 					<font>IconSmall</font>
-					<textcolor>themecolor</textcolor>
+					<textcolor>ff2e2e2e</textcolor>
 				</control>
 				<control type="rss">
 					<description>RSS feed</description>
@@ -701,12 +701,12 @@
 					<top>0</top>
 					<height>30</height>
 					<width>1730</width>
-					<font>font13</font>
+					<font>font12</font>
 					<urlset>1</urlset>
-					<textcolor>themecolor</textcolor>
-					<titlecolor>themecolor</titlecolor>
-					<headlinecolor>grey</headlinecolor>
-					<shadowcolor>shadow</shadowcolor>
+					<textcolor>a9000000</textcolor>
+					<headlinecolor>a9000000</headlinecolor>
+					<highlightcolor>a9000000</highlightcolor>
+					<titlecolor>a9000000</titlecolor>
 				</control>
 				<control type="image" id="90101">
 					<left>100</left>
