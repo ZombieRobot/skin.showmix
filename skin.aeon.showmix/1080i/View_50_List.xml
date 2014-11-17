@@ -1183,17 +1183,24 @@
 			</control>
 			<control type="group">
 				<left>1288</left>
-				<top>129</top>
+				<top>122</top>
 				<visible>Container.Content(genres)</visible>
 				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
 					<height>753</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+					<texture  diffuse="showmix/movie_thumb_mask.png" background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-6</left>
+					<top>15</top>
+					<width>520</width>
+					<height>731</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>showmix/movie_thumb_glass.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -1296,7 +1303,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_mask_poster_window.png</texture>
+				<texture>showmix/listpanel_mask_square_window.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -1304,7 +1311,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_poster_window.png</texture>
+				<texture>showmix/listpanel_square_window.png</texture>
 			</control>
 			<control type="group">
 				<left>69</left>
@@ -1783,14 +1790,14 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1288</left>
-				<top>129</top>
+				<left>1238</left>
+				<top>123</top>
 				<visible>!Container.Content(genres)</visible>
 				<include>Animation_list_slide</include>
 				<control type="image">
-					<width>510</width>
-					<height>753</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<width>612</width>
+					<height>903</height>
+					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
@@ -1798,14 +1805,14 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1288</left>
-				<top>129</top>
+				<left>1238</left>
+				<top>123</top>
 				<visible>Container.Content(genres)</visible>
 				<include>Animation_list_slide</include>
 				<control type="image">
-					<width>510</width>
-					<height>753</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<width>612</width>
+					<height>903</height>
+					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true" fallback="special://skin/extras/musicgenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/musicgenres/,.jpg]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
@@ -1825,7 +1832,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_mask_poster_window.png</texture>
+				<texture>showmix/listpanel_mask_square_window.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -1833,7 +1840,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_poster_window.png</texture>
+				<texture>showmix/listpanel_square_window.png</texture>
 			</control>
 			<control type="group">
 				<left>69</left>
@@ -2013,13 +2020,13 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1288</left>
-				<top>129</top>
+				<left>1238</left>
+				<top>123</top>
 				<include>Animation_list_slide</include>
 				<control type="image">
-					<width>510</width>
-					<height>753</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<width>612</width>
+					<height>903</height>
+					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
@@ -2039,7 +2046,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_mask_poster_window.png</texture>
+				<texture>showmix/listpanel_mask_square_window.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -2047,7 +2054,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_poster_window.png</texture>
+				<texture>showmix/listpanel_square_window.png</texture>
 			</control>
 			<control type="group">
 				<left>69</left>
@@ -2283,6 +2290,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
+							<colordiffuse>ff2e2e2e</colordiffuse>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
 							<fadetime>IconCrossfadeTime</fadetime>
 							<visible>SubString(ListItem.Icon,Default,left)</visible>
@@ -2342,13 +2350,13 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1288</left>
-				<top>129</top>
+				<left>1238</left>
+				<top>123</top>
 				<include>Animation_list_slide</include>
 				<control type="image">
-					<width>510</width>
-					<height>753</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<width>612</width>
+					<height>903</height>
+					<aspectratio aligny="center">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>

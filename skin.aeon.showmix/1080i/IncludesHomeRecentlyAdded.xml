@@ -698,10 +698,10 @@
 				<control type="rss">
 					<description>RSS feed</description>
 					<left>140</left>
-					<top>0</top>
+					<top>6</top>
 					<height>30</height>
 					<width>1730</width>
-					<font>font12</font>
+					<font>font10</font>
 					<urlset>1</urlset>
 					<textcolor>a9000000</textcolor>
 					<headlinecolor>a9000000</headlinecolor>
