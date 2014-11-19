@@ -143,6 +143,15 @@
 						<label>$INFO[Container(8000).ListItem.Director,$LOCALIZE[31000] ]</label>
 						<visible>IsEmpty(Container(8000).ListItem.Artist) + IsEmpty(Container(8000).ListItem.TvShowTitle)</visible>
 					</control>
+					<!--<control type="label">
+						<width>900</width>
+						<height>35</height>
+						<font>font14</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[Container(8000).ListItem.Property(episodeno)]</label>
+						<visible>!IsEmpty(Container(8000).ListItem.Property(episodeno))</visible>
+					</control>-->
 					<control type="label">
 						<width>900</width>
 						<height>35</height>
@@ -634,6 +643,26 @@
 				<bordertexture border="28">thumbs/cd_shadow2.png</bordertexture>
 				<bordersize>28</bordersize>
 			</control>
+			<!--<control type="image">
+				<left>1290</left>
+				<top>45</top>
+				<width>609</width>
+				<height>360</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="20">thumbs/thumb_shadow.png</texture>
+			</control>
+			<control type="multiimage">
+				<description>Fanart image</description>
+				<left>1310</left>
+				<top>65</top>
+				<width>570</width>
+				<height>320</height>
+				<aspectratio align="left">keep</aspectratio>
+				<imagepath background="true" fallback="special://skin/backgrounds/fallback_music.jpg">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<texture fallback="special://skin/backgrounds/fallback_music.jpg">$INFO[Player.Art(fanart)]</texture>
+				<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>-->
 		</control>
 	</include>
 	<include name="RSSFeedWidget">
@@ -647,12 +676,14 @@
 			<animation effect="slide" end="0,340" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 			<top>612</top>
 			<control type="group">
+				
 				<control type="image">
 					<left>62</left>
 					<width>1880</width>
 					<height>87</height>
 					<texture>showmix/rssbar_mid.png</texture>
 				</control>
+				
 			</control>
 			<control type="group">
 				<control type="label">
@@ -697,17 +728,16 @@
 			<control type="group">
 				<animation effect="rotatex" end="180" time="320" center="20" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
 				<control type="image">
-					<top>6</top>
-					<left>85</left>
-					<width>1880</width>
+					<left>140</left>
+					<width>1780</width>
 					<height>87</height>
-					<texture flipy="true">showmix/rssbar_mid.png</texture>
+					<texture flipy="true">submenu_bar.png</texture>
 				</control>
 				<control type="image">
 					<left>50</left>
-					<width>157</width>
-					<height>41</height>
-					<texture flipy="true">showmix/rssbar_mid_fade.png</texture>
+					<width>90</width>
+					<height>87</height>
+					<texture flipy="true" border="78,0,0,0">submenu_end.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -719,7 +749,7 @@
 					<height>41</height>
 					<label></label>
 					<font>IconSmall</font>
-					<textcolor>ff2e2e2e</textcolor>
+					<textcolor>themecolor</textcolor>
 				</control>
 				<control type="rss">
 					<description>RSS feed</description>

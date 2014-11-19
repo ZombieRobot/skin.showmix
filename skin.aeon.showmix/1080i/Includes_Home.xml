@@ -3,7 +3,7 @@
 	<!-- Main Menu Includes -->
 	<include name="MainMenuListContent">
 		<left>-290</left>
-		<top>59</top>
+		<top>62</top>
 		<width>2800</width>
 		<height>100</height>
 		<onleft>9000</onleft>
@@ -26,7 +26,7 @@
 				<width>500</width>
 				<height>90</height>
 				<font>font_MainMenu</font>
-				<textcolor>48FFFFFF</textcolor>
+				<textcolor>grey3</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -37,7 +37,7 @@
 				<width>500</width>
 				<height>90</height>
 				<font>font_MainMenu</font>
-				<textcolor>48FFFFFF</textcolor>
+				<textcolor>grey3</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -59,7 +59,7 @@
 				<width>640</width>
 				<height>90</height>
 				<font>font_MainMenu</font>
-				<textcolor>48FFFFFF</textcolor>
+				<textcolor>grey3</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -70,7 +70,7 @@
 				<width>640</width>
 				<height>90</height>
 				<font>font_MainMenu</font>
-				<textcolor>48FFFFFF</textcolor>
+				<textcolor>grey3</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -96,6 +96,25 @@
 				<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 				<colordiffuse>grey3</colordiffuse>
 			</control>
+			<!--<control type="image">
+				<left>89</left>
+				<top>-16</top>
+				<width>88</width>
+				<height>88</height>
+				<texture background="true">$INFO[ListItem.Property(Icon)]</texture>
+				<colordiffuse>grey3</colordiffuse>
+			</control>
+			<control type="label">
+				<left>133</left>
+				<top>50</top>
+				<width>266</width>
+				<height>40</height>
+				<font>font13_title</font>
+				<textcolor>grey3</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+			</control>-->
 		</itemlayout>
 		<focusedlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
 			<control type="image">
@@ -105,6 +124,37 @@
 				<height>105</height>
 				<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 			</control>
+			<!--<control type="image">
+				<left>89</left>
+				<top>-16</top>
+				<width>88</width>
+				<height>88</height>
+				<texture background="true">$INFO[ListItem.Property(Icon)]</texture>
+			</control>
+			<control type="label">
+				<left>133</left>
+				<top>50</top>
+				<width>266</width>
+				<height>40</height>
+				<font>font13_title</font>
+				<textcolor>grey3</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+			</control>
+			<control type="label">
+				<left>133</left>
+				<top>50</top>
+				<width>266</width>
+				<height>40</height>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(9000)</visible>
+				<include>VisibleFadeEffect</include>
+			</control>-->
 		</focusedlayout>
 		<include>FallbackMenu</include>
 	</include>
