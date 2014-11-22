@@ -1313,6 +1313,21 @@
 				<height>1024</height>
 				<texture>showmix/listpanel_square_window.png</texture>
 			</control>
+			<control type="label">
+				<visible>Skin.HasSetting(topbar)</visible>
+				<top>984</top>
+				<left>1000</left>
+				<width>200</width>
+				<height>90</height>
+				<font>font13_title</font>
+				<textoffsetx>15</textoffsetx>
+				<textcolor>grey2</textcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<textoffsety>-2</textoffsety>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,[COLOR grey3] | ,]$INFO[Container.NumPages,/,[/COLOR]]</label>
+				<include>Animation_CommonFade</include>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
@@ -1798,10 +1813,18 @@
 					<width>612</width>
 					<height>903</height>
 					<aspectratio aligny="center">keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture  diffuse="showmix/music_thumb_mask.png" background="true">$INFO[ListItem.Icon]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-11</left>
+					<top>135</top>
+					<width>632</width>
+					<height>632</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>showmix/music_thumb_glass.png</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -1841,6 +1864,21 @@
 				<width>1820</width>
 				<height>1024</height>
 				<texture>showmix/listpanel_square_window.png</texture>
+			</control>
+			<control type="label">
+				<visible>Skin.HasSetting(topbar)</visible>
+				<top>984</top>
+				<left>1000</left>
+				<width>200</width>
+				<height>90</height>
+				<font>font13_title</font>
+				<textoffsetx>15</textoffsetx>
+				<textcolor>grey2</textcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<textoffsety>-2</textoffsety>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,[COLOR grey3] | ,]$INFO[Container.NumPages,/,[/COLOR]]</label>
+				<include>Animation_CommonFade</include>
 			</control>
 			<control type="group">
 				<left>69</left>
@@ -2027,10 +2065,18 @@
 					<width>612</width>
 					<height>903</height>
 					<aspectratio aligny="center">keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture  diffuse="showmix/music_thumb_mask.png" background="true">$INFO[ListItem.Icon]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-11</left>
+					<top>135</top>
+					<width>632</width>
+					<height>632</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>showmix/music_thumb_glass.png</texture>
 				</control>
 			</control>
 		</control>

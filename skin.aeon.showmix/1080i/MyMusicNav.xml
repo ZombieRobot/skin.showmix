@@ -238,6 +238,13 @@
 					<label>589</label>
 					<include>ButtonCommonValues</include>
 				</control>
+				<control type="radiobutton" id="6055">
+					<description>List Toggle topbar</description>
+					<textwidth>255</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[32000]</label>
+					<onclick>Skin.ToggleSetting(topbar)</onclick>
+				</control>
 				<control type="button" id="203">
 					<description>Actions</description>
 					<textwidth>352</textwidth>

@@ -362,7 +362,7 @@
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
-					<control type="radiobutton" id="6055">
+				<control type="radiobutton" id="6055">
 					<description>List Toggle topbar</description>
 					<textwidth>255</textwidth>
 					<include>ButtonCommonValues</include>

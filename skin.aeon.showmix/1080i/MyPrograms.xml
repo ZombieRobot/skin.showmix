@@ -168,6 +168,22 @@
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
+				<control type="button" id="201">
+					<description>Misc options</description>
+					<textwidth>352</textwidth>
+					<font>font13_title</font>
+					<include>ButtonCommonValues</include>
+					<label>31026</label>
+					<enable>no</enable>
+					<disabledcolor>themecolor</disabledcolor>
+				</control>
+				<control type="radiobutton" id="6055">
+					<description>List Toggle topbar</description>
+					<textwidth>255</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[32000]</label>
+					<onclick>Skin.ToggleSetting(topbar)</onclick>
+				</control>
 			</control>
 		</control>
 	</controls>
