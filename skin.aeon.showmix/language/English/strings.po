@@ -1006,3 +1006,11 @@ msgstr ""
 msgctxt "#32002"
 msgid "PRESS X TO STOP"
 msgstr ""
+
+msgctxt "#31600"
+msgid "Apply gradiant effect to home menu background"
+msgstr ""
+
+msgctxt "#31601"
+msgid "[B]WELCOME TO YOUR PERSONAL AEON ASSISTANT[/B][CR]The aeon assistant displays news updates from the aeon server, vital statistics and credits.[CR]Or take a tour of the skin and see what showmix has to offer."
+msgstr ""

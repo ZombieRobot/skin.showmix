@@ -2102,6 +2102,21 @@
 				<height>1024</height>
 				<texture>showmix/listpanel_square_window.png</texture>
 			</control>
+			<control type="label">
+				<visible>Skin.HasSetting(topbar)</visible>
+				<top>984</top>
+				<left>1000</left>
+				<width>200</width>
+				<height>90</height>
+				<font>font13_title</font>
+				<textoffsetx>15</textoffsetx>
+				<textcolor>grey2</textcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<textoffsety>-2</textoffsety>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,[COLOR grey3] | ,]$INFO[Container.NumPages,/,[/COLOR]]</label>
+				<include>Animation_CommonFade</include>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
@@ -2431,7 +2446,22 @@
 				<width>1820</width>
 				<height>1024</height>
 				<texture>showmix/listpanel_poster_window.png</texture>
-			</control>			
+			</control>	
+			<control type="label">
+				<visible>Skin.HasSetting(topbar)</visible>
+				<top>984</top>
+				<left>1000</left>
+				<width>200</width>
+				<height>90</height>
+				<font>font13_title</font>
+				<textoffsetx>15</textoffsetx>
+				<textcolor>grey2</textcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<textoffsety>-2</textoffsety>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,[COLOR grey3] | ,]$INFO[Container.NumPages,/,[/COLOR]]</label>
+				<include>Animation_CommonFade</include>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
@@ -2699,6 +2729,7 @@
 			<control type="group">
 				<left>1288</left>
 				<top>129</top>
+				<visible>!Container.Content(genres)</visible>
 				<include>Animation_list_slide</include>
 				<control type="image">
 					<width>510</width>
@@ -2718,6 +2749,28 @@
 					<texture>showmix/movie_thumb_glass.png</texture>
 				</control>
 			</control>
+			<control type="group">
+				<left>1288</left>
+				<top>122</top>
+				<visible>Container.Content(genres)</visible>
+				<include>Animation_list_slide</include>
+				<control type="image">
+					<width>510</width>
+					<height>753</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture  diffuse="showmix/movie_thumb_mask.png" background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-6</left>
+					<top>15</top>
+					<width>520</width>
+					<height>731</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>showmix/movie_thumb_glass.png</texture>
+				</control>
+			</control>
 		</control>
 	</include>
 	<!-- Slim MusicList-->
@@ -2731,7 +2784,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_mask_poster_window.png</texture>
+				<texture>listpanel_mask_square_window.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
@@ -2739,8 +2792,23 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_poster_window.png</texture>
-			</control>			
+				<texture>showmix/listpanel_square_window.png</texture>
+			</control>		
+			<control type="label">
+				<visible>Skin.HasSetting(topbar)</visible>
+				<top>984</top>
+				<left>1000</left>
+				<width>200</width>
+				<height>90</height>
+				<font>font13_title</font>
+				<textoffsetx>15</textoffsetx>
+				<textcolor>grey2</textcolor>
+				<align>right</align>
+				<aligny>top</aligny>
+				<textoffsety>-2</textoffsety>
+				<label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,[COLOR grey3] | ,]$INFO[Container.NumPages,/,[/COLOR]]</label>
+				<include>Animation_CommonFade</include>
+			</control>
 			<control type="group">
 				<left>69</left>
 				<top>-41</top>
@@ -2936,17 +3004,26 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1288</left>
-				<top>129</top>
+				<left>1238</left>
+				<top>120</top>
 				<include>Animation_list_slide</include>
 				<control type="image">
-					<width>510</width>
-					<height>753</height>
+					<top>-142</top>
+					<width>612</width>
+					<height>903</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture background="true">$VAR[PosterThumb]</texture>
+					<texture  diffuse="showmix/music_thumb_mask.png" background="true">$VAR[PosterThumb]</texture>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>-11</left>
+					<top>135</top>
+					<width>637</width>
+					<height>637</height>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture>showmix/music_thumb_glass.png</texture>
 				</control>
 			</control>
 		</control>

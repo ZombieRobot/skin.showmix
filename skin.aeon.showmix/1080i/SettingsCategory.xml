@@ -6,136 +6,149 @@
 		<include>CommonBackground</include>
 		<control type="group">
 			<left>0</left>
-			<top>128</top>
+			<top>0</top>
 			<include>Window_OpenClose_Animation</include>
-			<include>SystemLeftPanel</include>
+			<include>SystemLeftPane8l</include>
+			
+			<control type="image">
+				<description>background image</description>
+				<left>120</left>
+				<top>80</top>
+				<width>1665</width>
+				<height>909</height>
+				<texture>showmix/settings_panelback.png</texture>
+				<include>SettingsPanelAnimation</include>
+			</control>
+			<control type="image">
+				<top>757</top>
+				<left>437</left>
+				<width>1309</width>
+				<height>190</height>
+				<texture>black.png</texture>
+				<colordiffuse>50FFFFFF</colordiffuse>
+			</control>
+			<control type="group">
+			<include>SettingsPanelAnimation</include>
+			<control type="label">
+				<description>sectiontitle</description>
+				<label>$LOCALIZE[31962]</label>
+				<left>167</left>
+				<top>125</top>
+				<width>1404</width>
+				<height>73</height>
+				<textcolor>FFbec0c2</textcolor>
+				<font>font_settings15</font>
+			</control>
+			<control type="label">
+				<description>section subtitle</description>
+				<left>167</left>
+				<top>165</top>
+				<width>1404</width>
+				<height>73</height>
+				<textcolor>FFbec0c2</textcolor>
+				<font>font_settings10</font>
+				<label>$LOCALIZE[31961]</label>
+			</control>
+		</control>
 			<control type="grouplist" id="3">
 				<description>button area</description>
-				<left>82</left>
-				<top>32</top>
-				<width>356</width>
+				<left>144</left>
+				<top>230</top>
+				<width>306</width>
 				<height>840</height>
 				<itemgap>0</itemgap>
 				<onleft>9000</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>20</ondown>
-			</control>
-			<control type="image">
-				<description>separator image</description>
-				<left>82</left>
-				<top>692</top>
-				<width>356</width>
-				<height>60</height>
-				<texture border="1">separator2.png</texture>
-				<visible>!Container(3).HasNext</visible>
-			</control>
-			<include>SystemRightPanel</include>
-			<control type="image">
-				<description>separator image</description>
-				<left>522</left>
-				<top>692</top>
-				<width>1316</width>
-				<height>60</height>
-				<texture border="1">separator2.png</texture>
-				<visible>!Container(5).HasNext</visible>
+				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="textbox" id="6">
 				<description>description area</description>
-				<left>552</left>
-				<top>754</top>
-				<width>1256</width>
+				<left>467</left>
+				<top>774</top>
+				<width>1286</width>
 				<height>115</height>
 				<font>font15_textbox</font>
 				<align>left</align>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
 				<visible>ControlGroup(5).HasFocus()</visible>
+				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<left>522</left>
-				<top>32</top>
-				<width>1316</width>
-				<height>720</height>
+				<left>437</left>
+				<top>129</top>
+				<width>1310</width>
+				<height>630</height>
 				<itemgap>0</itemgap>
 				<pagecontrol>60</pagecontrol>
 				<onleft>3</onleft>
 				<onright>60</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
-			</control>
-			<control type="scrollbar" id="60">
-				<left>1838</left>
-				<top>32</top>
-				<width>14</width>
-				<height>720</height>
-				<onleft>5</onleft>
-				<onright>3</onright>
-				<ondown>60</ondown>
-				<onup>60</onup>
-				<showonepage>false</showonepage>
-				<texturesliderbackground>-</texturesliderbackground>
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="button" id="20">
 				<description>Setting level button</description>
-				<left>82</left>
+				<left>145</left>
 				<top>752</top>
 				<height>120</height>
-				<width>356</width>
+				<width>290</width>
 				<label>10037</label>
-				<textoffsetx>30</textoffsetx>
-				<align>right</align>
+				<textoffsetx>17</textoffsetx>
+				<align>left</align>
 				<aligny>top</aligny>
 				<textoffsety>60</textoffsety>
 				<font>font15</font>
 				<textcolor>labelheader</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus border="3">listselect_fo.png</texturefocus>
+				<focusedcolor>FF262728</focusedcolor>
+				<texture border="4">showmix/listselect_fo_settings.png</texture>
 				<texturenofocus>-</texturenofocus>
 				<onleft>3</onleft>
 				<onright>3</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
 				<onclick>SettingsLevelChange</onclick>
+				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="button">
 				<description>Setting level button</description>
-				<left>82</left>
+				<left>132</left>
 				<top>752</top>
 				<height>120</height>
 				<width>356</width>
 				<label>$LOCALIZE[31142]</label>
 				<textoffsetx>30</textoffsetx>
-				<align>right</align>
+				<align>left</align>
 				<aligny>top</aligny>
 				<textoffsety>10</textoffsety>
 				<font>font15</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<disabledcolor>white</disabledcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>FF262728</focusedcolor>
 				<texturefocus border="3">-</texturefocus>
 				<texturenofocus border="4">-</texturenofocus>
 				<enable>no</enable>
 				<animation effect="fade" start="100" end="70" time="50" tween="sine" easing="inout" condition="!Control.HasFocus(20)">Conditional</animation>
+				<include>SettingsPanelAnimation</include>
 			</control>
 		</control>
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<height>90</height>
-			<width>356</width>
+			<width>290</width>
 			<textoffsetx>15</textoffsetx>
-			<align>right</align>
+			<align>left</align>
 			<aligny>center</aligny>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="3">listselect_fo.png</texturefocus>
-			<texturenofocus border="1">separator5.png</texturenofocus>
+			<textcolor>white</textcolor>
+			<focusedcolor>FF262728</focusedcolor>
+			<texture border="4">showmix/listselect_fo_settings.png</texture>
+			<texturenofocus border="1">-</texturenofocus>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -146,8 +159,8 @@
 			<font>font15</font>
 			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="3">listselect_fo.png</texturefocus>
+			<focusedcolor>FF262728</focusedcolor>
+			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
 		<control type="radiobutton" id="8">
@@ -157,10 +170,10 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
+			<textcolor>white</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="3">listselect_fo.png</texturefocus>
+			<focusedcolor>FF262728</focusedcolor>
+			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
 		<control type="spincontrolex" id="9">
@@ -170,10 +183,10 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
+			<textcolor>white</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="3">listselect_fo.png</texturefocus>
+			<focusedcolor>FF262728</focusedcolor>
+			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
@@ -186,17 +199,39 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
+			<textcolor>white</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="3">listselect_fo.png</texturefocus>
+			<focusedcolor>FF262728</focusedcolor>
+			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
-		<!--<control type="image" id="11">
-			<description>separator image</description>
-			<height>30</height>
-			<texture border="1">separator2.png</texture>
-		</control>-->
+		<control type="image">
+			<description>background image</description>
+			<left>143</left>
+			<top>89</top>
+			<width>1615</width>
+			<height>879</height>
+			<texture>showmix/settings_panelfront.png</texture>
+			<include>SettingsPanelAnimation</include>
+		</control> 
+
+		<control type="image">
+			<left>1990</left>
+			<top>975</top>
+			<width>154</width>
+			<height>135</height>
+			<texture>showmix/kodi_logo.png</texture>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>	
+		</control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it value down to the one below</description>
 			<left>0</left>
@@ -206,7 +241,6 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
-		<include>Topbar</include>
-		<include>Settings_Welcome</include>
+		<!--include>Settings_Welcome</include-->
 	</controls>
 </window>

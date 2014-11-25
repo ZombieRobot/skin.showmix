@@ -230,7 +230,7 @@
 					<item id="12">
 						<label>31972</label>
 						<label2>31974</label2>
-						<property name="description">31405</property>
+						<property name="description">31601</property>
 						<onclick>ActivateWindow(1200)</onclick>
 						<icon>-</icon>
 					</item>
@@ -335,9 +335,9 @@
 
 			<control type="textbox">
 				<description>description area</description>
-				<left>552</left>
+				<left>546</left>
 				<top>600</top>
-				<width>1256</width>
+				<width>1246</width>
 				<height>400</height>
 				<font>font14</font>
 				<align>left</align>
@@ -370,7 +370,7 @@
 			<top>975</top>
 			<width>154</width>
 			<height>135</height>
-			<texture>showmix/welcome_xbmclogo.png</texture>
+			<texture>showmix/kodi_logo.png</texture>
 			<animation type="WindowOpen" reversible="false">
 				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
 				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />

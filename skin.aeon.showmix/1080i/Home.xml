@@ -253,6 +253,13 @@
 				<width>1920</width>
 				<height>253</height>
 				<texture>showmix/homemenu_back.png</texture>
+				<visible>Skin.HasSetting(nohomegradient)</visible>
+			</control>
+			<control type="image">
+				<top>-15</top>
+				<width>1920</width>
+				<height>253</height>
+				<texture>showmix/homemenu_gradient.png</texture>
 			</control>
 			<!-- Main Menu (Includes_Home.xml) -->
 			<include condition="Skin.HasSetting(HorizontalListNav)">MainMenuListFixed</include>

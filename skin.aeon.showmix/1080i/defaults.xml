@@ -37,7 +37,7 @@
 		<top>0</top>
 		<width>450</width>
 		<height>60</height>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
@@ -54,9 +54,9 @@
 		<width>30</width>
 		<height>60</height>
 		<textoffsetx>15</textoffsetx>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
-		<alttexturefocus border="1">listselect_fo.png</alttexturefocus>
+		<alttexturefocus border="1">showmix/listselect_fo_settings.png</alttexturefocus>
 		<alttexturenofocus border="1">separator2.png</alttexturenofocus>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
@@ -114,7 +114,7 @@
 		<height>60</height>
 		<spinwidth>40</spinwidth>
 		<spinheight>25</spinheight>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<textureup>android/numberpicker_up_normal_holo_dark.png</textureup>
 		<texturedown>android/numberpicker_down_normal_holo_dark.png</texturedown>
@@ -141,7 +141,7 @@
 		<textureradioonnofocus>android/btn_radio_on_holo_dark.png</textureradioonnofocus>
 		<textureradioofffocus>android/btn_radio_off_holo_dark.png</textureradioofffocus>
 		<textureradiooffnofocus>android/btn_radio_off_holo_dark.png</textureradiooffnofocus>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<label>215</label>
 		<font>font14</font>
@@ -189,7 +189,7 @@
 		<height>60</height>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<sliderwidth>150</sliderwidth>
 		<sliderheight>20</sliderheight>
@@ -206,14 +206,14 @@
 	<default type="mover">
 		<left>0</left>
 		<top>0</top>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<default type="resize">
 		<left>0</left>
 		<top>0</top>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -222,7 +222,7 @@
 		<top>0</top>
 		<width>450</width>
 		<height>60</height>
-		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturefocus border="1">showmix/listselect_fo_settings.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
