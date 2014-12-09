@@ -1014,3 +1014,7 @@ msgstr ""
 msgctxt "#31601"
 msgid "[B]WELCOME TO YOUR PERSONAL AEON ASSISTANT[/B][CR]The aeon assistant displays news updates from the aeon server, vital statistics and credits.[CR]Or take a tour of the skin and see what showmix has to offer."
 msgstr ""
+
+msgctxt "#31602"
+msgid "Disable intro video"
+msgstr ""

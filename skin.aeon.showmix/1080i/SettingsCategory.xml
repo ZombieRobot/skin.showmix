@@ -241,6 +241,6 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
-		<!--include>Settings_Welcome</include-->
+		<include>Settings_Welcome</include>
 	</controls>
 </window>

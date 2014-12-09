@@ -45,7 +45,7 @@
 				</control>
 				<control type="grouplist" id="9020">
 					<left>0</left>
-					<top>46</top>
+					<top>49</top>
 					<width>1790</width>
 					<height>41</height>
 					<align>right</align>
@@ -57,11 +57,11 @@
 						<label></label>
 						<textoffsetx>0</textoffsetx>
 						<width>50</width>
-						<height>41</height>
+						<height>35</height>
 						<align>center</align>
 						<font>IconTiny</font>
 						<textcolor>grey</textcolor>
-						<shadowcolor>shadow</shadowcolor>
+						<focusedcolor>a9000000</focusedcolor>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 						<onclick>RunAddon(script.globalsearch)</onclick>
 						<animation type="Visible">

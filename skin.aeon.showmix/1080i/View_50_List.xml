@@ -73,8 +73,8 @@
 			<control type="label">
 				<visible>Skin.HasSetting(topbar)</visible>
 				<top>984</top>
-				<left>1000</left>
-				<width>200</width>
+				<left>970</left>
+				<width>250</width>
 				<height>90</height>
 				<font>font13_title</font>
 				<textoffsetx>15</textoffsetx>
@@ -1316,8 +1316,8 @@
 			<control type="label">
 				<visible>Skin.HasSetting(topbar)</visible>
 				<top>984</top>
-				<left>1000</left>
-				<width>200</width>
+				<left>970</left>
+				<width>250</width>
 				<height>90</height>
 				<font>font13_title</font>
 				<textoffsetx>15</textoffsetx>
@@ -1868,8 +1868,8 @@
 			<control type="label">
 				<visible>Skin.HasSetting(topbar)</visible>
 				<top>984</top>
-				<left>1000</left>
-				<width>200</width>
+				<left>970</left>
+				<width>250</width>
 				<height>90</height>
 				<font>font13_title</font>
 				<textoffsetx>15</textoffsetx>
@@ -2105,8 +2105,8 @@
 			<control type="label">
 				<visible>Skin.HasSetting(topbar)</visible>
 				<top>984</top>
-				<left>1000</left>
-				<width>200</width>
+				<left>970</left>
+				<width>250</width>
 				<height>90</height>
 				<font>font13_title</font>
 				<textoffsetx>15</textoffsetx>
@@ -2450,8 +2450,8 @@
 			<control type="label">
 				<visible>Skin.HasSetting(topbar)</visible>
 				<top>984</top>
-				<left>1000</left>
-				<width>200</width>
+				<left>970</left>
+				<width>250</width>
 				<height>90</height>
 				<font>font13_title</font>
 				<textoffsetx>15</textoffsetx>
@@ -2797,8 +2797,8 @@
 			<control type="label">
 				<visible>Skin.HasSetting(topbar)</visible>
 				<top>984</top>
-				<left>1000</left>
-				<width>200</width>
+				<left>970</left>
+				<width>250</width>
 				<height>90</height>
 				<font>font13_title</font>
 				<textoffsetx>15</textoffsetx>

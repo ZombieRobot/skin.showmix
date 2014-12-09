@@ -406,4 +406,39 @@
 	<include name="LoadTvTunes">
 		<onload condition="System.HasAddon(script.tvtunes) + !SubString(Window(10025).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
 	</include>
+	<include name="intro_enabled">
+		<control type="videowindow" id="1">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<visible>Player.HasVideo</visible>
+		</control>
+		<control type="image">
+			<aspectratio>stretch</aspectratio>
+			<include>screen_Dimensions</include>
+			<texture>black.png</texture>
+			<animation effect="fade" delay="4200" end="100" time="350">WindowOpen</animation>
+		</control>
+		<control type="button" id="8999">
+			<onfocus>PlayMedia(special://skin/intro/intro.mp4,1)</onfocus>
+			<onfocus>SetFocus(10)</onfocus>
+			<label>SHOULD NOT SEE ME</label>
+			<visible allowhiddenfocus="true">false</visible>
+		</control>
+		<control type="button" id="10">
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<animation effect="fade" delay="10950" end="100" time="350">Focus</animation>
+		</control>
+	</include>
+	<include name="intro_Disable">
+		<control type="button" id="8999">
+			<onfocus>ReplaceWindow(Home)</onfocus>
+			<label>SHOULD NOT SEE ME</label>
+			<visible allowhiddenfocus="true">false</visible>
+		</control>
+	</include>
+	
 </includes>
