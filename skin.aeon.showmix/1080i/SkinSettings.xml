@@ -3,17 +3,56 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=X1|X2|X3|X4|X5|X6|X7|X8|X9|X10|X11|X12|X13|X101|X202|X303|X404|X50​5|X606)</onunload>
 	<controls>
-		<include>CommonBackground</include>
-		<include>Topbar</include>
+		<include>GlobalSettingsBackground</include>
+			<control type="image">
+				<description>background image</description>
+				<left>120</left>
+				<top>80</top>
+				<width>1665</width>
+				<height>909</height>
+				<texture>showmix/settings_panelback.png</texture>
+				<include>SettingsPanelAnimation</include>
+			</control>
+			<control type="image">
+				<top>299</top>
+				<left>269</left>
+				<width>1659</width>
+				<height>1003</height>
+				<texture>showmix/settings_back_shadow.png</texture>
+				<colordiffuse>50FFFFFF</colordiffuse>
+				<include>SettingsPanelAnimation</include>
+			</control>
+			<control type="group">
+				<include>SettingsPanelAnimation</include>
+				<control type="label">
+					<description>sectiontitle</description>
+					<label>$LOCALIZE[31962]</label>
+					<left>167</left>
+					<top>125</top>
+					<width>1404</width>
+					<height>73</height>
+					<textcolor>FFbec0c2</textcolor>
+					<font>font_settings15</font>
+				</control>
+				<control type="label">
+					<description>section subtitle</description>
+					<left>167</left>
+					<top>165</top>
+					<width>1404</width>
+					<height>73</height>
+					<textcolor>FFbec0c2</textcolor>
+					<font>font_settings10</font>
+					<label>$LOCALIZE[31961]</label>
+				</control>
+			</control>
 		<control type="group">
 			<left>0</left>
 			<top>128</top>
-			<include>Window_OpenClose_Animation</include>
-			<include>SystemLeftPanel</include>
+			<include>SettingsPanelAnimation</include>
 			<control type="panel" id="9000">
-				<left>82</left>
-				<top>32</top>
-				<width>356</width>
+				<left>144</left>
+				<top>109</top>
+				<width>306</width>
 				<height>840</height>
 				<onleft>9010</onleft>
 				<onright>9010</onright>
@@ -23,117 +62,119 @@
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
 				<visible>!Window.IsActive(1121)</visible>
 				<include>SettingsFadeEffect</include>
-				<itemlayout height="90" width="356">
-					<control type="image">
-						<top>30</top>
-						<width>356</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
+				<itemlayout height="70" width="306">
 					<control type="label">
-						<width>356</width>
-						<height>90</height>
-						<font>font15</font>
-						<textoffsetx>20</textoffsetx>
-						<textcolor>grey2</textcolor>
+						<top>-13</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings14</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-				</itemlayout>
-				<focusedlayout height="90" width="356">
-					<control type="image">
-						<top>30</top>
-						<width>356</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
+					<control type="label">
+						<top>17</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings10</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
 					</control>
+				</itemlayout>
+				<focusedlayout height="70" width="306">
 					<control type="image">
-						<width>356</width>
-						<height>90</height>
-						<texture border="4">listselect_fo.png</texture>
+						<width>290</width>
+						<height>70</height>
+						<texture border="4">showmix/listselect_fo_settings.png</texture>
 						<visible>Control.HasFocus(9000)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<width>356</width>
-						<height>90</height>
-						<font>font15</font>
-						<textoffsetx>20</textoffsetx>
-						<textcolor>white</textcolor>
+						<top>-13</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings14</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>FF262728</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+					<control type="label">
+						<top>17</top>
+						<width>286</width>
+						<height>70</height>
+						<font>font_settings10</font>
+						<textoffsetx>26</textoffsetx>
+						<textcolor>FF262728</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 				</focusedlayout>
 				<content>
 					<item id="1">
 						<label>513</label>
+						<label2>31605</label2>
 						<onclick>noop</onclick>
 						<icon>-</icon>
 					</item>
 					<item id="2">
 						<label>16000</label>
+						<label2>31606</label2>
 						<onclick>noop</onclick>
 						<icon>-</icon>
 					</item>
 					<item id="3">
 						<label>31014</label>
+						<label2>31607</label2>
 						<onclick>noop</onclick>
 						<icon>-</icon>
 					</item>
 					<item id="4">
 						<label>10038</label>
+						<label2>31608</label2>
 						<onclick>noop</onclick>
 						<icon>-</icon>
 					</item>
 				</content>
 			</control>
-			<control type="image">
-				<description>LOGO</description>
-				<left>82</left>
-				<top>752</top>
-				<width>356</width>
-				<height>120</height>
-				<aspectratio>keep</aspectratio>
-				<texture>aeon-nox-logo.png</texture>
-			</control>
-			<include>SystemRightPanel</include>
-			<control type="image">
-				<description>separator image</description>
-				<left>522</left>
-				<top>692</top>
-				<width>1316</width>
-				<height>60</height>
-				<texture border="1">separator2.png</texture>
-			</control>
 			<control type="textbox">
 				<description>description area</description>
-				<left>552</left>
-				<top>754</top>
-				<width>1256</width>
+				<left>467</left>
+				<top>644</top>
+				<width>1266</width>
 				<height>115</height>
 				<font>font15_textbox</font>
 				<align>left</align>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<label>$VAR[SkinSettingsDescriptionVar]</label>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="1700" tween="sine" easing="inout">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
 				<visible>!Window.IsActive(1121)</visible>
+				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="group" id="9010">
 				<visible>!Window.IsActive(1121)</visible>
 				<include>SettingsFadeEffect</include>
 				<control type="grouplist" id="9001">
 					<description>control area</description>
-					<left>522</left>
-					<top>32</top>
-					<width>1316</width>
-					<height>720</height>
+					<left>439</left>
+					<top>1</top>
+					<width>1308</width>
+					<height>630</height>
 					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -147,6 +188,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31911</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>ActivateWindow(1121)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
@@ -157,6 +200,8 @@
 						<font>font15</font>
 						<label>31913</label>
 						<label2>[COLOR themecolor]$VAR[lowermainmenuVar][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
@@ -166,6 +211,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31600</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(nohomegradient)</onclick>
 						<selected>!Skin.HasSetting(nohomegradient)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -177,6 +224,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31602</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(intro.enable)</onclick>
 						<selected>!Skin.HasSetting(intro.enable)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -187,6 +236,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31082</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(Detach.RSS)</onclick>
 						<selected>Skin.HasSetting(Detach.RSS)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -198,6 +249,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>20083</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(Disable.Musicinfo)</onclick>
 						<selected>!Skin.HasSetting(Disable.Musicinfo)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -208,6 +261,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>20176</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(Disable.Videoinfo)</onclick>
 						<selected>!Skin.HasSetting(Disable.Videoinfo)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -218,6 +273,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31928</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label2>[COLOR labelheader]$VAR[MainMenuLayoutVar][/COLOR]</label2>
 						<onclick condition="!Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">Skin.SetBool(mainmenuicons)</onclick>
 						<onclick condition="Skin.HasSetting(mainmenuicons)">Skin.SetBool(biggergap)</onclick>
@@ -229,10 +286,10 @@
 				</control>
 				<control type="grouplist" id="9002">
 					<description>control area</description>
-					<left>522</left>
-					<top>32</top>
-					<width>1316</width>
-					<height>720</height>
+					<left>439</left>
+					<top>1</top>
+					<width>1308</width>
+					<height>630</height>
 					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -246,6 +303,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31947</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>ActivateWindow(1128)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
@@ -255,6 +314,8 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>20189</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<onclick>Skin.ToggleSetting(Enable.AutoScroll)</onclick>
 						<selected>Skin.HasSetting(Enable.AutoScroll)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -264,6 +325,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31931</label>
 						<label2>[COLOR themecolor]$VAR[VideoPlotLocalizeVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(VideoInfoPlotToggle)</onclick>
@@ -274,6 +337,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31124</label>
 						<onclick>Skin.ToggleSetting(Disable.ShowBackgroundVideo)</onclick>
 						<selected>!Skin.HasSetting(Disable.ShowBackgroundVideo)</selected>
@@ -284,6 +349,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31125</label>
 						<onclick>Skin.ToggleSetting(Disable.ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(Disable.ShowBackgroundVis)</selected>
@@ -292,10 +359,10 @@
 				</control>
 				<control type="grouplist" id="9003">
 					<description>control area</description>
-					<left>522</left>
-					<top>32</top>
-					<width>1316</width>
-					<height>720</height>
+					<left>439</left>
+					<top>1</top>
+					<width>1308</width>
+					<height>630</height>
 					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -309,6 +376,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>21398</label>
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
@@ -319,6 +388,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>15311</label>
 						<label2>[COLOR labelheader]$INFO[Skin.String(Startup_Playlist_Path)][/COLOR]</label2>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
@@ -329,6 +400,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31126</label>
 						<onclick>Skin.ToggleSetting(Enable.TvTunes)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -341,6 +414,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31083</label>
 						<onclick>Skin.ToggleSetting(Disable.NextAired)</onclick>
 						<selected>!Skin.HasSetting(Disable.NextAired)</selected>
@@ -351,6 +426,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31015</label>
 						<label2>[COLOR labelheader]$INFO[Skin.String(VideoGenreFanartPath)][/COLOR]</label2>
 						<onclick>Skin.SetPath(VideoGenreFanartPath)</onclick>
@@ -361,6 +438,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>- $LOCALIZE[10035]</label>
 						<onclick>Skin.Reset(VideoGenreFanartPath)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -371,6 +450,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31017</label>
 						<label2>[COLOR labelheader]$INFO[Skin.String(MusicGenreFanartPath)][/COLOR]</label2>
 						<onclick>Skin.SetPath(MusicGenreFanartPath)</onclick>
@@ -381,6 +462,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>- $LOCALIZE[10035]</label>
 						<onclick>Skin.Reset(MusicGenreFanartPath)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -389,10 +472,10 @@
 				</control>
 				<control type="grouplist" id="9004">
 					<description>control area</description>
-					<left>522</left>
-					<top>32</top>
-					<width>1316</width>
-					<height>720</height>
+					<left>439</left>
+					<top>1</top>
+					<width>1308</width>
+					<height>630</height>
 					<itemgap>0</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
@@ -405,6 +488,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31939</label>
 						<label2>[COLOR themecolor]$VAR[InfoPanelDelayLocalizeVar][/COLOR]</label2>
 						<onclick>$VAR[InfoPanelDelayOnClickVar]</onclick>
@@ -415,6 +500,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31941</label>
 						<onclick>Skin.ToggleSetting(KioskMode.Enabled)</onclick>
 						<selected>Skin.HasSetting(KioskMode.Enabled)</selected>
@@ -425,6 +512,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31915</label>
 						<label2>[COLOR themecolor]$VAR[HorizontalListNavVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(HorizontalListNav)</onclick>
@@ -435,6 +524,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31943</label>
 						<onclick>ActivateWindow(1127)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -444,6 +535,8 @@
 						<height>90</height>
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>FF262728</focusedcolor>
 						<label>31094</label>
 						<label2>[COLOR themecolor]$VAR[SlimListSettingVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(Enable.SlimList)</onclick>
@@ -451,6 +544,32 @@
 					</control>
 				</control>
 			</control>
+		</control>
+		<control type="image">
+			<description>background image</description>
+			<left>143</left>
+			<top>89</top>
+			<width>1615</width>
+			<height>879</height>
+			<texture>showmix/settings_panelfront.png</texture>
+			<include>SettingsPanelAnimation</include>
+		</control> 
+		<control type="image">
+			<left>1990</left>
+			<top>975</top>
+			<width>154</width>
+			<height>135</height>
+			<texture>showmix/kodi_logo.png</texture>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation type="Visible" reversible="false">
+				<effect type="fade" start="0" end="100" time="1200" delay="1500" />
+				<effect type="slide" start="0,0" end="-280,0" time="1200" delay="1500" tween="cubic" easing="out" />
+			</animation>
+			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>	
 		</control>
 	</controls>
 </window>

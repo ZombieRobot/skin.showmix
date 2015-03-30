@@ -91,15 +91,6 @@
 				<texture border="1">separator2.png</texture>
 				<visible>!Container(2).HasNext</visible>
 			</control>
-			<control type="image">
-				<description>LOGO</description>
-				<left>82</left>
-				<top>752</top>
-				<width>356</width>
-				<height>120</height>
-				<aspectratio>keep</aspectratio>
-				<texture>aeon-nox-logo.png</texture>
-			</control>
 			<include>SystemRightPanel</include>
 			<control type="grouplist" id="9001">
 				<description>control area</description>

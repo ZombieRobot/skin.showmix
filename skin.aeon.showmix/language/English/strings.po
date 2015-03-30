@@ -940,7 +940,7 @@ msgid "AEON WELCOME PAGE"
 msgstr ""
 
 msgctxt "#31986"
-msgid "XBMC BUILD VERSION[CR][CR]XBMC BUILD DATE[CR][CR]AEON VERSION[CR][CR]CURRENT THEME[CR][CR]LANGUAGE[CR][CR]SCREEN RESOLUTION[CR][CR]AVAILABLE RAM[CR][CR]SYSTEM DRIVE SPACE[CR][CR]CPU TEMPERATURE[CR][CR]GPU TEMPERATURE[CR][CR]SYSTEM UPTIME[CR][CR]ONLINE STATUS[CR][CR]IP ADDRESS[CR][CR]OPTICAL DRIVE"
+msgid "KODI BUILD VERSION[CR]KODI BUILD DATE[CR]AEON VERSION[CR]SKIN BUILD DATE[CR]CURRENT THEME[CR]CURRENT THEME COLOUR[CR]LANGUAGE[CR]SYSTEM DRIVE SPACE[CR]CPU TEMPERATURE[CR]GPU TEMPERATURE[CR]SYSTEM UPTIME[CR]ONLINE STATUS[CR]IP ADDRESS"
 msgstr ""
 
 msgctxt "#31987"
@@ -1018,3 +1018,28 @@ msgstr ""
 msgctxt "#31602"
 msgid "Disable intro video"
 msgstr ""
+
+msgctxt "#31603"
+msgid "Aeon Showmix 4.0"
+msgstr ""
+
+msgctxt "#31604"
+msgid "1st February 2015"
+msgstr ""
+
+msgctxt "#31605"
+msgid "Customize your home menu"
+msgstr ""
+
+msgctxt "#31606"
+msgid "miscellaneous skin settings"
+msgstr ""
+
+msgctxt "#31607"
+msgid "Add-on skin settings"
+msgstr ""
+
+msgctxt "#31608"
+msgid "Advanced skin options"
+msgstr ""
+

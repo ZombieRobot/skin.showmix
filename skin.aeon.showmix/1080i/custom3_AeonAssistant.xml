@@ -238,10 +238,10 @@
 				</control>
 				
 				<control type="label">
-					<top>20</top>
+					<top>-2</top>
 					<left>35</left>
 					<width>428</width>
-					<height>796</height>
+					<height>896</height>
 					<font>Font_Vitals</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -252,17 +252,17 @@
 				</control>
 				
 				<control type="label">
-					<top>20</top>
+					<top>-2</top>
 					<left>458</left>
 					<width>830</width>
-					<height>796</height>
+					<height>896</height>
 					<font>Font_Vitals</font>
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>15</textoffsetx>
 					<include>FFececec</include>
 					<visible>Container(9000).HasFocus(7)</visible>
-					<label>$INFO[System.BuildVersion][CR]$INFO[System.BuildDate][CR]$LOCALIZE[31000][CR]$INFO[Skin.CurrentTheme][CR]$INFO[System.Language][CR]$INFO[System.ScreenResolution][CR]$INFO[System.FreeMemory][CR]$INFO[System.UsedspacePercent][CR]$INFO[System.CPUTemperature][CR]$INFO[System.GPUTemperature][CR]$INFO[System.Uptime][CR]$INFO[System.Internetstate][CR]$INFO[Network.IPAddress][CR]$INFO[System.DVDLabel]</label>
+					<label>$INFO[System.BuildVersion][CR]$INFO[System.BuildDate][CR]$LOCALIZE[31603][CR]$LOCALIZE[31604][CR]$INFO[Skin.CurrentTheme][CR]$INFO[Skin.CurrentColourTheme][CR]$INFO[System.Language][CR]$INFO[System.UsedspacePercent][CR]$INFO[System.CPUTemperature][CR]$INFO[System.GPUTemperature][CR]$INFO[System.Uptime][CR]$INFO[System.Internetstate][CR]$INFO[Network.IPAddress]</label>
 				</control>
 				
 				<control type="image">

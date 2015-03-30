@@ -3,30 +3,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<control type="group">
-			<animation effect="fade" time="600">WindowOpen</animation>
-			<animation effect="fade" time="600">WindowClose</animation>
-			<include condition="Window.IsActive(home)">HomeFanart</include>
-			<include condition="!Window.IsActive(home)">GlobalFanart</include>
-			
-			<control type="visualisation">
-				<include>FullscreenDimensions</include>
-				<visible>Player.HasAudio</visible>
-				<visible>!Skin.HasSetting(Disable.ShowBackgroundVis)</visible>
-				<visible>!Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
-				<visible>IsEmpty(Window(Videos).Property(TvTunesIsAlive))</visible>
-			</control>
-			<control type="image">
-				<include>FullscreenDimensions</include>
-				<texture>black.png</texture>
-				<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)] | Control.IsVisible(502)</visible>
-				<animation effect="fade" start="100" end="70" time="300" condition="Control.IsVisible(502)">conditional</animation>
-			</control>
-			<control type="videowindow">
-				<include>FullscreenDimensions</include>
-				<visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
-			</control>
-		</control>
+		<include>GlobalSettingsBackground</include>
 		<include name="Animation_SettingsInternalPanel">
 			<animation effect="fade" time="125">Visible</animation>
 			<animation effect="fade" time="125">Hidden</animation>
@@ -107,7 +84,7 @@
 						<height>70</height>
 						<font>font_settings10</font>
 						<textoffsetx>26</textoffsetx>
-						<textcolor>white</textcolor>
+						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -332,7 +309,6 @@
 				<texture background="true">special://skin/backgrounds/default_assistant.jpg</texture>
 				<visible>Container(9000).HasFocus(12)</visible>
 			</control>
-
 			<control type="textbox">
 				<description>description area</description>
 				<left>546</left>

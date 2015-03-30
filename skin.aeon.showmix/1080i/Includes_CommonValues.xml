@@ -55,7 +55,7 @@
 		<height>60</height>
 		<textoffsetx>15</textoffsetx>
 		<textcolor>grey</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<focusedcolor>FF262728</focusedcolor>
 		<textwidth>300</textwidth>
 		<aligny>center</aligny>
 		<font>font13</font>

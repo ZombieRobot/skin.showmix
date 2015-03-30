@@ -183,6 +183,12 @@
 			<size>59</size>
 		</font>
 		<font>
+			<name>font_settings11</name>
+			<filename>BebasNeue.ttf</filename>
+			<linespacing>0</linespacing>
+			<size>29</size>
+		</font>
+		<font>
 			<name>font_settings14</name>
 			<filename>BebasNeue.ttf</filename>
 			<linespacing>0</linespacing>
@@ -199,6 +205,12 @@
 			<filename>BebasNeue.ttf</filename>
 			<linespacing>0</linespacing>
 			<size>22</size>
+		</font>
+		<font>
+			<name>Font_Vitals</name>
+			<filename>BebasNeue.ttf</filename>
+			<size>36</size>
+			<linespacing>1.1</linespacing>
 		</font>
 		<font>
 			<name>font_welcome10</name>

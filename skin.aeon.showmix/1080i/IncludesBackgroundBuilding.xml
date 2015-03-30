@@ -341,4 +341,30 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 	</include>
+	<include name="GlobalSettingsBackground">
+		<control type="group">
+				<animation effect="fade" time="600">WindowOpen</animation>
+				<animation effect="fade" time="600">WindowClose</animation>
+				<include condition="Window.IsActive(home)">HomeFanart</include>
+				<include condition="!Window.IsActive(home)">GlobalFanart</include>
+				
+				<control type="visualisation">
+					<include>FullscreenDimensions</include>
+					<visible>Player.HasAudio</visible>
+					<visible>!Skin.HasSetting(Disable.ShowBackgroundVis)</visible>
+					<visible>!Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+					<visible>IsEmpty(Window(Videos).Property(TvTunesIsAlive))</visible>
+				</control>
+				<control type="image">
+					<include>FullscreenDimensions</include>
+					<texture>black.png</texture>
+					<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)] | Control.IsVisible(502)</visible>
+					<animation effect="fade" start="100" end="70" time="300" condition="Control.IsVisible(502)">conditional</animation>
+				</control>
+				<control type="videowindow">
+					<include>FullscreenDimensions</include>
+					<visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+				</control>
+			</control>
+		</include>
 </includes>

@@ -1204,17 +1204,10 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>1280</left>
-				<top>-40</top>
+				<left>1260</left>
+				<top>0</top>
 				<visible>Container.Content(episodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="image">
-					<description>background image</description>
-					<top>148</top>
-					<width>570</width>
-					<height>904</height>
-					<texture border="40">listpanel_back.png</texture>
-				</control>
 				<control type="image">
 					<top>148</top>
 					<width>570</width>

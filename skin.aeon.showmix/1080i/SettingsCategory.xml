@@ -3,7 +3,7 @@
 	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<include>CommonBackground</include>
+		<include>GlobalSettingsBackground</include>
 		<control type="group">
 			<left>0</left>
 			<top>0</top>
@@ -20,12 +20,13 @@
 				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="image">
-				<top>757</top>
-				<left>437</left>
-				<width>1309</width>
-				<height>190</height>
-				<texture>black.png</texture>
+				<top>299</top>
+				<left>269</left>
+				<width>1659</width>
+				<height>1003</height>
+				<texture>showmix/settings_back_shadow.png</texture>
 				<colordiffuse>50FFFFFF</colordiffuse>
+				<include>SettingsPanelAnimation</include>
 			</control>
 			<control type="group">
 			<include>SettingsPanelAnimation</include>
@@ -73,7 +74,7 @@
 				<align>left</align>
 				<textcolor>white</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="1700" tween="sine" easing="inout">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
 				<visible>ControlGroup(5).HasFocus()</visible>
 				<include>SettingsPanelAnimation</include>
@@ -96,16 +97,16 @@
 				<description>Setting level button</description>
 				<left>145</left>
 				<top>752</top>
-				<height>120</height>
+				<height>70</height>
 				<width>290</width>
 				<label>10037</label>
 				<textoffsetx>17</textoffsetx>
 				<align>left</align>
 				<aligny>top</aligny>
-				<textoffsety>60</textoffsety>
-				<font>font15</font>
+				<textoffsety>76</textoffsety>
+				<font>font_settings11</font>
 				<textcolor>labelheader</textcolor>
-				<focusedcolor>FF262728</focusedcolor>
+				<focusedcolor>labelheader</focusedcolor>
 				<texture border="4">showmix/listselect_fo_settings.png</texture>
 				<texturenofocus>-</texturenofocus>
 				<onleft>3</onleft>
@@ -115,40 +116,62 @@
 				<onclick>SettingsLevelChange</onclick>
 				<include>SettingsPanelAnimation</include>
 			</control>
-			<control type="button">
-				<description>Setting level button</description>
+			<control type="label">
 				<left>132</left>
-				<top>752</top>
+				<top>762</top>
 				<height>120</height>
 				<width>356</width>
-				<label>$LOCALIZE[31142]</label>
 				<textoffsetx>30</textoffsetx>
+				<font>font_settings14</font>
+				<textcolor>grey2</textcolor>
 				<align>left</align>
 				<aligny>top</aligny>
-				<textoffsety>10</textoffsety>
-				<font>font15</font>
-				<textcolor>white</textcolor>
-				<disabledcolor>white</disabledcolor>
-				<focusedcolor>FF262728</focusedcolor>
-				<texturefocus border="3">-</texturefocus>
-				<texturenofocus border="4">-</texturenofocus>
-				<enable>no</enable>
-				<animation effect="fade" start="100" end="70" time="50" tween="sine" easing="inout" condition="!Control.HasFocus(20)">Conditional</animation>
+				<label>$LOCALIZE[31142]</label>
 				<include>SettingsPanelAnimation</include>
+				<visible>!Control.HasFocus(20)</visible>
+			</control>
+			<control type="label">
+				<left>132</left>
+				<top>760</top>
+				<height>120</height>
+				<width>356</width>
+				<textoffsetx>30</textoffsetx>
+				<font>font_settings14</font>
+				<textcolor>FF262728</textcolor>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[31142]</label>
+				<include>SettingsPanelAnimation</include>
+				<visible>Control.HasFocus(20)</visible>
 			</control>
 		</control>
 		<control type="button" id="10">
 			<description>Default Category Button</description>
-			<height>90</height>
+			<height>70</height>
 			<width>290</width>
-			<textoffsetx>15</textoffsetx>
+			<textoffsetx>28</textoffsetx>
 			<align>left</align>
-			<aligny>center</aligny>
-			<font>font15</font>
+			<aligny>top</aligny>
+			<font>font_settings14</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>FF262728</focusedcolor>
 			<texture border="4">showmix/listselect_fo_settings.png</texture>
 			<texturenofocus border="1">-</texturenofocus>
+		</control>
+		<control type="label">
+			<left>132</left>
+			<top>760</top>
+			<height>90</height>
+			<width>290</width>
+			<textoffsetx>30</textoffsetx>
+			<font>font_settings14</font>
+			<textcolor>FF262728</textcolor>
+			<textoffsetx>30</textoffsetx>
+			<align>left</align>
+			<aligny>top</aligny>
+			<label>$LOCALIZE[31142]</label>
+			<include>SettingsPanelAnimation</include>
+			<visible>Control.HasFocus(20)</visible>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -170,7 +193,7 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>white</textcolor>
+			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
 			<focusedcolor>FF262728</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
@@ -183,7 +206,7 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>white</textcolor>
+			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
 			<focusedcolor>FF262728</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
@@ -199,7 +222,7 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>white</textcolor>
+			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
 			<focusedcolor>FF262728</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
@@ -214,7 +237,6 @@
 			<texture>showmix/settings_panelfront.png</texture>
 			<include>SettingsPanelAnimation</include>
 		</control> 
-
 		<control type="image">
 			<left>1990</left>
 			<top>975</top>
@@ -241,6 +263,6 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
-		<include>Settings_Welcome</include>
+		<include>Settings_Welcomew</include>
 	</controls>
 </window>
