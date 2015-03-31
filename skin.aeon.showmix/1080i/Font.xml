@@ -150,6 +150,16 @@
 			<size>600</size>
 		</font>
 		<font>
+			<name>Font_SettingsMainLabelBig</name>
+			<filename>BebasNeue.ttf</filename>
+			<size>60</size>
+		</font>
+		<font>
+			<name>Font_SettingsMainLabelsmall</name>
+			<filename>BebasNeue.ttf</filename>
+			<size>33</size>
+		</font>
+		<font>
 			<name>WeatherTemp</name>
 			<filename>RobotoCondensed-Uppercase.ttf</filename>
 			<style>uppercase</style>

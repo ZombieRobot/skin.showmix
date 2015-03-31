@@ -190,7 +190,7 @@
 					<description>Ok Button</description>
 					<width>310</width>
 					<textcolor>grey2</textcolor>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>FF262728</focusedcolor>
 					<label>186</label>
 					<font>font15</font>
 				</control>
@@ -198,7 +198,7 @@
 					<description>Cancel Button</description>
 					<width>310</width>
 					<textcolor>grey2</textcolor>
-					<focusedcolor>white</focusedcolor>
+					<focusedcolor>FF262728</focusedcolor>
 					<label>222</label>
 					<font>font15</font>
 				</control>

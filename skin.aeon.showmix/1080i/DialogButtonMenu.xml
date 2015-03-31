@@ -30,11 +30,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.Quit()</onclick>
 				<font>font14</font>
@@ -46,11 +46,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.Powerdown()</onclick>
 				<visible>System.CanPowerDown</visible>
@@ -62,11 +62,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
 				<font>font14</font>
@@ -79,11 +79,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
 				<font>font14</font>
@@ -95,11 +95,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.Suspend()</onclick>
 				<visible>System.CanSuspend</visible>
@@ -111,11 +111,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.Hibernate()</onclick>
 				<visible>System.CanHibernate</visible>
@@ -127,11 +127,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.Reset()</onclick>
 				<visible>System.CanReboot</visible>
@@ -143,11 +143,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>dialog.close(all,true)</onclick>
 				<onclick>System.LogOff</onclick>
@@ -167,11 +167,11 @@
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<focusedcolor>showmixfocus</focusedcolor>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<usealttexture>!System.IsMaster</usealttexture>
-				<alttexturefocus border="35,2,35,2">button_shutdown_focus.png</alttexturefocus>
+				<alttexturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</alttexturefocus>
 				<alttexturenofocus border="35,2,35,2">button_shutdown_nofocus.png</alttexturenofocus>
 				<onclick>xbmc.mastermode</onclick>
 				<font>font14</font>
@@ -182,11 +182,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.InhibitIdleShutdown(true)</onclick>
 				<font>font14</font>
@@ -198,11 +198,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>XBMC.InhibitIdleShutdown(false)</onclick>
 				<font>font14</font>
@@ -214,11 +214,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>ActivateWindow(settings)</onclick>
 				<font>font14</font>
@@ -229,11 +229,11 @@
 				<width>510</width>
 				<height>60</height>
 				<textcolor>grey2</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<focusedcolor>showmixfocus</focusedcolor>
 				<align>left</align>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">showmix/listselect_fo_settings.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>ActivateWindow(favourites)</onclick>
 				<font>font14</font>
