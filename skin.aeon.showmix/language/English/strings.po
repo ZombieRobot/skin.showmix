@@ -1043,3 +1043,18 @@ msgctxt "#31608"
 msgid "Advanced skin options"
 msgstr ""
 
+msgctxt "#31609"
+msgid "Multiplex Classic"
+msgstr ""
+
+msgctxt "#31610"
+msgid "Multiplex Fullscreen"
+msgstr ""
+
+msgctxt "#31611"
+msgid "View 3"
+msgstr ""
+
+msgctxt "#31612"
+msgid "View 4"
+msgstr ""

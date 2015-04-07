@@ -2,24 +2,24 @@
 <includes>
 
 	<include name="MultiplexIconDimensionsWrap2">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>177</width>
 		<height>264</height>
 		<fadetime>200</fadetime>
 	</include>
 
 	<include name="MultiplexIconDimensionsWrapReflect2">
-		<posx>0</posx>
-		<posy>266</posy>
+		<left>0</left>
+		<top>266</top>
 		<width>177</width>
 		<height>264</height>
 		<colordiffuse>d0FFFFFF</colordiffuse>
 		<fadetime>200</fadetime>		
 	</include>	
 		<include name="MultiplexInfoLabel_Left">
-		<posx>0</posx>
-		<posy>0</posy>
+		<left>0</left>
+		<top>0</top>
 		<width>150</width>
 		<height>13</height>
 		<align>left</align>
@@ -31,8 +31,8 @@
 	    <animation effect="zoom" center="56,80" start="110" end="100" time="400" tween="cubic" easing="inout">Unfocus</animation> 	
     </include>	
 	<include name="MultiplexInfoValueVars">
-		<posx>0</posx>
-		<posy>28</posy>
+		<left>0</left>
+		<top>28</top>
 		<height>13</height>
 		<font>Droid16</font>	
 		<textcolor>FFFFFFFF</textcolor>
@@ -76,36 +76,36 @@
 			<visible>Control.IsVisible(599)</visible>
 			<include>Animation_CommonFade</include>
 				<control type="group">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>     
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1245</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -113,16 +113,16 @@
 
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -132,37 +132,37 @@
 				<include>Animation_CommonFade</include>
 				<visible>Control.IsVisible(599)</visible>
 				<control type="group">
-					<posx>0</posx>
-					<posy>0</posy>
+					<left>0</left>
+					<top>0</top>
 					<visible>Skin.HasSetting(noinfo)</visible>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>     
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1245</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -170,16 +170,16 @@
 
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -191,55 +191,55 @@
 				
 				
 				<control type="group">
-					<posx>0</posx>
-					<posy>0</posy>
-					<visible>!Skin.HasSetting(noinfo) + stringcompare(Skin.String(MovieInfoStyle),$LOCALIZE[31667])</visible>
+					<left>0</left>
+					<top>0</top>
+					<visible>!Skin.HasSetting(noinfo) + StringCompare(Control.GetLabel(4420),1)</visible>
 				
 
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>     
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1245</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>   		
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
 					</control>		
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -249,14 +249,14 @@
 		<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 			
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>1920</width>
 						<height>572</height>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<visible>!Skin.HasSetting(grey) + !Skin.HasSetting(green) + !Skin.HasSetting(black)</visible>
@@ -264,13 +264,13 @@
 						</control>
 						<control type="image">
 							<visible>!Skin.HasSetting(grey) + !Skin.HasSetting(green) + !Skin.HasSetting(black) + Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
 						</control>					
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<visible>Skin.HasSetting(green)</visible>
@@ -278,13 +278,13 @@
 						</control>
 						<control type="image">
 							<visible>Skin.HasSetting(green) + Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_green.png</texture>
 						</control>	
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<visible>Skin.HasSetting(grey)</visible>
@@ -292,13 +292,13 @@
 						</control>
 						<control type="image">
 							<visible>Skin.HasSetting(grey) + Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_grey.png</texture>
 						</control>	
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<visible>Skin.HasSetting(black) + Skin.HasSetting(black)</visible>
@@ -306,37 +306,37 @@
 						</control>
 						<control type="image">
 							<visible>Skin.HasSetting(black) + Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
 						</control>			
 						<control type="image">
-							<posx>126</posx>
-							<posy>635</posy>
+							<left>126</left>
+							<top>635</top>
 							<width>1673</width>
 							<height>200</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_bottom_tint.png</texture>
 							<colordiffuse>9FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>59</posy>
+							<left>128</left>
+							<top>59</top>
 							<width>1670</width>
 							<height>540</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>
 								<control type="image">
-							<posx>128</posx>
-							<posy>56</posy>
+							<left>128</left>
+							<top>56</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>599</posy>
+							<left>128</left>
+							<top>599</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -346,22 +346,22 @@
 		<!-- POSTER VIEW LINES -->		
 		-==-=-==-=-=-=-=--==-=--		
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>1920</width>
 						<height>572</height>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<control type="image">
-							<posx>597</posx>
-							<posy>59</posy>
+							<left>597</left>
+							<top>59</top>
 							<width>3</width>
 							<height>540</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>1425</posx>
-							<posy>59</posy>
+							<left>1425</left>
+							<top>59</top>
 							<width>3</width>
 							<height>540</height>
 							<texture>views/multiplex/vert_line.png</texture>
@@ -374,12 +374,12 @@
 
 		<!-- START POSTER VIEW INFO RATINGS LEFT SIDE -->	
 					<control type="group">
-						<posx>158</posx>
-						<posy>144</posy>
+						<left>158</left>
+						<top>144</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>	
 						<control type="group">
-							<posy>33</posy>
+							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31402]:</label>
@@ -391,7 +391,7 @@
 						</control>
 						
 						<control type="group">
-							<posy>108</posy>
+							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31401]:</label>
@@ -403,7 +403,7 @@
 						</control>
 
 						<control type="group">
-							<posy>183</posy>
+							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31436]:</label>
@@ -415,7 +415,7 @@
 						</control>
 
 						<control type="group">
-							<posy>258</posy>
+							<top>258</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31445]:</label>
@@ -427,7 +427,7 @@
 						</control>
 
 						<control type="group">
-							<posy>333</posy>
+							<top>333</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31438]:</label>
@@ -439,7 +439,7 @@
 						</control>
 
 						<control type="group">
-							<posy>408</posy>
+							<top>408</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31417]:</label>
@@ -451,7 +451,7 @@
 						</control>
 
 						<control type="group">
-							<posy>483</posy>
+							<top>483</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31408]:</label>
@@ -465,13 +465,13 @@
 		<!-- END POSTER VIEW INFO RATINGS LEFT SIDE -->	
 					<!-- IMAGES FOR POSTER VIEW -->
 					<control type="group">
-						<posx>1428</posx>
-						<posy>156</posy>
+						<left>1428</left>
+						<top>156</top>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<control type="largeimage">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>368</width>
 							<height>540</height>
 							<aspectratio>scale</aspectratio>
@@ -484,22 +484,22 @@
 		<!-- VIDEO WINDOW FOR POSTER VIEW -->
 					
 					<control type="group">
-						<posx>600</posx>
-						<posy>159</posy>
+						<left>600</left>
+						<top>159</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>825</width>
 							<height>539</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>0</posx>
-							<posy>38</posy>
+							<left>0</left>
+							<top>38</top>
 							<width>825</width>
 							<height>464</height>
 							<!-- <aspectratio>scale</aspectratio> -->
@@ -507,18 +507,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>908</posx>
-							<posy>513</posy>
+							<left>908</left>
+							<top>513</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>830</posx>
-							<posy>527</posy>
+							<left>830</left>
+							<top>527</top>
 							<width>368</width>
 							<align>center</align>
 							<height>45</height>
@@ -529,19 +529,19 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>908</posx>
-							<posy>513</posy>
+							<left>908</left>
+							<top>513</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 				
 						<control type="label">
-							<posx>830</posx>
-							<posy>527</posy>
+							<left>830</left>
+							<top>527</top>
 							<width>368</width>
 							<align>center</align>
 							<height>45</height>
@@ -552,8 +552,8 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="textbox">
-							<posx>18</posx>
-							<posy>12</posy>
+							<left>18</left>
+							<top>12</top>
 							<width>795</width>
 							<height>503</height>
 							<font>Droid19</font>
@@ -566,8 +566,8 @@
 
 		 <!-- Movie count Label -->				
 					<control type="label">
-						<posx>1757</posx>
-						<posy>116</posy>
+						<left>1757</left>
+						<top>116</top>
 						<width>593</width>
 						<height>38</height>
 						<font>Droid16</font>
@@ -597,17 +597,17 @@
 							<visible>Skin.HasSetting(Dark)</visible>
 						</control>				
 						<control type="image">
-							<posx>0</posx>
-							<posy>912</posy>
+							<left>0</left>
+							<top>912</top>
 							<width>1920</width>
 							<height>614</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>	
 							
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1920</width>
 							<height>86</height>
 							<texture flipy="false">views/multiplex/backgrounds/multiplex_fullscreen_top_tint.png</texture>
@@ -615,8 +615,8 @@
 						</control>
 						
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>215</height>
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_bottom_tint.png</texture>
@@ -628,22 +628,22 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="image">
-							<posx>0</posx>
-							<posy>84</posy>
+							<left>0</left>
+							<top>84</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>914</posy>
+							<left>0</left>
+							<top>914</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -656,22 +656,22 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>				
 						<control type="image">
-							<posx>408</posx>
-							<posy>87</posy>
+							<left>408</left>
+							<top>87</top>
 							<width>3</width>
 							<height>614</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>1394</posx>
-							<posy>87</posy>
+							<left>1394</left>
+							<top>87</top>
 							<width>3</width>
 							<height>614</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>411</posx>
-							<posy>168</posy>
+							<left>411</left>
+							<top>168</top>
 							<width>984</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -681,8 +681,8 @@
 					<control type="label">
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>15</posx>
-						<posy>23</posy>
+						<left>15</left>
+						<top>23</top>
 						<width>1193</width>
 						<height>38</height>
 						<font>DroidBold37</font>
@@ -694,8 +694,8 @@
 					</control>
 		<!-- FULLSCREEN DIRECTOR INFO -->		
 					<control type="group">
-						<posx>450</posx>
-						<posy>102</posy>
+						<left>450</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -709,8 +709,8 @@
 					</control>
 						
 					<control type="group">
-						<posx>998</posx>
-						<posy>102</posy>
+						<left>998</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -724,13 +724,13 @@
 					</control>				
 		<!-- FULLSCREEN IMAGES FOR PLOT VIEW -->
 					<control type="group">
-						<posx>0</posx>
-						<posy>87</posy>
+						<left>0</left>
+						<top>87</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="largeimage">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>408</width>
 							<height>612</height>
 							<aspectratio>scale</aspectratio>
@@ -738,17 +738,17 @@
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
-							<posx>1406</posx>
-							<posy>9</posy>
+							<left>1406</left>
+							<top>9</top>
 							<width>507</width>
 							<height>285</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>1407</posx>
-							<posy>11</posy>
+							<left>1407</left>
+							<top>11</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -757,8 +757,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="largeimage">
-							<posx>1407</posx>
-							<posy>11</posy>
+							<left>1407</left>
+							<top>11</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -767,17 +767,17 @@
 							<visible>substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="image">
-							<posx>1406</posx>
-							<posy>318</posy>
+							<left>1406</left>
+							<top>318</top>
 							<width>507</width>
 							<height>285</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>1407</posx>
-							<posy>320</posy>
+							<left>1407</left>
+							<top>320</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -786,8 +786,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>				
 						<control type="largeimage">
-							<posx>1407</posx>
-							<posy>320</posy>
+							<left>1407</left>
+							<top>320</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -798,14 +798,14 @@
 					</control>
 						<!-- VIDEO WINDOW -->
 					<control type="group">
-						<posx>431</posx>
-						<posy>173</posy>
+						<left>431</left>
+						<top>173</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>		
 		<!-- FULLSCREEN PLOT TEXT FOR PLOT VIEW -->		
 						<control type="textbox">
-							<posx>6</posx>
-							<posy>9</posy>
+							<left>6</left>
+							<top>9</top>
 							<width>938</width>
 							<height>503</height>
 							<font>Droid22</font>
@@ -816,17 +816,17 @@
 							<visible>!IsEmpty(ListItem.Plot) + Skin.HasSetting(FullscreenPoster) + !Player.HasVideo</visible>	
 						</control>					
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>942</width>
 							<height>530</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>942</width>
 							<height>530</height>
 							<!-- <aspectratio>scale</aspectratio> -->
@@ -834,18 +834,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>-329</posx>
-							<posy>507</posy>
+							<left>-329</left>
+							<top>507</top>
 							<width>213</width>
 							<height>45</height>
 							<align>center</align>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>-428</posx>
-							<posy>521</posy>
+							<left>-428</left>
+							<top>521</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
@@ -856,18 +856,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>-329</posx>
-							<posy>507</posy>
+							<left>-329</left>
+							<top>507</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>-428</posx>
-							<posy>521</posy>
+							<left>-428</left>
+							<top>521</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
@@ -896,38 +896,38 @@
 		<!--START PLOT VIEW MULTIPLEX -->
 
 				<control type="group">
-					<posx>0</posx>
-					<posy>0</posy>
-					<visible>!Skin.HasSetting(noinfo) + stringcompare(Skin.String(MovieInfoStyle),$LOCALIZE[31046])</visible>
+					<left>0</left>
+					<top>0</top>
+					<visible>!Skin.HasSetting(noinfo) + StringCompare(Control.GetLabel(4420),2)</visible>
 						
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>     
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1245</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -935,16 +935,16 @@
 
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -955,14 +955,14 @@
 			<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 				
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>1920</width>
 						<height>572</height>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
@@ -970,37 +970,37 @@
 				
 						<control type="image">
 							<visible>Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
 						</control>		
 						<control type="image">
-							<posx>126</posx>
-							<posy>635</posy>
+							<left>126</left>
+							<top>635</top>
 							<width>1673</width>
 							<height>200</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_bottom_tint.png</texture>
 							<colordiffuse>9FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>59</posy>
+							<left>128</left>
+							<top>59</top>
 							<width>1670</width>
 							<height>540</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>56</posy>
+							<left>128</left>
+							<top>56</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>599</posy>
+							<left>128</left>
+							<top>599</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -1024,17 +1024,17 @@
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_black.png</texture>
 						</control>				
 						<control type="image">
-							<posx>0</posx>
-							<posy>87</posy>
+							<left>0</left>
+							<top>87</top>
 							<width>1920</width>
 							<height>614</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>	
 							
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1920</width>
 							<height>86</height>
 							<texture flipy="false">views/multiplex/backgrounds/multiplex_fullscreen_top_tint.png</texture>
@@ -1042,8 +1042,8 @@
 						</control>
 						
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>215</height>
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_bottom_tint.png</texture>
@@ -1054,17 +1054,17 @@
 					<control type="group">
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>				
-						<posy>98</posy>
+						<top>98</top>
 						<control type="image">
-							<posx>597</posx>
-							<posy>59</posy>
+							<left>597</left>
+							<top>59</top>
 							<width>3</width>
 							<height>540</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>1334</posx>
-							<posy>59</posy>
+							<left>1334</left>
+							<top>59</top>
 							<width>3</width>
 							<height>540</height>
 							<texture>views/multiplex/vert_line.png</texture>
@@ -1072,14 +1072,14 @@
 					</control>
 			<!-- VIDEO WINDOW FOR PLOT VIEW -->
 					<control type="group">
-						<posx>600</posx>
-						<posy>156</posy>
+						<left>600</left>
+						<top>156</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>	
 			<!-- PLOT TEXT FOR PLOT VIEW -->
 						<control type="textbox">
-							<posx>30</posx>
-							<posy>0</posy>
+							<left>30</left>
+							<top>0</top>
 							<width>683</width>
 							<height>533</height>
 							<font>Droid19</font>
@@ -1090,17 +1090,17 @@
 							<visible>!IsEmpty(ListItem.Plot) + !Skin.HasSetting(FullscreenPoster) + !Player.HasVideo</visible>	
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>734</width>
 							<height>539</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>0</posx>
-							<posy>63</posy>
+							<left>0</left>
+							<top>63</top>
 							<width>734</width>
 							<height>414</height>
 							<!-- <aspectratio>scale</aspectratio> -->
@@ -1108,18 +1108,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>867</posx>
-							<posy>519</posy>
+							<left>867</left>
+							<top>519</top>
 							<width>213</width>
 							<height>45</height>
 							<align>center</align>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>777</posx>
-							<posy>533</posy>
+							<left>777</left>
+							<top>533</top>
 							<width>392</width>
 							<height>45</height>
 							<align>center</align>
@@ -1130,18 +1130,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>867</posx>
-							<posy>519</posy>
+							<left>867</left>
+							<top>519</top>
 							<width>213</width>
 							<height>45</height>
 							<align>center</align>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>777</posx>
-							<posy>533</posy>
+							<left>777</left>
+							<top>533</top>
 							<width>392</width>
 							<height>45</height>
 							<align>center</align>
@@ -1158,22 +1158,22 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="image">
-							<posx>0</posx>
-							<posy>84</posy>
+							<left>0</left>
+							<top>84</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>914</posy>
+							<left>0</left>
+							<top>914</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -1185,22 +1185,22 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>				
 						<control type="image">
-							<posx>525</posx>
-							<posy>87</posy>
+							<left>525</left>
+							<top>87</top>
 							<width>2</width>
 							<height>614</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>1394</posx>
-							<posy>87</posy>
+							<left>1394</left>
+							<top>87</top>
 							<width>3</width>
 							<height>614</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>528</posx>
-							<posy>168</posy>
+							<left>528</left>
+							<top>168</top>
 							<width>867</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -1209,12 +1209,12 @@
 			<!-- END POSTER VIEW LINES -->
 			<!-- START POSTER VIEW INFO RATINGS LEFT SIDE -->	
 					<control type="group">
-						<posx>158</posx>
-						<posy>144</posy>
+						<left>158</left>
+						<top>144</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>	
 						<control type="group">
-							<posy>33</posy>
+							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31402]:</label>
@@ -1226,7 +1226,7 @@
 						</control>
 							
 						<control type="group">
-							<posy>108</posy>
+							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31401]:</label>
@@ -1238,7 +1238,7 @@
 						</control>
 
 						<control type="group">
-							<posy>183</posy>
+							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31436]:</label>
@@ -1250,7 +1250,7 @@
 						</control>
 
 						<control type="group">
-							<posy>258</posy>
+							<top>258</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31445]:</label>
@@ -1262,7 +1262,7 @@
 						</control>
 
 						<control type="group">
-							<posy>333</posy>
+							<top>333</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31438]:</label>
@@ -1274,7 +1274,7 @@
 						</control>
 
 						<control type="group">
-							<posy>408</posy>
+							<top>408</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31417]:</label>
@@ -1286,7 +1286,7 @@
 						</control>
 
 						<control type="group">
-							<posy>483</posy>
+							<top>483</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31408]:</label>
@@ -1302,8 +1302,8 @@
 					<control type="label">
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>15</posx>
-						<posy>23</posy>
+						<left>15</left>
+						<top>23</top>
 						<width>1193</width>
 						<height>38</height>
 						<font>DroidBold37</font>
@@ -1316,22 +1316,22 @@
 						
 			<!-- IMAGES PLOT VIEW -->
 					<control type="group">
-						<posx>1370</posx>
-						<posy>176</posy>
+						<left>1370</left>
+						<top>176</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>				
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>395</width>
 							<height>245</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>392</width>
 							<height>242</height>
 							<aspectratio>scale</aspectratio>
@@ -1340,8 +1340,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="largeimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>392</width>
 							<height>242</height>
 							<aspectratio>scale</aspectratio>
@@ -1350,17 +1350,17 @@
 							<visible>substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>257</posy>
+							<left>0</left>
+							<top>257</top>
 							<width>395</width>
 							<height>245</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>2</posx>
-							<posy>258</posy>
+							<left>2</left>
+							<top>258</top>
 							<width>392</width>
 							<height>242</height>
 							<aspectratio>scale</aspectratio>
@@ -1369,8 +1369,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>				
 						<control type="largeimage">
-							<posx>2</posx>
-							<posy>258</posy>
+							<left>2</left>
+							<top>258</top>
 							<width>392</width>
 							<height>242</height>
 							<aspectratio>scale</aspectratio>
@@ -1383,22 +1383,22 @@
 
 			<!-- FULLSCREEN IMAGES FOR PLOT VIEW -->
 					<control type="group">
-						<posx>12</posx>
-						<posy>87</posy>
+						<left>12</left>
+						<top>87</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="image">
-							<posx>-3</posx>
-							<posy>9</posy>
+							<left>-3</left>
+							<top>9</top>
 							<width>507</width>
 							<height>285</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>-2</posx>
-							<posy>11</posy>
+							<left>-2</left>
+							<top>11</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1407,8 +1407,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="largeimage">
-							<posx>-2</posx>
-							<posy>11</posy>
+							<left>-2</left>
+							<top>11</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1417,17 +1417,17 @@
 							<visible>substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="image">
-							<posx>-3</posx>
-							<posy>318</posy>
+							<left>-3</left>
+							<top>318</top>
 							<width>507</width>
 							<height>285</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>-2</posx>
-							<posy>320</posy>
+							<left>-2</left>
+							<top>320</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1436,8 +1436,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>				
 						<control type="largeimage">
-							<posx>-2</posx>
-							<posy>320</posy>
+							<left>-2</left>
+							<top>320</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1446,17 +1446,17 @@
 							<visible>substring(ListItem.Path,stack)</visible>	
 						</control>			
 						<control type="image">
-							<posx>1392</posx>
-							<posy>9</posy>
+							<left>1392</left>
+							<top>9</top>
 							<width>507</width>
 							<height>285</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>1394</posx>
-							<posy>11</posy>
+							<left>1394</left>
+							<top>11</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1465,8 +1465,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="largeimage">
-							<posx>1394</posx>
-							<posy>11</posy>
+							<left>1394</left>
+							<top>11</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1475,17 +1475,17 @@
 							<visible>substring(ListItem.Path,stack)</visible>	
 						</control>
 						<control type="image">
-							<posx>1392</posx>
-							<posy>318</posy>
+							<left>1392</left>
+							<top>318</top>
 							<width>507</width>
 							<height>285</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0" condition="!Skin.HasSetting(darkmultiplex)">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>1394</posx>
-							<posy>320</posy>
+							<left>1394</left>
+							<top>320</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1494,8 +1494,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>				
 						<control type="largeimage">
-							<posx>1394</posx>
-							<posy>320</posy>
+							<left>1394</left>
+							<top>320</top>
 							<width>504</width>
 							<height>282</height>
 							<aspectratio>scale</aspectratio>
@@ -1508,14 +1508,14 @@
 						
 			<!-- FULLSCREEN VIDEO WINDOW PLOT -->
 					<control type="group">
-						<posx>431</posx>
-						<posy>173</posy>
+						<left>431</left>
+						<top>173</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>		
 			<!-- FULLSCREEN PLOT TEXT FOR PLOT VIEW -->		
 						<control type="textbox">
-							<posx>111</posx>
-							<posy>9</posy>
+							<left>111</left>
+							<top>9</top>
 							<width>845</width>
 							<height>503</height>
 							<font>Droid22</font>
@@ -1526,17 +1526,17 @@
 							<visible>!IsEmpty(ListItem.Plot) + Skin.HasSetting(FullscreenPoster) + !Player.HasVideo</visible>	
 						</control>					
 						<control type="image">
-							<posx>99</posx>
-							<posy>0</posy>
+							<left>99</left>
+							<top>0</top>
 							<width>863</width>
 							<height>530</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>99</posx>
-							<posy>0</posy>
+							<left>99</left>
+							<top>0</top>
 							<width>863</width>
 							<height>530</height>
 							<!-- <aspectratio>scale</aspectratio> -->
@@ -1544,18 +1544,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>1122</posx>
-							<posy>503</posy>
+							<left>1122</left>
+							<top>503</top>
 							<width>213</width>
 							<height>45</height>
 							<align>center</align>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>1025</posx>
-							<posy>516</posy>
+							<left>1025</left>
+							<top>516</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
@@ -1566,18 +1566,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>1122</posx>
-							<posy>503</posy>
+							<left>1122</left>
+							<top>503</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>1025</posx>
-							<posy>516</posy>
+							<left>1025</left>
+							<top>516</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
@@ -1592,8 +1592,8 @@
 
 			 <!-- Movie count Label -->				
 					<control type="label">
-						<posx>1757</posx>
-						<posy>116</posy>
+						<left>1757</left>
+						<top>116</top>
 						<width>593</width>
 						<height>38</height>
 						<font>Droid16</font>
@@ -1606,8 +1606,8 @@
 					</control>	 			
 			<!-- FULLSCREEN DIRECTOR INFO -->		
 					<control type="group">
-						<posx>564</posx>
-						<posy>102</posy>
+						<left>564</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -1621,8 +1621,8 @@
 					</control>
 							
 					<control type="group">
-						<posx>998</posx>
-						<posy>102</posy>
+						<left>998</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -1650,37 +1650,37 @@
 		<!--START BIG FANART VIEW MULTIPLEX OLD-->
 
 				<control type="group">
-					<posx>0</posx>
-					<posy>0</posy>
-					<visible>!Skin.HasSetting(noinfo) + stringcompare(Skin.String(MovieInfoStyle),$LOCALIZE[31984])</visible>
+					<left>0</left>
+					<top>0</top>
+					<visible>!Skin.HasSetting(noinfo) + StringCompare(Control.GetLabel(4420),3)</visible>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>     
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -1688,16 +1688,16 @@
 
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -1706,14 +1706,14 @@
 			<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 				
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>1920</width>
 						<height>572</height>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>	
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/Backgrounds/multiplex_window_black.png</texture>
@@ -1721,38 +1721,38 @@
 						
 						<control type="image">
 							<visible>Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
 						</control>	
 							
 						<control type="image">
-							<posx>126</posx>
-							<posy>635</posy>
+							<left>126</left>
+							<top>635</top>
 							<width>1673</width>
 							<height>200</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_bottom_tint.png</texture>
 							<colordiffuse>9FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>59</posy>
+							<left>128</left>
+							<top>59</top>
 							<width>1670</width>
 							<height>540</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>56</posy>
+							<left>128</left>
+							<top>56</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>599</posy>
+							<left>128</left>
+							<top>599</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -1764,27 +1764,27 @@
 
 			<!-- THUMB & ART VIEW LINES -->
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>		
+						<left>0</left>
+						<top>98</top>		
 						<include>Animation_Multiplex_Menu_Popup</include>	
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>				
 						<control type="image">
-							<posx>485</posx>
-							<posy>59</posy>
+							<left>485</left>
+							<top>59</top>
 							<width>3</width>
 							<height>246</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>863</posx>
-							<posy>59</posy>
+							<left>863</left>
+							<top>59</top>
 							<width>3</width>
 							<height>540</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>303</posy>
+							<left>125</left>
+							<top>303</top>
 							<width>740</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -1794,8 +1794,8 @@
 
 			 <!-- Movie count Label -->				
 					<control type="label">
-						<posx>1757</posx>
-						<posy>116</posy>
+						<left>1757</left>
+						<top>116</top>
 						<width>593</width>
 						<height>38</height>
 						<font>Droid16</font>
@@ -1809,22 +1809,22 @@
 
 					<!-- IMAGES FOR ART VIEW -->
 					<control type="group">
-						<posx>885</posx>
-						<posy>176</posy>
+						<left>885</left>
+						<top>176</top>
 						<include>Animation_Multiplex_Menu_Popup</include>					
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>					
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>893</width>
 							<height>503</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0">Conditional</animation>					
 						</control>				
 						<control type="largeimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>890</width>
 							<height>500</height>
 							<aspectratio>scale</aspectratio>
@@ -1834,22 +1834,22 @@
 					</control>	
 			<!-- VIDEO WINDOW MULTI-IMAGE VIEW -->
 					<control type="group">
-						<posx>885</posx>
-						<posy>176</posy>
+						<left>885</left>
+						<top>176</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>		
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>893</width>
 							<height>503</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>893</width>
 							<height>503</height>
 							<aspectratio>scale</aspectratio>
@@ -1857,18 +1857,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>339</posx>
-							<posy>479</posy>
+							<left>339</left>
+							<top>479</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>491</posy>
+							<left>0</left>
+							<top>491</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
@@ -1879,18 +1879,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>357</posx>
-							<posy>479</posy>
+							<left>357</left>
+							<top>479</top>
 							<align>center</align>
 							<width>180</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>491</posy>
+							<left>0</left>
+							<top>491</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
@@ -1903,12 +1903,12 @@
 					</control>	
 						<!-- TEXT FOR MULTI IMAGE VIEW -->
 					<control type="group">
-						<posx>158</posx>
-						<posy>143</posy>
+						<left>158</left>
+						<top>143</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>	
 						<control type="group">
-							<posy>33</posy>
+							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31402]:</label>
@@ -1920,7 +1920,7 @@
 						</control>
 							
 						<control type="group">
-							<posy>108</posy>
+							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31402]:</label>
@@ -1932,7 +1932,7 @@
 						</control>
 
 						<control type="group">
-							<posy>183</posy>
+							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31436]:</label>
@@ -1945,8 +1945,8 @@
 
 
 						<control type="group">
-							<posx>360</posx>
-							<posy>33</posy>
+							<left>360</left>
+							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31445]:</label>
@@ -1958,8 +1958,8 @@
 						</control>
 
 						<control type="group">
-							<posx>360</posx>
-							<posy>108</posy>
+							<left>360</left>
+							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31417]:</label>
@@ -1971,8 +1971,8 @@
 						</control>
 
 						<control type="group">
-							<posx>360</posx>
-							<posy>183</posy>
+							<left>360</left>
+							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31408]:</label>
@@ -1985,8 +1985,8 @@
 					</control>	
 						<!-- PLOT TEXT FOR MULTI-IMAGE VIEW -->
 					<control type="textbox">
-						<posx>158</posx>
-						<posy>408</posy>
+						<left>158</left>
+						<top>408</top>
 						<width>683</width>
 						<height>270</height>
 						<font>Droid19</font>
@@ -2013,16 +2013,16 @@
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_black.png</texture>
 						</control>			
 						<control type="image">
-							<posx>0</posx>
-							<posy>87</posy>
+							<left>0</left>
+							<top>87</top>
 							<width>1920</width>
 							<height>614</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>	
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1920</width>
 							<height>86</height>
 							<texture flipy="false">views/multiplex/backgrounds/multiplex_fullscreen_top_tint.png</texture>
@@ -2030,8 +2030,8 @@
 						</control>
 				
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>215</height>
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_bottom_tint.png</texture>
@@ -2043,15 +2043,15 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>				
 						<control type="image">
-							<posx>839</posx>
-							<posy>87</posy>
+							<left>839</left>
+							<top>87</top>
 							<width>3</width>
 							<height>614</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>168</posy>
+							<left>0</left>
+							<top>168</top>
 							<width>840</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -2060,8 +2060,8 @@
 						
 			<!-- FULLSCREEN DIRECTOR INFO -->		
 					<control type="group">
-						<posx>45</posx>
-						<posy>102</posy>
+						<left>45</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -2075,8 +2075,8 @@
 					</control>
 							
 					<control type="group">
-						<posx>428</posx>
-						<posy>102</posy>
+						<left>428</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -2091,22 +2091,22 @@
 
 			<!-- IMAGES FOR MULTITHUMB VIEW -->
 					<control type="group">
-						<posx>845</posx>
-						<posy>90</posy>
+						<left>845</left>
+						<top>90</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>					
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1071</width>
 							<height>603</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0">Conditional</animation>					
 						</control>					
 						<control type="largeimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>1073</width>
 							<height>605</height>
 							<aspectratio>scale</aspectratio>
@@ -2118,8 +2118,8 @@
 					<control type="label">
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>15</posx>
-						<posy>23</posy>
+						<left>15</left>
+						<top>23</top>
 						<width>1193</width>
 						<height>38</height>
 						<font>DroidBold37</font>
@@ -2134,22 +2134,22 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="image">
-							<posx>0</posx>
-							<posy>84</posy>
+							<left>0</left>
+							<top>84</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>914</posy>
+							<left>0</left>
+							<top>914</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -2157,15 +2157,15 @@
 					</control>
 			<!--FULLSCREEN VIDEO WINDOW FOR BIGFANART VIEW -->
 					<control type="group">
-						<posx>6</posx>
-						<posy>173</posy>
+						<left>6</left>
+						<top>173</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>		
 			<!-- FULLSCREEN PLOT TEXT FOR BIGFANART VIEW -->		
 						
 						<control type="textbox">
-							<posx>9</posx>
-							<posy>8</posy>
+							<left>9</left>
+							<top>8</top>
 							<width>812</width>
 							<height>504</height>
 							<font>Droid22</font>
@@ -2176,17 +2176,17 @@
 							<visible>!IsEmpty(ListItem.Plot) + Skin.HasSetting(FullscreenPoster)</visible>	
 						</control>					
 						<control type="image">
-							<posx>840</posx>
-							<posy>-81</posy>
+							<left>840</left>
+							<top>-81</top>
 							<width>1073</width>
 							<height>605</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>840</posx>
-							<posy>-81</posy>
+							<left>840</left>
+							<top>-81</top>
 							<width>1073</width>
 							<height>605</height>
 							<!-- <aspectratio>scale</aspectratio> -->
@@ -2194,18 +2194,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>1271</posx>
-							<posy>501</posy>
+							<left>1271</left>
+							<top>501</top>
 							<width>213</width>
 							<height>45</height>
 							<align>center</align>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>1173</posx>
-							<posy>515</posy>
+							<left>1173</left>
+							<top>515</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
@@ -2216,18 +2216,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>1271</posx>
-							<posy>501</posy>
+							<left>1271</left>
+							<top>501</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>1170</posx>
-							<posy>515</posy>
+							<left>1170</left>
+							<top>515</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
@@ -2259,37 +2259,37 @@
 		<!--START OF BIG EXTRATHUMB VIEW MULTIPLEX OLD-->
 		<!--START OF BIG EXTRATHUMB VIEW MULTIPLEX OLD-->
 				<control type="group">
-					<posx>0</posx>
-					<posy>0</posy>
-					<visible>!Skin.HasSetting(noinfo) + stringcompare(Skin.String(MovieInfoStyle),$LOCALIZE[31666])</visible>
+					<left>0</left>
+					<top>0</top>
+					<visible>!Skin.HasSetting(noinfo) + StringCompare(Control.GetLabel(4420),4)</visible>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1080</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>     
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>0</posx>
-						<posy>0</posy>
+						<left>0</left>
+						<top>0</top>
 						<width>1920</width>
 						<height>1245</height>
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>162</posy>
+						<left>0</left>
+						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -2297,16 +2297,16 @@
 
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
 						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<posx>0</posx>
-						<posy>203</posy>
+						<left>0</left>
+						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
@@ -2317,14 +2317,14 @@
 		<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 			
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>
+						<left>0</left>
+						<top>98</top>
 						<width>1920</width>
 						<height>572</height>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>	
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<control type="image">
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
@@ -2332,37 +2332,37 @@
 						
 						<control type="image">
 							<visible>Skin.HasSetting(Dark)</visible>
-							<posx>113</posx>
+							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
 						</control>			
 						<control type="image">
-							<posx>126</posx>
-							<posy>635</posy>
+							<left>126</left>
+							<top>635</top>
 							<width>1673</width>
 							<height>200</height>
 							<texture>views/multiplex/backgrounds/multiplex_window_bottom_tint.png</texture>
 							<colordiffuse>9FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>59</posy>
+							<left>128</left>
+							<top>59</top>
 							<width>1670</width>
 							<height>540</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>56</posy>
+							<left>128</left>
+							<top>56</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>128</posx>
-							<posy>599</posy>
+							<left>128</left>
+							<top>599</top>
 							<width>1668</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -2374,27 +2374,27 @@
 
 		<!-- THUMB & ART VIEW LINES -->
 					<control type="group">
-						<posx>0</posx>
-						<posy>98</posy>		
+						<left>0</left>
+						<top>98</top>		
 						<include>Animation_Multiplex_Menu_Popup</include>	
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>					
 						<control type="image">
-							<posx>485</posx>
-							<posy>59</posy>
+							<left>485</left>
+							<top>59</top>
 							<width>3</width>
 							<height>246</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>863</posx>
-							<posy>59</posy>
+							<left>863</left>
+							<top>59</top>
 							<width>3</width>
 							<height>540</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>125</posx>
-							<posy>303</posy>
+							<left>125</left>
+							<top>303</top>
 							<width>740</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -2404,8 +2404,8 @@
 
 		 <!-- Movie count Label -->				
 					<control type="label">
-						<posx>1757</posx>
-						<posy>116</posy>
+						<left>1757</left>
+						<top>116</top>
 						<width>593</width>
 						<height>38</height>
 						<font>Droid16</font>
@@ -2419,22 +2419,22 @@
 
 		<!-- IMAGES FOR MULTITHUMB VIEW -->
 					<control type="group">
-						<posx>885</posx>
-						<posy>176</posy>
+						<left>885</left>
+						<top>176</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>					
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>893</width>
 							<height>503</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0">Conditional</animation>					
 						</control>				
 						<control type="multiimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>890</width>
 							<height>500</height>
 							<aspectratio>scale</aspectratio>
@@ -2444,8 +2444,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>			
 						<control type="multiimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>890</width>
 							<height>500</height>
 							<aspectratio>scale</aspectratio>
@@ -2457,22 +2457,22 @@
 					</control>	
 		<!-- VIDEO WINDOW MULTI-IMAGE VIEW -->
 					<control type="group">
-						<posx>885</posx>
-						<posy>176</posy>
+						<left>885</left>
+						<top>176</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>		
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>893</width>
 							<height>503</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>893</width>
 							<height>503</height>
 							<aspectratio>scale</aspectratio>
@@ -2480,18 +2480,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>339</posx>
-							<posy>479</posy>
+							<left>339</left>
+							<top>479</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>491</posy>
+							<left>0</left>
+							<top>491</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
@@ -2502,18 +2502,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>357</posx>
-							<posy>479</posy>
+							<left>357</left>
+							<top>479</top>
 							<align>center</align>
 							<width>180</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>0</posx>
-							<posy>491</posy>
+							<left>0</left>
+							<top>491</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
@@ -2526,12 +2526,12 @@
 					</control>	
 					<!-- TEXT FOR MULTI IMAGE VIEW -->
 					<control type="group">
-						<posx>158</posx>
-						<posy>143</posy>
+						<left>158</left>
+						<top>143</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>!Skin.HasSetting(FullscreenPoster)</visible>		
 						<control type="group">
-							<posy>33</posy>
+							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31402]:</label>
@@ -2543,7 +2543,7 @@
 						</control>
 						
 						<control type="group">
-							<posy>108</posy>
+							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31401]:</label>
@@ -2555,7 +2555,7 @@
 						</control>
 
 						<control type="group">
-							<posy>183</posy>
+							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31436]:</label>
@@ -2568,8 +2568,8 @@
 
 
 						<control type="group">
-							<posx>360</posx>
-							<posy>33</posy>
+							<left>360</left>
+							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31445]:</label>
@@ -2581,8 +2581,8 @@
 						</control>
 
 						<control type="group">
-							<posx>360</posx>
-							<posy>108</posy>
+							<left>360</left>
+							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31417]:</label>
@@ -2594,8 +2594,8 @@
 						</control>
 
 						<control type="group">
-							<posx>360</posx>
-							<posy>183</posy>
+							<left>360</left>
+							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
 								<label>$LOCALIZE[31408]:</label>
@@ -2608,8 +2608,8 @@
 					</control>	
 		<!-- PLOT TEXT FOR MULTI-IMAGE VIEW -->
 					<control type="textbox">
-						<posx>158</posx>
-						<posy>408</posy>
+						<left>158</left>
+						<top>408</top>
 						<width>683</width>
 						<height>270</height>
 						<font>Droid19</font>
@@ -2636,17 +2636,17 @@
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_black.png</texture>
 						</control>		
 						<control type="image">
-							<posx>0</posx>
-							<posy>87</posy>
+							<left>0</left>
+							<top>87</top>
 							<width>1920</width>
 							<height>614</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>5FFFFFFF</colordiffuse>
 						</control>	
 							
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1920</width>
 							<height>86</height>
 							<texture flipy="false">views/multiplex/backgrounds/multiplex_fullscreen_top_tint.png</texture>
@@ -2654,8 +2654,8 @@
 						</control>
 						
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>215</height>
 							<texture>views/multiplex/backgrounds/multiplex_fullscreen_bottom_tint.png</texture>
@@ -2667,15 +2667,15 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>				
 						<control type="image">
-							<posx>839</posx>
-							<posy>87</posy>
+							<left>839</left>
+							<top>87</top>
 							<width>3</width>
 							<height>614</height>
 							<texture>views/multiplex/vert_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>168</posy>
+							<left>0</left>
+							<top>168</top>
 							<width>840</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -2686,22 +2686,22 @@
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="image">
-							<posx>0</posx>
-							<posy>84</posy>
+							<left>0</left>
+							<top>84</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="false">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>701</posy>
+							<left>0</left>
+							<top>701</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
 						</control>
 						<control type="image">
-							<posx>0</posx>
-							<posy>914</posy>
+							<left>0</left>
+							<top>914</top>
 							<width>1920</width>
 							<height>3</height>
 							<texture flipy="true">views/multiplex/hort_line.png</texture>
@@ -2711,8 +2711,8 @@
 				
 		<!-- FULLSCREEN DIRECTOR INFO -->		
 					<control type="group">
-						<posx>45</posx>
-						<posy>102</posy>
+						<left>45</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -2726,8 +2726,8 @@
 					</control>
 						
 					<control type="group">
-						<posx>570</posx>
-						<posy>102</posy>
+						<left>570</left>
+						<top>102</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						   <visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
@@ -2742,22 +2742,22 @@
 
 		<!-- IMAGES FOR MULTITHUMB VIEW -->
 					<control type="group">
-						<posx>845</posx>
-						<posy>90</posy>
+						<left>845</left>
+						<top>90</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>					
 						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
+							<left>0</left>
+							<top>0</top>
 							<width>1071</width>
 							<height>603</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<colordiffuse>94FFFFFF</colordiffuse>
 							<animation effect="fade" start="50" end="50" time="0">Conditional</animation>					
 						</control>				
 						<control type="multiimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>1073</width>
 							<height>605</height>
 							<aspectratio>scale</aspectratio>
@@ -2767,8 +2767,8 @@
 							<visible>!substring(ListItem.Path,stack)</visible>	
 						</control>			
 						<control tye="multiimage">
-							<posx>2</posx>
-							<posy>2</posy>
+							<left>2</left>
+							<top>2</top>
 							<width>1073</width>
 							<height>605</height>
 							<aspectratio>scale</aspectratio>
@@ -2782,8 +2782,8 @@
 					<control type="label">
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
-						<posx>15</posx>
-						<posy>23</posy>
+						<left>15</left>
+						<top>23</top>
 						<width>1193</width>
 						<height>38</height>
 						<font>DroidBold37</font>
@@ -2795,15 +2795,15 @@
 					</control>		
 		<!--FULLSCREEN VIDEO WINDOW FOR BIGTHUMB VIEW -->
 					<control type="group">
-						<posx>6</posx>
-						<posy>173</posy>
+						<left>6</left>
+						<top>173</top>
 						<include>Animation_Multiplex_Menu_Popup</include>
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>		
 		<!-- FULLSCREEN PLOT TEXT FOR BIGTHUMB VIEW -->		
 					
 						<control type="textbox">
-							<posx>9</posx>
-							<posy>8</posy>
+							<left>9</left>
+							<top>8</top>
 							<width>812</width>
 							<height>504</height>
 							<font>Droid22</font>
@@ -2814,17 +2814,17 @@
 							<visible>!IsEmpty(ListItem.Plot) + Skin.HasSetting(FullscreenPoster)</visible>	
 						</control>					
 						<control type="image">
-							<posx>840</posx>
-							<posy>-81</posy>
+							<left>840</left>
+							<top>-81</top>
 							<width>1073</width>
 							<height>605</height>
-							<texture>common/black.png</texture>
+							<texture>black.png</texture>
 							<visible>Player.HasVideo</visible>
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>				
 						<control type="videowindow">
-							<posx>840</posx>
-							<posy>-81</posy>
+							<left>840</left>
+							<top>-81</top>
 							<width>1073</width>
 							<height>605</height>
 							<!-- <aspectratio>scale</aspectratio> -->
@@ -2832,18 +2832,18 @@
 							<animation effect="fade" start="0" end="100" time="500">VisibleChange</animation>
 						</control>
 						<control type="image">
-							<posx>1271</posx>
-							<posy>501</posy>
+							<left>1271</left>
+							<top>501</top>
 							<width>213</width>
 							<height>45</height>
 							<align>center</align>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>1173</posx>
-							<posy>515</posy>
+							<left>1173</left>
+							<top>515</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
@@ -2854,18 +2854,18 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="image">
-							<posx>1271</posx>
-							<posy>501</posy>
+							<left>1271</left>
+							<top>501</top>
 							<align>center</align>
 							<width>213</width>
 							<height>45</height>
-							<texture>common/oldschool_progress_back.png</texture>
+							<texture>showmix/oldschool_progress_back.png</texture>
 							<visible>Player.Playing</visible>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<posx>1170</posx>
-							<posy>515</posy>
+							<left>1170</left>
+							<top>515</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
@@ -2883,16 +2883,17 @@
 	<!--END OF BIG EXTRATHUMB VIEW MULTIPLEX OLD-->
 	<!--END OF BIG EXTRATHUMB VIEW MULTIPLEX OLD-->	
 			<control type="fixedlist" id="599">
-				
-				<posx>240</posx>
-				<posy>717</posy>
+				<include>ViewAnimation</include>
+				<left>240</left>
+				<top>717</top>
 				<width>1470</width>
 				<height>450</height>		
 				<onleft>599</onleft>
 				<onright>599</onright>
-				<onup>955</onup>
+				<onup>SetProperty(MediaMenu,True,home)</onup>
+				<onup>SetFocus(9050)</onup>
 				<ondown>60</ondown>
-				<viewtype label="31446">list</viewtype>
+				<viewtype label="31609">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<orientation>horizontal</orientation>
 				<focusposition>3</focusposition>	
@@ -2957,14 +2958,14 @@
 				</focusedlayout>
 			</control>
 			<control type="group">
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<include>Animation_Multiplex_Menu_Popup</include>
 			
 				<control type="scrollbar" id="60">
 					<description>My first scroll bar control</description>
-					<posx>460</posx>
-					<posy>995</posy>
+					<left>460</left>
+					<top>995</top>
 					<width>1000</width>
 					<height>60</height>
 					<visible allowhiddenfocus="true">Control.IsVisible(599) + Control.HasFocus(60)</visible>

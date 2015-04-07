@@ -234,5 +234,10 @@
 			<linespacing>0</linespacing>
 			<size>34</size>
 		</font>
+		<font>
+			<name>Droid16</name>
+			<filename>DroidSans.ttf</filename>
+			<size>24</size>
+		</font>	
 	</fontset>
 </fonts>

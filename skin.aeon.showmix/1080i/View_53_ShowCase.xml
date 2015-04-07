@@ -127,8 +127,8 @@
 					</control>
 				</control>
 				<control type="image">
-					<posx>-5</posx>
-					<posy>1005</posy>
+					<left>-5</left>
+					<top>1005</top>
 					<width>1930</width>
 					<height>108</height>
 					<texture>showmix/floor_panel_night.png</texture>
