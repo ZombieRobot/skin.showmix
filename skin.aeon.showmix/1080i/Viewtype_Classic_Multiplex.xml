@@ -55,7 +55,7 @@
 	</include>
 	<include name="MultiplexInfoValue_270">
 		<include>MultiplexInfoValueVars</include>
-		<width>270</width>
+		<width>420</width>
 	</include>
 	<include name="MultiplexInfoValue_300">
 		<include>MultiplexInfoValueVars</include>
@@ -382,11 +382,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 						
@@ -394,11 +394,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31401]:</label>
+								<label>$LOCALIZE[31001]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -406,11 +406,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -418,11 +418,11 @@
 							<top>258</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -430,11 +430,11 @@
 							<top>333</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31438]:</label>
+								<label>$LOCALIZE[31615]:</label>
 							</control>					
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Genre]</label>
+								<label fallback="31613">$INFO[ListItem.Genre]</label>
 							</control>			
 						</control>
 
@@ -442,11 +442,11 @@
 							<top>408</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>			
 						</control>
 
@@ -454,11 +454,11 @@
 							<top>483</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>
 					</control>
@@ -518,12 +518,12 @@
 						</control>
 						<control type="label">
 							<left>830</left>
-							<top>527</top>
+							<top>513</top>
 							<width>368</width>
 							<align>center</align>
 							<height>45</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -700,11 +700,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 						
@@ -715,11 +715,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>				
 		<!-- FULLSCREEN IMAGES FOR PLOT VIEW -->
@@ -844,13 +844,13 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<left>-428</left>
-							<top>521</top>
+							<left>-426</left>
+							<top>320</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1119,12 +1119,12 @@
 						</control>
 						<control type="label">
 							<left>777</left>
-							<top>533</top>
+							<top>519</top>
 							<width>392</width>
 							<height>45</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1217,11 +1217,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 							
@@ -1229,11 +1229,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31401]:</label>
+								<label>$LOCALIZE[31001]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -1241,11 +1241,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -1253,11 +1253,11 @@
 							<top>258</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -1265,11 +1265,11 @@
 							<top>333</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31438]:</label>
+								<label>$LOCALIZE[31615]:</label>
 							</control>					
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Genre]</label>
+								<label fallback="31613">$INFO[ListItem.Genre]</label>
 							</control>			
 						</control>
 
@@ -1277,11 +1277,11 @@
 							<top>408</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>			
 						</control>
 
@@ -1289,11 +1289,11 @@
 							<top>483</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>
 					</control>
@@ -1554,13 +1554,13 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<left>1025</left>
-							<top>516</top>
+							<left>1024</left>
+							<top>316</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1612,11 +1612,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 							
@@ -1627,11 +1627,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>	
 				</control>	
@@ -1868,12 +1868,12 @@
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>491</top>
+							<top>487</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1911,11 +1911,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 							
@@ -1923,11 +1923,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -1935,11 +1935,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -1949,11 +1949,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -1962,11 +1962,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>					
 						</control>
 
@@ -1975,11 +1975,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>				
 					</control>	
@@ -2066,11 +2066,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 							
@@ -2081,11 +2081,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>			
 
@@ -2205,12 +2205,12 @@
 						</control>
 						<control type="label">
 							<left>1173</left>
-							<top>515</top>
+							<top>313</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2491,12 +2491,12 @@
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>491</top>
+							<top>487</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2534,11 +2534,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 						
@@ -2546,11 +2546,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31401]:</label>
+								<label>$LOCALIZE[31001]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -2558,11 +2558,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -2572,11 +2572,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -2585,11 +2585,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>					
 						</control>
 
@@ -2598,11 +2598,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>				
 					</control>	
@@ -2717,11 +2717,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 						
@@ -2732,11 +2732,11 @@
 						   <visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>			
 
@@ -2843,12 +2843,12 @@
 						</control>
 						<control type="label">
 							<left>1173</left>
-							<top>515</top>
+							<top>313</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>

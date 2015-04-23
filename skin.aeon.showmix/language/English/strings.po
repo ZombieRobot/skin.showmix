@@ -1052,9 +1052,37 @@ msgid "Multiplex Fullscreen"
 msgstr ""
 
 msgctxt "#31611"
-msgid "View 3"
+msgid "Fanart"
 msgstr ""
 
 msgctxt "#31612"
-msgid "View 4"
+msgid "Extra-fanart"
+msgstr ""
+
+msgctxt "#31613"
+msgid "Info unavailable"
+msgstr ""
+
+msgctxt "#31614"
+msgid "Run time"
+msgstr ""
+
+msgctxt "#31615"
+msgid "Genre"
+msgstr ""
+
+msgctxt "#31616"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#31617"
+msgid "IMDB"
+msgstr ""
+
+msgctxt "#31618"
+msgid "PRESS DOWN TO VIEW TRAILER"
+msgstr ""
+
+msgctxt "#31619"
+msgid "Year"
 msgstr ""

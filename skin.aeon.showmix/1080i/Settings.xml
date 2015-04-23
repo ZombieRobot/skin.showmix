@@ -315,7 +315,7 @@
 				<top>590</top>
 				<width>1246</width>
 				<height>400</height>
-				<font>font15</font>
+				<font>font13</font>
 				<align>left</align>
 				<textcolor>FFbec0c2</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
