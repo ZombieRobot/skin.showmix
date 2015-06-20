@@ -2778,7 +2778,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>listpanel_mask_square_window.png</texture>
+				<texture>showmix/listpanel_mask_square_window.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>

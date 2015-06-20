@@ -155,6 +155,11 @@
 			<size>60</size>
 		</font>
 		<font>
+			<name>Font_ProgressLabelMid</name>
+			<filename>BebasNeue.ttf</filename>
+			<size>38</size>
+		</font>	
+		<font>
 			<name>Font_SettingsMainLabelsmall</name>
 			<filename>BebasNeue.ttf</filename>
 			<size>33</size>

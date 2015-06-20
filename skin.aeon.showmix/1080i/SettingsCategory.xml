@@ -93,56 +93,59 @@
 				<ondown>5</ondown>
 				<include>SettingsPanelAnimation</include>
 			</control>
-			<control type="button" id="20">
-				<description>Setting level button</description>
-				<left>145</left>
-				<top>752</top>
-				<height>70</height>
-				<width>290</width>
-				<label>10037</label>
-				<textoffsetx>17</textoffsetx>
-				<align>left</align>
-				<aligny>top</aligny>
-				<textoffsety>76</textoffsety>
-				<font>font_settings11</font>
-				<textcolor>labelheader</textcolor>
-				<focusedcolor>labelheader</focusedcolor>
-				<texture border="4">showmix/listselect_fo_settings.png</texture>
-				<texturenofocus>-</texturenofocus>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
-				<onclick>SettingsLevelChange</onclick>
-				<include>SettingsPanelAnimation</include>
-			</control>
-			<control type="label">
-				<left>132</left>
-				<top>762</top>
-				<height>120</height>
-				<width>356</width>
-				<textoffsetx>30</textoffsetx>
-				<font>font_settings14</font>
-				<textcolor>grey2</textcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<label>$LOCALIZE[31142]</label>
-				<include>SettingsPanelAnimation</include>
-				<visible>!Control.HasFocus(20)</visible>
-			</control>
-			<control type="label">
-				<left>132</left>
-				<top>760</top>
-				<height>120</height>
-				<width>356</width>
-				<textoffsetx>30</textoffsetx>
-				<font>font_settings14</font>
-				<textcolor>FF262728</textcolor>
-				<align>left</align>
-				<aligny>top</aligny>
-				<label>$LOCALIZE[31142]</label>
-				<include>SettingsPanelAnimation</include>
-				<visible>Control.HasFocus(20)</visible>
+			<control type="group">
+				<top>70</top>
+				<control type="button" id="20">
+					<description>Setting level button</description>
+					<left>145</left>
+					<top>752</top>
+					<height>70</height>
+					<width>290</width>
+					<label>10037</label>
+					<textoffsetx>17</textoffsetx>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textoffsety>76</textoffsety>
+					<font>font_settings11</font>
+					<textcolor>labelheader</textcolor>
+					<focusedcolor>labelheader</focusedcolor>
+					<texture border="4">showmix/listselect_fo_settings.png</texture>
+					<texturenofocus>-</texturenofocus>
+					<onleft>3</onleft>
+					<onright>3</onright>
+					<onup>3</onup>
+					<ondown>3</ondown>
+					<onclick>SettingsLevelChange</onclick>
+					<include>SettingsPanelAnimation</include>
+				</control>
+				<control type="label">
+					<left>132</left>
+					<top>762</top>
+					<height>120</height>
+					<width>356</width>
+					<textoffsetx>30</textoffsetx>
+					<font>font_settings14</font>
+					<textcolor>grey2</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>$LOCALIZE[31142]</label>
+					<include>SettingsPanelAnimation</include>
+					<visible>!Control.HasFocus(20)</visible>
+				</control>
+				<control type="label">
+					<left>132</left>
+					<top>760</top>
+					<height>120</height>
+					<width>356</width>
+					<textoffsetx>30</textoffsetx>
+					<font>font_settings14</font>
+					<textcolor>showmixfocus</textcolor>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>$LOCALIZE[31142]</label>
+					<include>SettingsPanelAnimation</include>
+					<visible>Control.HasFocus(20)</visible>
+				</control>
 			</control>
 		</control>
 		<control type="button" id="10">
@@ -154,18 +157,17 @@
 			<aligny>top</aligny>
 			<font>font_settings14</font>
 			<textcolor>white</textcolor>
-			<focusedcolor>FF262728</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<texture border="4">showmix/listselect_fo_settings.png</texture>
 			<texturenofocus border="1">-</texturenofocus>
 		</control>
 		<control type="label">
 			<left>132</left>
-			<top>760</top>
+			<top>830</top>
 			<height>90</height>
 			<width>290</width>
-			<textoffsetx>30</textoffsetx>
 			<font>font_settings14</font>
-			<textcolor>FF262728</textcolor>
+			<textcolor>showmixfocus</textcolor>
 			<textoffsetx>30</textoffsetx>
 			<align>left</align>
 			<aligny>top</aligny>
@@ -182,7 +184,7 @@
 			<font>font15</font>
 			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>FF262728</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
@@ -195,7 +197,7 @@
 			<font>font15</font>
 			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>FF262728</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
@@ -208,7 +210,7 @@
 			<font>font15</font>
 			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>FF262728</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 			<aligny>center</aligny>
@@ -224,7 +226,7 @@
 			<font>font15</font>
 			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>FF262728</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<texturefocus border="3">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
@@ -263,6 +265,6 @@
 			<font>-</font>
 			<visible>false</visible>
 		</control>
-		<include>Settings_Welcomew</include>
+		<include>Settings_Welcome</include>
 	</controls>
 </window>

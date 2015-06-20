@@ -105,7 +105,7 @@
 						<height>70</height>
 						<font>font_settings14</font>
 						<textoffsetx>26</textoffsetx>
-						<textcolor>FF262728</textcolor>
+						<textcolor>showmixfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -118,7 +118,7 @@
 						<height>70</height>
 						<font>font_settings10</font>
 						<textoffsetx>26</textoffsetx>
-						<textcolor>FF262728</textcolor>
+						<textcolor>showmixfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>

@@ -21,7 +21,7 @@
 				<width>1676</width>
 				<height>40</height>
 				<font>font15_title</font>
-				<label>XBMC Subtitles</label>
+				<label>$LOCALIZE[31620]</label>
 				<align>center</align>
 				<textcolor>dialogheader</textcolor>
 				<font>font15_title</font>

@@ -101,7 +101,7 @@
 							<top>0</top>
 							<width>960</width>
 							<height>62</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture border="5">showmix/listselect_fo_settings.png</texture>
 							<visible>Control.HasFocus(450)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -114,6 +114,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textoffsetx>15</textoffsetx>
+							<textcolor>showmixfocus</textcolor>
 							<selectedcolor>green</selectedcolor>
 							<info>ListItem.Label</info>
 						</control>
@@ -158,7 +159,7 @@
 							<top>0</top>
 							<width>960</width>
 							<height>62</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture border="5">showmix/listselect_fo_settings.png</texture>
 							<visible>Control.HasFocus(451)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -171,6 +172,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textoffsetx>15</textoffsetx>
+							<textcolor>showmixfocus</textcolor>
 							<selectedcolor>green</selectedcolor>
 							<info>ListItem.Label</info>
 						</control>
