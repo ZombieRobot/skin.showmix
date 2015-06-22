@@ -128,6 +128,7 @@
 	<include name="PicturesMainMenu">
 		<item id="4">
 			<label fallback="31951">$INFO[Skin.String(PicturesHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultPicture.png">$INFO[Skin.String(PicturesHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(PicturesHomeItem.MultiFanart)]</thumb>
@@ -145,6 +146,7 @@
 	<include name="MusicMainMenu">
 		<item id="3">
 			<label fallback="31956">$INFO[Skin.String(MusicHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultAddonMusic.png">$INFO[Skin.String(MusicHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(MusicHomeItem.MultiFanart)]</thumb>
@@ -162,6 +164,7 @@
 	<include name="MoviesMainMenu">
 		<item id="10">
 			<label fallback="31954">$INFO[Skin.String(MovieHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultMovies.png">$INFO[Skin.String(MovieHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(MovieHomeItem.MultiFanart)]</thumb>
@@ -179,6 +182,7 @@
 	<include name="TVShowsMainMenu">
 		<item id="11">
 			<label fallback="31955">$INFO[Skin.String(TVShowHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultTVShows.png">$INFO[Skin.String(TVShowHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(TVShowHomeItem.MultiFanart)]</thumb>
@@ -196,6 +200,7 @@
 	<include name="TVMainMenu">
 		<item id="12">
 			<label fallback="31952">$INFO[Skin.String(LiveTVHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultAddonPVRClient.png">$INFO[Skin.String(LiveTVHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(LiveTVHomeItem.MultiFanart)]</thumb>
@@ -213,6 +218,7 @@
 	<include name="VideosMainMenu">
 		<item id="2">
 			<label fallback="31953">$INFO[Skin.String(VideosHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultVideo.png">$INFO[Skin.String(VideosHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(VideosHomeItem.MultiFanart)]</thumb>
@@ -230,6 +236,7 @@
 	<include name="ProgramsMainMenu">
 		<item id="1">
 			<label fallback="31957">$INFO[Skin.String(ProgramsHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultProgram.png">$INFO[Skin.String(ProgramsHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(ProgramsHomeItem.MultiFanart)]</thumb>
@@ -247,6 +254,7 @@
 	<include name="SettingsMainMenu">
 		<item id="5">
 			<label fallback="31959">$INFO[Skin.String(SettingsHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultAddonService.png">$INFO[Skin.String(SettingsHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(SettingsHomeItem.MultiFanart)]</thumb>
@@ -264,6 +272,7 @@
 	<include name="ShutdownMainMenu">
 		<item id="6">
 			<label fallback="33060">$INFO[Skin.String(ShutdownHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/power.png">$INFO[Skin.String(ShutdownHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(ShutdownHomeItem.MultiFanart)]</thumb>
@@ -281,6 +290,7 @@
 	<include name="FavoritesMainMenu">
 		<item id="8">
 			<label fallback="1036">$INFO[Skin.String(FavoritesHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Favorites.png">$INFO[Skin.String(FavoritesHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(FavoritesHomeItem.MultiFanart)]</thumb>
@@ -298,6 +308,7 @@
 	<include name="WeatherMainMenu">
 		<item id="7">
 			<label fallback="31950">$INFO[Skin.String(WeatherHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultAddonWeather.png">$INFO[Skin.String(WeatherHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(WeatherHomeItem.MultiFanart)]</thumb>
@@ -315,6 +326,7 @@
 	<include name="MusicVideosMainMenu">
 		<item id="13">
 			<label fallback="31960">$INFO[Skin.String(MusicVideoHomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="views/list/DefaultMusicVideos.png">$INFO[Skin.String(MusicVideoHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(MusicVideoHomeItem.MultiFanart)]</thumb>
@@ -332,6 +344,7 @@
 	<include name="CustomMainMenuItem1">
 		<item id="101">
 			<label fallback="CUSTOM1">$INFO[Skin.String(Custom1HomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Customize.png">$INFO[Skin.String(Custom1HomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(Custom1HomeItem.MultiFanart)]</thumb>
@@ -349,6 +362,7 @@
 	<include name="CustomMainMenuItem2">
 		<item id="202">
 			<label fallback="CUSTOM2">$INFO[Skin.String(Custom2HomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Customize.png">$INFO[Skin.String(Custom2HomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(Custom2HomeItem.MultiFanart)]</thumb>
@@ -366,6 +380,7 @@
 	<include name="CustomMainMenuItem3">
 		<item id="303">
 			<label fallback="CUSTOM3">$INFO[Skin.String(Custom3HomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Customize.png">$INFO[Skin.String(Custom3HomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(Custom3HomeItem.MultiFanart)]</thumb>
@@ -383,6 +398,7 @@
 	<include name="CustomMainMenuItem4">
 		<item id="404">
 			<label fallback="CUSTOM4">$INFO[Skin.String(Custom4HomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Customize.png">$INFO[Skin.String(Custom4HomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(Custom4HomeItem.MultiFanart)]</thumb>
@@ -400,6 +416,7 @@
 	<include name="CustomMainMenuItem5">
 		<item id="505">
 			<label fallback="CUSTOM5">$INFO[Skin.String(Custom5HomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Customize.png">$INFO[Skin.String(Custom5HomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(Custom5HomeItem.MultiFanart)]</thumb>
@@ -417,6 +434,7 @@
 	<include name="CustomMainMenuItem6">
 		<item id="606">
 			<label fallback="CUSTOM6">$INFO[Skin.String(Custom6HomeItem.Label)]</label>
+			<label2>31605</label2>
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Customize.png">$INFO[Skin.String(Custom6HomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(Custom6HomeItem.MultiFanart)]</thumb>
