@@ -783,7 +783,3 @@ msgstr "SYSTEM"
 msgctxt "#31960"
 msgid "CONCERTS"
 msgstr "CONCERTS"
-
-msgctxt "#31961"
-msgid "INFO UNAVAILABLE"
-msgstr "INFO UNAVAILABLE"

@@ -155,11 +155,6 @@
 			<size>60</size>
 		</font>
 		<font>
-			<name>Font_ProgressLabelMid</name>
-			<filename>BebasNeue.ttf</filename>
-			<size>38</size>
-		</font>	
-		<font>
 			<name>Font_SettingsMainLabelsmall</name>
 			<filename>BebasNeue.ttf</filename>
 			<size>33</size>
@@ -244,28 +239,5 @@
 			<filename>DroidSans.ttf</filename>
 			<size>24</size>
 		</font>	
-		<font>
-			<name>Droid9</name>
-			<filename>DroidSans.ttf</filename>
-			<size>14</size>
-		</font>	
-		<font>
-			<name>Droid19</name>
-			<filename>DroidSans.ttf</filename>
-			<size>28</size>
-		</font>	
-		<font>
-			<name>Droid22</name>
-			<filename>DroidSans.ttf</filename>
-			<size>33</size>
-			<shadow>55000000</shadow>
-		</font>
-		<font>
-			<name>DroidBold37</name>
-			<filename>DroidSans-bold.ttf</filename>
-			<size>56</size>
-			<shadow>55000000</shadow>
-		</font>	
-		
 	</fontset>
 </fonts>

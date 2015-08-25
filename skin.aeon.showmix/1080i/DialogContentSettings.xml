@@ -58,19 +58,7 @@
 					<label>$LOCALIZE[20344]</label>
 					<textcolor>grey2</textcolor>
 					<textoffsetx>15</textoffsetx>
-					<visible>!Control.hasFocus(3) + !Control.hasFocus(20)</visible>
-				</control>
-				<control type="label">
-					<description>Content Picker Header</description>
-					<left>31</left>
-					<top>88</top>
-					<width>1138</width>
-					<height>60</height>
-					<font>font14</font>
-					<label>$LOCALIZE[20344]</label>
-					<textcolor>showmixfocus</textcolor>
-					<textoffsetx>15</textoffsetx>
-					<visible>Control.hasFocus(20)</visible>
+					<visible>!Control.hasFocus(3)</visible>
 				</control>
 				<control type="label">
 					<description>Content Picker Header</description>
@@ -142,7 +130,7 @@
 							<top>0</top>
 							<width>1134</width>
 							<height>60</height>
-							<texture border="5">showmix/listselect_fo_settings.png</texture>
+							<texture border="5">listselect_fo.png</texture>
 							<visible>Control.HasFocus(21)</visible>
 							<include>VisibleFadeEffect</include>
 						</control>
@@ -159,8 +147,8 @@
 							<height>60</height>
 							<font>font14</font>
 							<align>left</align>
-							<textcolor>showmixfocus</textcolor>
-							<selectedcolor>showmixfocus</selectedcolor>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
 							<info>ListItem.Label</info>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(21)">Conditional</animation>
 						</control>
@@ -220,7 +208,7 @@
 						<width>310</width>
 						<align>left</align>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>showmixfocus</focusedcolor>
+						<focusedcolor>white</focusedcolor>
 						<label>186</label>
 					</control>
 					<control type="button" id="29">
@@ -228,7 +216,7 @@
 						<width>310</width>
 						<align>left</align>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>showmixfocus</focusedcolor>
+						<focusedcolor>white</focusedcolor>
 						<label>222</label>
 					</control>
 					<control type="button" id="22">
@@ -236,7 +224,7 @@
 						<width>310</width>
 						<align>left</align>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>showmixfocus</focusedcolor>
+						<focusedcolor>white</focusedcolor>
 						<label>5</label>
 					</control>
 					<control type="image">

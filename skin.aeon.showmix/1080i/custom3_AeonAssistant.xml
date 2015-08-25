@@ -65,6 +65,7 @@
 					<label>$LOCALIZE[31972]</label>
 				</control>
 				<control type="label">
+					<description>sectiontitle</description>
 					<description>section subtitle</description>
 					<left>167</left>
 					<top>165</top>
@@ -130,7 +131,7 @@
 							<height>70</height>
 							<font>font_settings14</font>
 							<textoffsetx>26</textoffsetx>
-							<textcolor>showmixfocus</textcolor>
+							<textcolor>FF262728</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -143,7 +144,7 @@
 							<height>70</height>
 							<font>font_settings10</font>
 							<textoffsetx>26</textoffsetx>
-							<textcolor>showmixfocus</textcolor>
+							<textcolor>FF262728</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -156,7 +157,7 @@
 							<label>31979</label>
 							<label2>31980</label2>
 							<property name="description">-</property>
-							<onclick>noop</onclick>
+							<onclick>-</onclick>
 							<icon>-</icon>
 						</item>
 						<item id="7">
@@ -170,7 +171,7 @@
 							<label>31983</label>
 							<label2>31984</label2>
 							<property name="description">-</property>
-							<onclick>noop</onclick>
+							<onclick>-</onclick>
 							<icon>-</icon>
 						</item>
 						<item id="9">
@@ -178,7 +179,7 @@
 							<label2>31985</label2>
 							<property name="description">31975</property>			
 							<onclick>ActivateWindow(AppearanceSettings)</onclick>
-							<onclick>SetFocus(899)</onclick>
+							<onclick>SetFocus(600)</onclick>
 							<icon>-</icon>
 						</item>
 					</content>
@@ -259,7 +260,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textoffsetx>15</textoffsetx>
-					<include>Colour_OffWhite</include>
+					<include>FFececec</include>
 					<visible>Container(9000).HasFocus(7)</visible>
 					<label>$INFO[System.BuildVersion][CR]$INFO[System.BuildDate][CR]$LOCALIZE[31603][CR]$LOCALIZE[31604][CR]$INFO[Skin.CurrentTheme][CR]$INFO[Skin.CurrentColourTheme][CR]$INFO[System.Language][CR]$INFO[System.UsedspacePercent][CR]$INFO[System.CPUTemperature][CR]$INFO[System.GPUTemperature][CR]$INFO[System.Uptime][CR]$INFO[System.Internetstate][CR]$INFO[Network.IPAddress]</label>
 				</control>

@@ -104,7 +104,7 @@
 						<top>0</top>
 						<width>786</width>
 						<height>60</height>
-						<texture border="5">showmix/listselect_fo_settings.png</texture>
+						<texture border="5">listselect_fo.png</texture>
 						<visible>Control.HasFocus(10)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
@@ -117,7 +117,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>showmixfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -191,7 +190,7 @@
 					<description>Ok Button</description>
 					<width>310</width>
 					<textcolor>grey2</textcolor>
-					<focusedcolor>showmixfocus</focusedcolor>
+					<focusedcolor>FF262728</focusedcolor>
 					<label>186</label>
 					<font>font15</font>
 				</control>
@@ -199,7 +198,7 @@
 					<description>Cancel Button</description>
 					<width>310</width>
 					<textcolor>grey2</textcolor>
-					<focusedcolor>showmixfocus</focusedcolor>
+					<focusedcolor>FF262728</focusedcolor>
 					<label>222</label>
 					<font>font15</font>
 				</control>
@@ -232,7 +231,7 @@
 				<onleft>12</onleft>
 				<onright>19</onright>
 				<ondown>9001</ondown>
-				<texturefocus border="5">showmix/listselect_fo_settings.png</texturefocus>
+				<texturefocus border="5">button_fo.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 			</control>
 		</control>

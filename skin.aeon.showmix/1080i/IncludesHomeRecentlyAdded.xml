@@ -249,11 +249,11 @@
 						<effect type="fade" start="100" end="0" time="10" delay="200" />
 					</animation>
 					<control type="image">
-						<left>-4</left>
-						<top>-35</top>
-						<width>438</width>
-						<height>514</height>
-						<texture border="40">showmix/recent_widget_list.png</texture>
+						<left>0</left>
+						<top>0</top>
+						<width>422</width>
+						<height>422</height>
+						<texture border="40">dialogs/default/bg2.png</texture>
 					</control>
 					<control type="label">
 						<left>32</left>
@@ -279,7 +279,7 @@
 					<control type="label">
 						<description>Plot</description>
 						<left>47</left>
-						<top>291</top>
+						<top>310</top>
 						<width>332</width>
 						<height>80</height>
 						<font>font15_title</font>
@@ -297,17 +297,24 @@
 						<effect type="fade" start="0" end="100" time="10" delay="200" />
 					</animation>
 					<control type="image">
-						<left>-7</left>
-						<top>-30</top>
-						<width>439</width>
-						<height>542</height>
-						<texture border="40">showmix/recent_widget_list.png</texture>
+						<left>0</left>
+						<top>0</top>
+						<width>422</width>
+						<height>422</height>
+						<texture border="40">dialogs/default/bg2.png</texture>
+					</control>
+					<control type="image">
+						<left>30</left>
+						<top>30</top>
+						<width>362</width>
+						<height>362</height>
+						<texture border="5">dialogs/default/inner2.png</texture>
 					</control>
 					<control type="list" id="8000">
 						<left>31</left>
-						<top>99</top>
+						<top>31</top>
 						<width>360</width>
-						<height>310</height>
+						<height>360</height>
 						<onup>8000</onup>
 						<ondown>8000</ondown>
 						<onleft>9000</onleft>
@@ -339,13 +346,12 @@
 							<control type="image">
 								<width>360</width>
 								<height>60</height>
-								<texture border="5">showmix/listselect_fo_settings.png</texture>
+								<texture border="5">listselect_fo.png</texture>
 							</control>
 							<control type="label">
 								<width>360</width>
 								<height>60</height>
 								<font>font14</font>
-								<textcolor>showmixfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<textoffsetx>15</textoffsetx>
 								<label>$INFO[ListItem.Label]</label>

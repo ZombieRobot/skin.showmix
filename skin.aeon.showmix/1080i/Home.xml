@@ -277,6 +277,21 @@
 				<label>[UPPERCASE]$INFO[Container(9000).ListItem.Label][/UPPERCASE]</label>
 				<visible>Skin.HasSetting(mainmenuicons)</visible>
 			</control>
+			<control tye="image">
+				<left>0</left>
+				<top>58</top>
+				<width>100</width>
+				<height>104</height>
+				<texture border="1">side_fade.png</texture>
+			</control>
+			<control tye="image">
+				<left>1820</left>
+				<top>58</top>
+				<width>100</width>
+				<height>104</height>
+				<texture flipx="true" border="1">side_fade.png</texture>
+			</control>
+		
 		</control>
 	</controls>
 </window>

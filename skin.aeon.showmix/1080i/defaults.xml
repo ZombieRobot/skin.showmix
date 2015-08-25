@@ -41,7 +41,7 @@
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>FF262728</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<textoffsetx>15</textoffsetx>
@@ -59,7 +59,7 @@
 		<alttexturefocus border="1">showmix/listselect_fo_settings.png</alttexturefocus>
 		<alttexturenofocus border="1">separator2.png</alttexturenofocus>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<label>-</label>
@@ -98,7 +98,7 @@
 		<font>font14</font>
 		<reverse>yes</reverse>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<subtype>text</subtype>
@@ -122,7 +122,7 @@
 		<texturedownfocus>android/numberpicker_down_longpressed_holo_dark.png</texturedownfocus>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<textoffsetx>15</textoffsetx>
@@ -146,7 +146,7 @@
 		<label>215</label>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<textoffsetx>15</textoffsetx>
@@ -170,7 +170,7 @@
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
 		<textoffsetx>15</textoffsetx>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<align>left</align>
@@ -198,7 +198,7 @@
 		<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<pulseonselect>false</pulseonselect>
@@ -226,7 +226,7 @@
 		<texturenofocus border="1">separator2.png</texturenofocus>
 		<font>font14</font>
 		<textcolor>grey2</textcolor>
-		<focusedcolor>showmixfocus</focusedcolor>
+		<focusedcolor>white</focusedcolor>
 		<disabledcolor>grey4</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<textoffsetx>15</textoffsetx>

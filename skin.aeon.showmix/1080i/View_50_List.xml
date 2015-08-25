@@ -4,7 +4,6 @@
 	<include name="VideoList">
 		<control type="group">
 			<visible>Control.IsVisible(50) + !Window.IsActive(addoninformation)</visible>
-			<include>ViewAnimation</include>
 			<include>Animation_CommonFade</include>
 			<control type="image">
 				<description>background image</description>
@@ -2778,7 +2777,7 @@
 				<top>77</top>
 				<width>1820</width>
 				<height>1024</height>
-				<texture>showmix/listpanel_mask_square_window.png</texture>
+				<texture>listpanel_mask_square_window.png</texture>
 			</control>
 			<control type="image">
 				<description>background image</description>
