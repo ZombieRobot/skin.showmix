@@ -1,7 +1,7 @@
 # XBMC Media Center language file
-# Addon Name: Aeon Nox
-# Addon id: skin.aeon.nox.5
-# Addon Provider: BigNoid
+# Addon Name: Aeon showmix
+# Addon id: skin.aeon.showmix.4.0
+# Addon Provider: ZombieRobot
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -543,7 +543,7 @@ msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR]Set three cities to collect weather 
 msgstr ""
 
 msgctxt "#31405"
-msgid "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware · Monitor CPU usage[CR]Check XBMC revision number"
+msgid "[B]MONITOR YOUR SYSTEM[/B][CR]Check out your hardware · Monitor CPU usage[CR]Check Kodi revision number"
 msgstr ""
 
 msgctxt "#31406"
@@ -555,7 +555,7 @@ msgid "[B]SETUP PROFILES[/B][CR]Setup and manage user profiles · Enable login s
 msgstr ""
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org[CR]Modify Add-on settings"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR]Manage your installed Add-ons · Browse for and install Add-ons from kodi.tv[CR]Modify Add-on settings"
 msgstr ""
 
 msgctxt "#31409"
@@ -563,7 +563,7 @@ msgid "[B]CONFIGURE TV SETTINGS[/B][CR]Change full screen info · Manage EPG dat
 msgstr ""
 
 msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of XBMC via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
 msgstr ""
 
 #empty string with id 31411
@@ -579,7 +579,7 @@ msgstr ""
 #empty strings from id 31414 to 31420
 
 msgctxt "#31421"
-msgid "Select your XBMC user Profile[CR]to login and continue"
+msgid "Select your Kodi user Profile[CR]to login and continue"
 msgstr ""
 
 #empty strings from id 31422 to 31500
@@ -648,7 +648,7 @@ msgid "Map & Alerts"
 msgstr ""
 
 msgctxt "#31911"
-msgid "Setup the Aeon Nox main menu"
+msgid "Setup the Aeon Showmix main menu"
 msgstr ""
 
 msgctxt "#31912"
@@ -656,7 +656,7 @@ msgid "Customize the main menu with widgets, backgrounds and statistics. Add you
 msgstr ""
 
 msgctxt "#31913"
-msgid "Aeon Nox main menu horizontal position"
+msgid "Aeon showmix main menu horizontal position"
 msgstr ""
 
 msgctxt "#31914"
@@ -668,7 +668,7 @@ msgid "Navigation style for horizontal lists"
 msgstr ""
 
 msgctxt "#31916"
-msgid "Change the way horizontal lists scroll in Aeon Nox. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
+msgid "Change the way horizontal lists scroll in Aeon showmix. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
 msgstr ""
 
 msgctxt "#31917"
@@ -708,7 +708,7 @@ msgid "Pick one of the preset backgrounds or set your own images as the menu ite
 msgstr ""
 
 msgctxt "#31926"
-msgid "Select add-ons, playlists or favourites. Choose 'Custom' for any of XBMC's built-in functions. (http://http://wiki.xbmc.org/?title=List_of_Built_In_Functions)"
+msgid "Select add-ons, playlists or favourites. Choose 'Custom' for any of Kodi's built-in functions. (http://kodi.wiki/view/List_of_built-in_functions)"
 msgstr ""
 
 msgctxt "#31927"
@@ -716,7 +716,7 @@ msgid "Resets all above values to their defaults."
 msgstr ""
 
 msgctxt "#31928"
-msgid "Aeon Nox main menu layout"
+msgid "Aeon showmix main menu layout"
 msgstr ""
 
 msgctxt "#31929"
@@ -972,7 +972,7 @@ msgid "Aeon loves artwork. Its visual philosophy revolves entirely around the[CR
 msgstr ""
 
 msgctxt "#31994"
-msgid "Building a library of movies, television shows or music lets Aeon exploit[CR]the full power of XBMC, providing a rich and informative browsing experience.[CR]Plot synopses and album reviews are just the tip of the iceberg thanks to[CR]info pulled from the IMDb, Allmusic, or one of many user-selected sources."
+msgid "Building a library of movies, television shows or music lets Aeon exploit[CR]the full power of Kodi, providing a rich and informative browsing experience.[CR]Plot synopses and album reviews are just the tip of the iceberg thanks to[CR]info pulled from the IMDb, Allmusic, or one of many user-selected sources."
 msgstr ""
 
 msgctxt "#31995"
@@ -980,7 +980,7 @@ msgid "Navigating between Aeon's views and windows couldn't be easier.[CR]The Gl
 msgstr ""
 
 msgctxt "#31996"
-msgid "Every aspect of Aeon and XBMC can be configured behind the scenes.[CR]A multi-faceted Settings environment is available from every screen,[CR]split into sections for ease of use. Its Virtual Home page provides an[CR]intuitive visual reference for all your personalisation needs."
+msgid "Every aspect of Aeon and Kodi can be configured behind the scenes.[CR]A multi-faceted Settings environment is available from every screen,[CR]split into sections for ease of use. Its Virtual Home page provides an[CR]intuitive visual reference for all your personalisation needs."
 msgstr ""
 
 msgctxt "#31997"
@@ -988,7 +988,7 @@ msgid "There's no limit to how many wallpapers you can splash across Aeon's[CR]b
 msgstr ""
 
 msgctxt "#31998"
-msgid "Control every aspect of XBMC's media playback without missing a second.[CR]On-screen displays for video and music let you adjust everything from[CR]subtitles and aspect ratio to audiovisual sync. Permanent bookmarks[CR]can be set for easy access to your favourite scenes."
+msgid "Control every aspect of Kodi's media playback without missing a second.[CR]On-screen displays for video and music let you adjust everything from[CR]subtitles and aspect ratio to audiovisual sync. Permanent bookmarks[CR]can be set for easy access to your favourite scenes."
 msgstr ""
 
 msgctxt "#31999"
@@ -1052,9 +1052,49 @@ msgid "Multiplex Fullscreen"
 msgstr ""
 
 msgctxt "#31611"
-msgid "View 3"
+msgid "Fanart"
 msgstr ""
 
 msgctxt "#31612"
-msgid "View 4"
+msgid "Extra-fanart"
+msgstr ""
+
+msgctxt "#31613"
+msgid "Info unavailable"
+msgstr ""
+
+msgctxt "#31614"
+msgid "Run time"
+msgstr ""
+
+msgctxt "#31615"
+msgid "Genre"
+msgstr ""
+
+msgctxt "#31616"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#31617"
+msgid "IMDB"
+msgstr ""
+
+msgctxt "#31618"
+msgid "PRESS DOWN TO VIEW TRAILER"
+msgstr ""
+
+msgctxt "#31619"
+msgid "Year"
+msgstr ""
+
+msgctxt "#31620"
+msgid "Kodi Subtitles"
+msgstr ""
+
+msgctxt "#31621"
+msgid "PRESS DOWN TO STOP"
+msgstr ""
+
+msgctxt "#31622"
+msgid "Customize"
 msgstr ""

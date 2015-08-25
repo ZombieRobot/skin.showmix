@@ -55,7 +55,7 @@
 	</include>
 	<include name="MultiplexInfoValue_270">
 		<include>MultiplexInfoValueVars</include>
-		<width>270</width>
+		<width>420</width>
 	</include>
 	<include name="MultiplexInfoValue_300">
 		<include>MultiplexInfoValueVars</include>
@@ -95,7 +95,7 @@
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>162</top>
 						<width>1920</width>
@@ -103,29 +103,12 @@
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>162</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		       
-
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
-					</control>
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>203</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
 					</control>
 				</control>
 			<control type="group">
@@ -152,37 +135,20 @@
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
-					</control>
+					</control>       
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>162</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		       
-
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
-					</control>
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>203</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
 					</control>
 				</control>			
 				
@@ -213,7 +179,7 @@
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control>   		
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>162</top>
 						<width>1920</width>
@@ -221,31 +187,14 @@
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>162</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>203</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>			
-
-			
+				
 		<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 			
 					<control type="group">
@@ -259,11 +208,11 @@
 							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
-							<visible>!Skin.HasSetting(grey) + !Skin.HasSetting(green) + !Skin.HasSetting(black)</visible>
+							<visible>!Skin.HasSetting(classic) + !Skin.HasSetting(black)</visible>
 							<texture>views/multiplex/backgrounds/multiplex_window_black.png</texture>
 						</control>
 						<control type="image">
-							<visible>!Skin.HasSetting(grey) + !Skin.HasSetting(green) + !Skin.HasSetting(black) + Skin.HasSetting(Dark)</visible>
+							<visible>!Skin.HasSetting(classic) + !Skin.HasSetting(black) + Skin.HasSetting(Dark)</visible>
 							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
@@ -273,29 +222,15 @@
 							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
-							<visible>Skin.HasSetting(green)</visible>
-							<texture>views/multiplex/backgrounds/multiplex_window_green.png</texture>
+							<visible>Skin.HasSetting(classic)</visible>
+							<texture>views/multiplex/backgrounds/multiplex_window_classic.png</texture>
 						</control>
 						<control type="image">
-							<visible>Skin.HasSetting(green) + Skin.HasSetting(Dark)</visible>
+							<visible>Skin.HasSetting(classic) + Skin.HasSetting(Dark)</visible>
 							<left>113</left>
 							<width>1695</width>
 							<height>846</height>
-							<texture>views/multiplex/backgrounds/multiplex_window_green.png</texture>
-						</control>	
-						<control type="image">
-							<left>113</left>
-							<width>1695</width>
-							<height>846</height>
-							<visible>Skin.HasSetting(grey)</visible>
-							<texture>views/multiplex/backgrounds/multiplex_window_grey.png</texture>
-						</control>
-						<control type="image">
-							<visible>Skin.HasSetting(grey) + Skin.HasSetting(Dark)</visible>
-							<left>113</left>
-							<width>1695</width>
-							<height>846</height>
-							<texture>views/multiplex/backgrounds/multiplex_window_grey.png</texture>
+							<texture>views/multiplex/backgrounds/multiplex_window_classic.png</texture>
 						</control>	
 						<control type="image">
 							<left>113</left>
@@ -382,11 +317,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 						
@@ -394,11 +329,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31401]:</label>
+								<label>$LOCALIZE[31001]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -406,11 +341,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -418,11 +353,11 @@
 							<top>258</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -430,11 +365,11 @@
 							<top>333</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31438]:</label>
+								<label>$LOCALIZE[31615]:</label>
 							</control>					
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Genre]</label>
+								<label fallback="31613">$INFO[ListItem.Genre]</label>
 							</control>			
 						</control>
 
@@ -442,11 +377,11 @@
 							<top>408</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>			
 						</control>
 
@@ -454,11 +389,11 @@
 							<top>483</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>
 					</control>
@@ -518,12 +453,12 @@
 						</control>
 						<control type="label">
 							<left>830</left>
-							<top>527</top>
+							<top>513</top>
 							<width>368</width>
 							<align>center</align>
 							<height>45</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -541,12 +476,12 @@
 				
 						<control type="label">
 							<left>830</left>
-							<top>527</top>
+							<top>513</top>
 							<width>368</width>
 							<align>center</align>
 							<height>45</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -700,11 +635,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 						
@@ -715,11 +650,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>				
 		<!-- FULLSCREEN IMAGES FOR PLOT VIEW -->
@@ -844,13 +779,13 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<left>-428</left>
-							<top>521</top>
+							<left>-426</left>
+							<top>320</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -867,12 +802,12 @@
 						</control>
 						<control type="label">
 							<left>-428</left>
-							<top>521</top>
+							<top>320</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -917,41 +852,22 @@
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
-					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>162</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		       
 
 					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
-					</control>
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>203</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>	
-					
-
-				
+					</control>			
 			<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 				
 					<control type="group">
@@ -1119,12 +1035,12 @@
 						</control>
 						<control type="label">
 							<left>777</left>
-							<top>533</top>
+							<top>519</top>
 							<width>392</width>
 							<height>45</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1141,12 +1057,12 @@
 						</control>
 						<control type="label">
 							<left>777</left>
-							<top>533</top>
+							<top>519</top>
 							<width>392</width>
 							<height>45</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1217,11 +1133,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 							
@@ -1229,11 +1145,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31401]:</label>
+								<label>$LOCALIZE[31001]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -1241,11 +1157,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -1253,11 +1169,11 @@
 							<top>258</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -1265,11 +1181,11 @@
 							<top>333</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31438]:</label>
+								<label>$LOCALIZE[31615]:</label>
 							</control>					
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.Genre]</label>
+								<label fallback="31613">$INFO[ListItem.Genre]</label>
 							</control>			
 						</control>
 
@@ -1277,11 +1193,11 @@
 							<top>408</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>			
 						</control>
 
@@ -1289,11 +1205,11 @@
 							<top>483</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_270</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>
 					</control>
@@ -1554,13 +1470,13 @@
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
 						</control>
 						<control type="label">
-							<left>1025</left>
-							<top>516</top>
+							<left>1024</left>
+							<top>316</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1577,12 +1493,12 @@
 						</control>
 						<control type="label">
 							<left>1025</left>
-							<top>516</top>
+							<top>316</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1612,11 +1528,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 							
@@ -1627,11 +1543,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>	
 				</control>	
@@ -1670,38 +1586,23 @@
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
-					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>162</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		       
+		       
 
 					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>203</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		
 
 			<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 				
@@ -1868,12 +1769,12 @@
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>491</top>
+							<top>487</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1890,12 +1791,12 @@
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>491</top>
+							<top>487</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -1911,11 +1812,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 							
@@ -1923,11 +1824,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -1935,11 +1836,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -1949,11 +1850,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -1962,11 +1863,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>					
 						</control>
 
@@ -1975,11 +1876,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>				
 					</control>	
@@ -2066,11 +1967,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 							
@@ -2081,11 +1982,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>			
 
@@ -2205,12 +2106,12 @@
 						</control>
 						<control type="label">
 							<left>1173</left>
-							<top>515</top>
+							<top>313</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2227,12 +2128,12 @@
 						</control>
 						<control type="label">
 							<left>1170</left>
-							<top>515</top>
+							<top>313</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2279,41 +2180,23 @@
 						<texture>views/multiplex/backgrounds/showcase_stage.png</texture>	
 					</control> 		
 					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>!Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>162</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
-					</control>
-					<control type="image">
-						<visible>!Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>162</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>		       
+					</control>       
 
 					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + !Skin.HasSetting(Dark_Floor)</visible>
+						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<left>0</left>
 						<top>203</top>
 						<width>1920</width>
 						<height>1077</height>
 						<texture>views/multiplex/backgrounds/showcase_floor_back.png</texture>	
 					</control>
-					<control type="image">
-						<visible>Skin.HasSetting(FullscreenPoster) + Skin.HasSetting(Dark_Floor)</visible>
-						<left>0</left>
-						<top>203</top>
-						<width>1920</width>
-						<height>1077</height>
-						<texture>views/multiplex/backgrounds/showcase_floor_back_dark.png</texture>	
-					</control>	
-				
-
-			
+	
 		<!--MULTIPLEX COMMON BACKGROUND GROUP-->
 			
 					<control type="group">
@@ -2491,12 +2374,12 @@
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>491</top>
+							<top>487</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2513,12 +2396,12 @@
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>491</top>
+							<top>487</top>
 							<align>center</align>
 							<width>890</width>
 							<height>30</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2534,11 +2417,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31402]:</label>
+								<label>$LOCALIZE[31000]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Director]</label>
+								<label fallback="31613">$INFO[ListItem.Director]</label>
 							</control>			
 						</control>
 						
@@ -2546,11 +2429,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31401]:</label>
+								<label>$LOCALIZE[31001]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Writer]</label>
+								<label fallback="31613">$INFO[ListItem.Writer]</label>
 							</control>			
 						</control>
 
@@ -2558,11 +2441,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31436]:</label>
+								<label>$LOCALIZE[31619]:</label>
 							</control>
 							<control type="fadelabel">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Year]</label>
+								<label fallback="31613">$INFO[ListItem.Year]</label>
 							</control>			
 						</control>
 
@@ -2572,11 +2455,11 @@
 							<top>33</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31445]:</label>
+								<label>$LOCALIZE[31614]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.Duration]</label>
+								<label fallback="31613">$INFO[ListItem.Duration]</label>
 							</control>			
 						</control>
 
@@ -2585,11 +2468,11 @@
 							<top>108</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31417]:</label>
+								<label>$LOCALIZE[31616]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.MPAA]</label>
+								<label fallback="31613">$INFO[ListItem.MPAA]</label>
 							</control>					
 						</control>
 
@@ -2598,11 +2481,11 @@
 							<top>183</top>
 							<control type="label">
 								<include>MultiplexInfoLabel_Left</include>
-								<label>$LOCALIZE[31408]:</label>
+								<label>$LOCALIZE[31617]:</label>
 							</control>
 							<control type="label">
 								<include>MultiplexInfoValue_200</include>				
-								<label fallback="31425">$INFO[ListItem.RatingAndVotes]</label>
+								<label fallback="31613">$INFO[ListItem.RatingAndVotes]</label>
 							</control>			
 						</control>				
 					</control>	
@@ -2717,11 +2600,11 @@
 						<visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31402]:</label>
+							<label>$LOCALIZE[31000]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Director]</label>
+							<label fallback="31613">$INFO[ListItem.Director]</label>
 						</control>
 					</control>
 						
@@ -2732,11 +2615,11 @@
 						   <visible>Skin.HasSetting(FullscreenPoster)</visible>
 						<control type="label">
 							<include>MultiplexInfoLabel_Left</include>
-							<label>$LOCALIZE[31401]:</label>
+							<label>$LOCALIZE[31001]:</label>
 						</control>
 						<control type="fadelabel">
 							<include>MultiplexInfoValue_250</include>				
-							<label fallback="31425">$INFO[ListItem.Writer]</label>
+							<label fallback="31613">$INFO[ListItem.Writer]</label>
 						</control>
 					</control>			
 
@@ -2843,12 +2726,12 @@
 						</control>
 						<control type="label">
 							<left>1173</left>
-							<top>515</top>
+							<top>313</top>
 							<width>408</width>
 							<height>420</height>
 							<align>center</align>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to View trailer[/UPPERCASE]</label>
+							<label>$LOCALIZE[31618]</label>
 							<visible>!IsEmpty(ListItem.Trailer) + !Player.HasMedia</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2865,12 +2748,12 @@
 						</control>
 						<control type="label">
 							<left>1170</left>
-							<top>515</top>
+							<top>313</top>
 							<align>center</align>
 							<width>408</width>
 							<height>420</height>
 							<font>Droid9</font>
-							<label>[UPPERCASE]Press Down to stop[/UPPERCASE]</label>
+							<label>$LOCALIZE[31621]</label>
 							<visible>Player.Playing</visible>
 							<colordiffuse>d0FFFFFF</colordiffuse>
 							<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
@@ -2883,7 +2766,7 @@
 	<!--END OF BIG EXTRATHUMB VIEW MULTIPLEX OLD-->
 	<!--END OF BIG EXTRATHUMB VIEW MULTIPLEX OLD-->	
 			<control type="fixedlist" id="599">
-				
+				<include>ViewAnimation</include>
 				<left>240</left>
 				<top>717</top>
 				<width>1470</width>
@@ -2940,7 +2823,6 @@
 				
 					<control type="image">
 						<include>MultiplexIconDimensionsWrap2</include>
-						<bordertexture border="-24">multiplex/multiplex_border.png</bordertexture>
 						<texture>views/multiplex/multiplex_glass.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<include>Animation_MultiplexFocusZoom2</include>
@@ -2969,11 +2851,11 @@
 					<width>1000</width>
 					<height>60</height>
 					<visible allowhiddenfocus="true">Control.IsVisible(599) + Control.HasFocus(60)</visible>
-					<texturesliderbackground>windows/scrollbarbackshowcase.png</texturesliderbackground>
+					<texturesliderbackground>scrollbarbackshowcase.png</texturesliderbackground>
 					<texturesliderbar>-</texturesliderbar>
 					<texturesliderbarfocus>-</texturesliderbarfocus>
-					<textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
-					<textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+					<textureslidernib>scrollbarnub-nofocus.png</textureslidernib>
+					<textureslidernibfocus>scrollbarnub-focus.png</textureslidernibfocus>
 					<pulseonselect></pulseonselect>
 					<orientation>horizontal</orientation>
 					<showonepage>false</showonepage>

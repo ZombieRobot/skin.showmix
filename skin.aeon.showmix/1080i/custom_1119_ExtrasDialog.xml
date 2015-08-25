@@ -30,7 +30,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>Dialog.Close(MovieInformation)</onclick>
@@ -44,7 +44,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
@@ -57,7 +57,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
@@ -70,7 +70,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.libraryeditor,DBID=$INFO[ListItem.DBID])</onclick>
@@ -82,7 +82,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.ratingupdate,Single=Movie)</onclick>
@@ -95,7 +95,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
@@ -108,7 +108,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
@@ -121,7 +121,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(all,true)</onclick>
 				<onclick>ActivateWindow(videos,$ESCINFO[ListItem.Label,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=],return)</onclick>
@@ -133,7 +133,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<onclick>Skin.SetString(Startup_Playlist_Path,RunScript(script.playalbum,albumid=$INFO[ListItem.DBID]))</onclick>
@@ -145,7 +145,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>SetFocus(90300)</onclick>
 				<label>$LOCALIZE[31092]</label>
@@ -155,7 +155,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>RunScript(script.maps.browser,artist=$INFO[ListItem.Artist])</onclick>
 				<onclick>Dialog.Close(1119)</onclick>
@@ -167,7 +167,7 @@
 				<width>510</width>
 				<textwidth>435</textwidth>
 				<textoffsetx>45</textoffsetx>
-				<texturefocus border="35,2,35,2">button_shutdown_focus.png</texturefocus>
+				<texturefocus border="35,2,35,2">context_highlight.png</texturefocus>
 				<texturenofocus border="35,2,35,2">button_shutdown_nofocus.png</texturenofocus>
 				<onclick>Dialog.Close(1119)</onclick>
 				<label>$LOCALIZE[31075]</label>

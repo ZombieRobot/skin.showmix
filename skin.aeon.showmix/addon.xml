@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.aeon.showmix.new"
-  version="3.3.3"
-  name="Aeon Showmix 2"
+  id="skin.aeon.showmix"
+  version="3.3.5"
+  name="Aeon Showmix"
   provider-name="ZombieRobot">
 	<requires>
-		<import addon="xbmc.gui" version="5.3.0"/>
+		<import addon="xbmc.gui" version="5.9.0"/>
 		<import addon="script.grab.fanart" version="0.13.2"/>
-		<import addon="script.skinshortcuts" version="0.4.2"/>
-		<import addon="service.library.data.provider" version="0.0.6"/>
+		<import addon="script.skinshortcuts" version="0.4.5"/>
+		<import addon="service.library.data.provider" version="0.0.7"/>
 	</requires>
 	<extension
 	  point="xbmc.gui.skin"
 	  defaultthemename="textures.xbt"
-	  debugging="true"
+	  debugging="false"
 	  effectslowdown="0.75">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>

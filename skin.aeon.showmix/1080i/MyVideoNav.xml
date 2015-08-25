@@ -316,7 +316,7 @@
 					<include>ButtonCommonValues</include>
 					<label>$LOCALIZE[31610]</label>
 					<onclick>Skin.ToggleSetting(FullscreenPoster)</onclick>
-					<visible>Control.IsVisible(599) | Skin.HasSetting(noinfo)</visible>
+					<visible>Control.IsVisible(599) + !StringCompare(Control.GetLabel(4420),)</visible>
 				</control>
 				<control type="togglebutton" id="6053">
 					<description>LowList Toggle</description>

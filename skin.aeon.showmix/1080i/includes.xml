@@ -441,5 +441,13 @@
 			<visible allowhiddenfocus="true">false</visible>
 		</control>
 	</include>
+	<include name="Colour_Grey">
+		<textcolor>FF868686</textcolor>
+		<focusedcolor>FFececec</focusedcolor>
+		<disabledcolor>d0505050</disabledcolor>
+	</include>
+	<include name="Colour_OffWhite">
+		<textcolor>FFececec</textcolor>
+	</include>
 	
 </includes>

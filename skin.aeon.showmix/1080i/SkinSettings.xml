@@ -102,7 +102,7 @@
 						<height>70</height>
 						<font>font_settings14</font>
 						<textoffsetx>26</textoffsetx>
-						<textcolor>FF262728</textcolor>
+						<textcolor>showmixfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -115,7 +115,7 @@
 						<height>70</height>
 						<font>font_settings10</font>
 						<textoffsetx>26</textoffsetx>
-						<textcolor>FF262728</textcolor>
+						<textcolor>showmixfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -189,7 +189,7 @@
 						<font>font15</font>
 						<label>31911</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>ActivateWindow(1121)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
@@ -201,7 +201,7 @@
 						<label>31913</label>
 						<label2>[COLOR themecolor]$VAR[lowermainmenuVar][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
@@ -212,7 +212,7 @@
 						<font>font15</font>
 						<label>31600</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(nohomegradient)</onclick>
 						<selected>!Skin.HasSetting(nohomegradient)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -225,7 +225,7 @@
 						<font>font15</font>
 						<label>31602</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(intro.enable)</onclick>
 						<selected>!Skin.HasSetting(intro.enable)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -237,7 +237,7 @@
 						<font>font15</font>
 						<label>31082</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(Detach.RSS)</onclick>
 						<selected>Skin.HasSetting(Detach.RSS)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -250,7 +250,7 @@
 						<font>font15</font>
 						<label>20083</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(Disable.Musicinfo)</onclick>
 						<selected>!Skin.HasSetting(Disable.Musicinfo)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -262,7 +262,7 @@
 						<font>font15</font>
 						<label>20176</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(Disable.Videoinfo)</onclick>
 						<selected>!Skin.HasSetting(Disable.Videoinfo)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -274,7 +274,7 @@
 						<font>font15</font>
 						<label>31928</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label2>[COLOR labelheader]$VAR[MainMenuLayoutVar][/COLOR]</label2>
 						<onclick condition="!Skin.HasSetting(biggergap) + !Skin.HasSetting(mainmenuicons)">Skin.SetBool(mainmenuicons)</onclick>
 						<onclick condition="Skin.HasSetting(mainmenuicons)">Skin.SetBool(biggergap)</onclick>
@@ -304,7 +304,7 @@
 						<font>font15</font>
 						<label>31947</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>ActivateWindow(1128)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
@@ -315,7 +315,7 @@
 						<font>font15</font>
 						<label>20189</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<onclick>Skin.ToggleSetting(Enable.AutoScroll)</onclick>
 						<selected>Skin.HasSetting(Enable.AutoScroll)</selected>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -326,7 +326,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31931</label>
 						<label2>[COLOR themecolor]$VAR[VideoPlotLocalizeVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(VideoInfoPlotToggle)</onclick>
@@ -338,7 +338,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31124</label>
 						<onclick>Skin.ToggleSetting(Disable.ShowBackgroundVideo)</onclick>
 						<selected>!Skin.HasSetting(Disable.ShowBackgroundVideo)</selected>
@@ -350,7 +350,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31125</label>
 						<onclick>Skin.ToggleSetting(Disable.ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(Disable.ShowBackgroundVis)</selected>
@@ -377,7 +377,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>21398</label>
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
@@ -389,7 +389,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>15311</label>
 						<label2>[COLOR labelheader]$INFO[Skin.String(Startup_Playlist_Path)][/COLOR]</label2>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
@@ -401,7 +401,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31126</label>
 						<onclick>Skin.ToggleSetting(Enable.TvTunes)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -415,7 +415,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31083</label>
 						<onclick>Skin.ToggleSetting(Disable.NextAired)</onclick>
 						<selected>!Skin.HasSetting(Disable.NextAired)</selected>
@@ -427,7 +427,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31015</label>
 						<label2>[COLOR labelheader]$INFO[Skin.String(VideoGenreFanartPath)][/COLOR]</label2>
 						<onclick>Skin.SetPath(VideoGenreFanartPath)</onclick>
@@ -439,7 +439,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>- $LOCALIZE[10035]</label>
 						<onclick>Skin.Reset(VideoGenreFanartPath)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -451,7 +451,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31017</label>
 						<label2>[COLOR labelheader]$INFO[Skin.String(MusicGenreFanartPath)][/COLOR]</label2>
 						<onclick>Skin.SetPath(MusicGenreFanartPath)</onclick>
@@ -463,7 +463,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>- $LOCALIZE[10035]</label>
 						<onclick>Skin.Reset(MusicGenreFanartPath)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -489,7 +489,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31939</label>
 						<label2>[COLOR themecolor]$VAR[InfoPanelDelayLocalizeVar][/COLOR]</label2>
 						<onclick>$VAR[InfoPanelDelayOnClickVar]</onclick>
@@ -501,7 +501,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31941</label>
 						<onclick>Skin.ToggleSetting(KioskMode.Enabled)</onclick>
 						<selected>Skin.HasSetting(KioskMode.Enabled)</selected>
@@ -513,7 +513,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31915</label>
 						<label2>[COLOR themecolor]$VAR[HorizontalListNavVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(HorizontalListNav)</onclick>
@@ -525,7 +525,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31943</label>
 						<onclick>ActivateWindow(1127)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
@@ -536,7 +536,7 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>FF262728</focusedcolor>
+						<focusedcolor>showmixfocus</focusedcolor>
 						<label>31094</label>
 						<label2>[COLOR themecolor]$VAR[SlimListSettingVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(Enable.SlimList)</onclick>

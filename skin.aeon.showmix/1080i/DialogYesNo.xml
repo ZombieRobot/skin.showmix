@@ -16,13 +16,6 @@
 			<height>494</height>
 			<texture border="40">dialogs/default/bg.png</texture>
 		</control>
-		<!--<control type="image">
-			<left>30</left>
-			<top>32</top>
-			<width>856</width>
-			<height>40</height>
-			<texture border="5">dialogs/default/inner.png</texture>
-		</control>-->
 		<control type="image">
 			<left>30</left>
 			<top>86</top>
@@ -64,13 +57,13 @@
 			<label>107</label>
 			<font>font15_title</font>
 			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<align>center</align>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>11</onup>
 			<ondown>11</ondown>
-			<texturefocus border="5">button_fo.png</texturefocus>
+			<texturefocus border="5">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 		</control>
 		<control type="button" id="10">
@@ -82,13 +75,13 @@
 			<label>106</label>
 			<font>font15_title</font>
 			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
+			<focusedcolor>showmixfocus</focusedcolor>
 			<align>center</align>
 			<onleft>11</onleft>
 			<onright>11</onright>
 			<onup>10</onup>
 			<ondown>10</ondown>
-			<texturefocus border="5">button_fo.png</texturefocus>
+			<texturefocus border="5">showmix/listselect_fo_settings.png</texturefocus>
 			<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 		</control>
 	</controls>
