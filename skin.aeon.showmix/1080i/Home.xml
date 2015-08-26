@@ -198,10 +198,10 @@
 							<visible>Control.HasFocus(9010)</visible>
 							<control type="image">
 								<top>1</top>
-								<left>-5</left>
-								<width>308</width>
+								<left>-18</left>
+								<width>338</width>
 								<height>42</height>
-								<texture>listselect_fo.png</texture>
+								<texture>context_highlight.png</texture>
 							</control>
 							<control type="label">
 								<width>300</width>
