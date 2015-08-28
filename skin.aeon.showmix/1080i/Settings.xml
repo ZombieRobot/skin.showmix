@@ -197,6 +197,13 @@
 						<onclick>ActivateWindow(SystemSettings)</onclick>
 						<icon>-</icon>
 					</item>
+					<item id="13">
+						<label>31624</label>
+						<label2>31623</label2>
+						<property name="description">31626</property>
+						<onclick>ActivateWindow(skinsettings)</onclick>
+						<icon>-</icon>
+					</item>
 					<item id="10">
 						<label>10511</label>
 						<label2>31963</label2>
@@ -211,6 +218,7 @@
 						<onclick>ActivateWindow(1200)</onclick>
 						<icon>-</icon>
 					</item>
+					
 				</content>
 			</control>
 			<control type="image">
@@ -308,6 +316,14 @@
 				<height>637</height>
 				<texture background="true">special://skin/backgrounds/default_assistant.jpg</texture>
 				<visible>Container(9000).HasFocus(12)</visible>
+			</control>
+			<control type="image">
+				<left>527</left>
+				<top>-69</top>
+				<width>1133</width>
+				<height>637</height>
+				<texture background="true">special://skin/backgrounds/default_skinsettings.jpg</texture>
+				<visible>Container(9000).HasFocus(13)</visible>
 			</control>
 			<control type="textbox">
 				<description>description area</description>

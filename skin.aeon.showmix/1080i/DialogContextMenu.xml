@@ -24,13 +24,21 @@
 			<itemgap>0</itemgap>
 			<include condition="Window.IsActive(programs) + !IsEmpty(Window(Home).Property(Progams.Games))">AdvancedLauncherTrailerButton</include>
 		</control>
+		<control type="image" id="998">
+			<description>background image</description>
+			<left>30</left>
+			<top>-49</top>
+			<width>451</width>
+			<height>48</height>
+			<texture>dialog_top2.png</texture>
+		</control>
 		<control type="image" id="999">
 			<description>background image</description>
-			<left>0</left>
-			<top>-34</top>
-			<width>510</width>
-			<height>1148</height>
-			<texture border="36">dialog_context.png</texture>
+			<left>30</left>
+			<top>361</top>
+			<width>451</width>
+			<height>48</height>
+			<texture>dialog_bottom2.png</texture>
 		</control>
 		<control type="button" id="1000">
 			<description>button template</description>
@@ -39,12 +47,12 @@
 			<width>450</width>
 			<height>60</height>
 			<font>font14</font>
-			<align>left</align>
-			<textoffsetx>15</textoffsetx>
+			<align>center</align>
+			<textoffsetx>0</textoffsetx>
 			<textcolor>grey2</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<texturefocus border="5">button_middle_focus.png</texturefocus>
-			<texturenofocus border="5">button_middle3.png</texturenofocus>
+			<focusedcolor>showmixfocus</focusedcolor>
+			<texturefocus border="5">context_highlight.png</texturefocus>
+			<texturenofocus border="5">button_shutdown_nofocus.png</texturenofocus>
 		</control>
 	</controls>
 </window>

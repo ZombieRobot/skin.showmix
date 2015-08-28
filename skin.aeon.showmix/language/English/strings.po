@@ -1098,3 +1098,19 @@ msgstr ""
 msgctxt "#31622"
 msgid "Customize"
 msgstr ""
+
+msgctxt "#31623"
+msgid "Extended Showmix Options"
+msgstr ""
+
+msgctxt "#31624"
+msgid "Skin Settings"
+msgstr ""
+
+msgctxt "#31625"
+msgid "[B][/B][CR]" 
+msgstr ""
+
+msgctxt "#31626"
+msgid "[B]ENHANCE YOUR SHOWMIX EXPERIENCE[/B][CR]Personalize showmix the way,look and feel you want with our custom options[CR]that change the way your skin is displayed."
+msgstr ""
