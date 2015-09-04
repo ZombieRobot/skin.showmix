@@ -61,9 +61,10 @@
 			<control type="group">
 				<visible>Control.IsVisible(52) | Control.IsVisible(53)</visible>
 				<animation effect="slide" tween="cubic" time="720" start="0,806" end="0,0">VisibleChange</animation>
+				
 				<control type="grouplist">
-					<left>300</left>
-					<top>1010</top>
+<!--ZOMBIEROBOT-->	<left>300</left>
+					<top>1044</top>
 					<width>1320</width>
 					<height>42</height>
 					<align>center</align>
@@ -93,12 +94,12 @@
 					<left>300</left>
 					<top>1010</top>
 					<control type="label">
-						<left>0</left>
-						<top>45</top>
-						<width>1320</width>
+						<left>1153</left>
+						<top>58</top>
+						<width>480</width>
 						<height>30</height>
-						<align>center</align>
-						<font>font13_title</font>
+						<align>right</align>
+						<font>font9_title</font>
 						<textcolor>white</textcolor>
 						<label>$VAR[FloorSubLabelVar]</label>
 						<textoffsetx>30</textoffsetx>
