@@ -223,6 +223,12 @@
 			<size>24</size>
 		</font>
 		<font>
+			<name>font_settings19</name>
+			<filename>BebasNeue.ttf</filename>
+			<linespacing>0</linespacing>
+			<size>31</size>
+		</font>
+		<font>
 			<name>font_welcome9</name>
 			<filename>BebasNeue.ttf</filename>
 			<linespacing>0</linespacing>

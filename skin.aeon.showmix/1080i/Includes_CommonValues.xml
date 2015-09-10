@@ -69,7 +69,7 @@
 		<aligny>center</aligny>
 		<font>font15</font>
 		<textcolor>grey</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<focusedcolor>showmixfocus</focusedcolor>
 	</include>
 	<!-- KeyBoard -->
 	<include name="Objects_KeyOffVars">

@@ -202,7 +202,7 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>white</textcolor>
+						<textcolor>showmixfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>

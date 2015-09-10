@@ -126,13 +126,7 @@
 						</control>
 					</control>
 				</control>
-				<control type="image">
-					<left>-5</left>
-					<top>1005</top>
-					<width>1930</width>
-					<height>108</height>
-					<texture>showmix/floor_panel_night.png</texture>
-				</control>
+				
 				<control type="group" id="6002">
 					<left>55</left>
 					<top>570</top>
@@ -335,6 +329,13 @@
 						</control>
 					</control>
 				</control>
+				<control type="image">
+					<left>0</left>
+					<top>1006</top>
+					<width>1920</width>
+					<height>108</height>
+					<texture>showmix/floor_panel_night.png</texture>
+				</control>
 			</control>
 			<include condition="Skin.HasSetting(HorizontalListNav)">scmfixed</include>
 			<include condition="!Skin.HasSetting(HorizontalListNav)">scmwrap</include>
@@ -363,7 +364,7 @@
 			<animation effect="slide" start="0,-1200" end="0,0" time="720" tween="cubic">WindowOpen</animation>
 			<animation effect="slide" end="0,-1200" start="0,0" time="720" tween="cubic">WindowClose</animation>
 			<animation effect="slide" start="0,0" end="0,20" time="720" tween="cubic" condition="Control.IsVisible(52)">Conditional</animation>
-			<top>50</top>
+			<top>0</top>
 			<control type="image">
 				<description>background image</description>
 				<left>106</left>
@@ -374,11 +375,11 @@
 			</control>
 			<control type="image">
 				<description>background image</description>
-				<left>106</left>
-				<top>130</top>
-				<width>1706</width>
-				<height>734</height>
-				<texture border="40">listpanel_back.png</texture>
+				<left>112</left>
+				<top>57</top>
+				<width>1699</width>
+				<height>655</height>
+				<texture border="40">showmix/multiplex_poster.png</texture>
 			</control>
 			<control type="group">
 				<visible>StringCompare(Control.GetLabel(4420),1)</visible>
@@ -608,6 +609,17 @@
 		<bordertexture border="20">thumbs/thumb_shadow_aa.png</bordertexture>
 		<bordersize>20</bordersize>
 	</include>
+	<include name="MovieShowcaseThumb2">
+		<left>-4</left>
+		<top>-9</top>
+		<width>304</width>
+		<height>427</height>
+		<align>center</align>
+		<aspectratio scalediffuse="false">scale</aspectratio>
+		<fadetime>0</fadetime>
+		
+		<bordersize>20</bordersize>
+	</include>
 	<include name="MovieShowcaseThumbReflection">
 		<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
 		<fadetime>0</fadetime>
@@ -630,6 +642,10 @@
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-7Var]</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
 		<control type="group">
 			<left>28</left>
 			<top>22</top>
@@ -643,6 +659,10 @@
 	<include name="MovieShowCaseItem-6">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-6Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="group">
@@ -662,6 +682,10 @@
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-5Var]</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
 		<control type="group">
 			<left>28</left>
 			<top>22</top>
@@ -677,6 +701,10 @@
 	<include name="MovieShowCaseItem-4">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-4Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="group">
@@ -696,6 +724,10 @@
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-3Var]</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
 		<control type="group">
 			<left>28</left>
 			<top>22</top>
@@ -713,6 +745,10 @@
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-2Var]</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
 		<control type="group">
 			<left>28</left>
 			<top>22</top>
@@ -728,6 +764,10 @@
 	<include name="MovieShowCaseItem-1">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-1Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
@@ -752,6 +792,10 @@
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb2</include>
+		</control>
+		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture>$VAR[IconOverlay0Var]</texture>
 		</control>
@@ -768,6 +812,10 @@
 	<include name="MovieShowCaseItem1">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
@@ -793,6 +841,10 @@
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture>$VAR[IconOverlay2Var]</texture>
 		</control>
@@ -807,6 +859,10 @@
 	<include name="MovieShowCaseItem3">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
@@ -827,6 +883,10 @@
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture>$VAR[IconOverlay4Var]</texture>
 		</control>
@@ -841,6 +901,10 @@
 	<include name="MovieShowCaseItem5">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
@@ -861,6 +925,10 @@
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
 			<include>WatchedOverlayShowCase</include>
 			<texture>$VAR[IconOverlay6Var]</texture>
 		</control>
@@ -875,6 +943,10 @@
 	<include name="MovieShowCaseItem7">
 		<control type="image">
 			<texture background="true" diffuse="thumbs/thumb_mask.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
+			<include>MovieShowcaseThumb</include>
+		</control>
+		<control type="image">
+			<texture>views/multiplex/multiplex_glass.png</texture>
 			<include>MovieShowcaseThumb</include>
 		</control>
 		<control type="image">
