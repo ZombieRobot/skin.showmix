@@ -105,7 +105,7 @@
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+			<onclick>ActivateWindow(Music,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
@@ -119,7 +119,7 @@
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+			<onclick>ActivateWindow(Music,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
@@ -132,8 +132,8 @@
 			<thumb />
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
-			<onclick>ActivateWindow(MusicFiles)</onclick>
-			<property name="path">ActivateWindow(MusicFiles)</property>
+			<onclick>ActivateWindow(Music,Files,return)</onclick>
+			<property name="path">ActivateWindow(Music,Files,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">x3</property>
@@ -146,8 +146,8 @@
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<onclick>ActivateWindow(Music,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">x3</property>
@@ -160,8 +160,8 @@
 			<property name="labelID">14022</property>
 			<property name="defaultID">14022</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,root)</property>
+			<onclick>ActivateWindow(Music,Root)</onclick>
+			<property name="path">ActivateWindow(Music,Root)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">x3</property>
@@ -843,7 +843,7 @@
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+			<onclick>ActivateWindow(Music,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x3</property>
@@ -856,7 +856,7 @@
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+			<onclick>ActivateWindow(Music,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x3</property>
@@ -868,8 +868,8 @@
 			<thumb />
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
-			<onclick>ActivateWindow(MusicFiles)</onclick>
-			<property name="path">ActivateWindow(MusicFiles)</property>
+			<onclick>ActivateWindow(Music,Files,return)</onclick>
+			<property name="path">ActivateWindow(Music,Files,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x3</property>
 		</item>
@@ -881,8 +881,8 @@
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<onclick>ActivateWindow(Music,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x3</property>
 		</item>
@@ -894,8 +894,8 @@
 			<property name="labelID">14022</property>
 			<property name="defaultID">14022</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,root)</property>
+			<onclick>ActivateWindow(Music,Root)</onclick>
+			<property name="path">ActivateWindow(Music,Root)</property>
 			<visible>StringCompare(System.ProfileName,Master user)</visible>
 			<property name="group">x3</property>
 		</item>
@@ -923,7 +923,7 @@
 			<property name="labelID">132</property>
 			<property name="defaultID">132</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+			<onclick>ActivateWindow(Music,Albums,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Albums,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
@@ -937,7 +937,7 @@
 			<property name="labelID">134</property>
 			<property name="defaultID">134</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+			<onclick>ActivateWindow(Music,Songs,return)</onclick>
 			<property name="path">ActivateWindow(MusicLibrary,Songs,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
@@ -950,8 +950,8 @@
 			<thumb />
 			<property name="labelID">744</property>
 			<property name="defaultID">744</property>
-			<onclick>ActivateWindow(MusicFiles)</onclick>
-			<property name="path">ActivateWindow(MusicFiles)</property>
+			<onclick>ActivateWindow(Music,Files,return)</onclick>
+			<property name="path">ActivateWindow(Music,Files,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">x3</property>
@@ -964,8 +964,8 @@
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<onclick>ActivateWindow(Music,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Music,Addons,return)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">x3</property>
@@ -978,8 +978,8 @@
 			<property name="labelID">14022</property>
 			<property name="defaultID">14022</property>
 			<visible>Library.HasContent(Music)</visible>
-			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
-			<property name="path">ActivateWindow(MusicLibrary,root)</property>
+			<onclick>ActivateWindow(Music,Root)</onclick>
+			<property name="path">ActivateWindow(Music,Root)</property>
 			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
 			<property name="isSubmenu">True</property>
 			<property name="group">x3</property>

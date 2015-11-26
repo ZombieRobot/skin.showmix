@@ -39,7 +39,7 @@
 			<animation effect="slide" start="0,0" end="0,-20" time="720" tween="cubic" easing="inout" condition="[Control.IsVisible(58) | Control.IsVisible(510)]">Conditional</animation>
 			<control type="image">
 				<left>0</left>
-				<top>-80</top>
+				<top>0</top>
 				<width>696</width>
 				<height>1080</height>
 				<texture border="1">vignette.png</texture>
@@ -48,7 +48,7 @@
 			</control>
 			<control type="image">
 				<left>696r</left>
-				<top>-80</top>
+				<top>0</top>
 				<width>696</width>
 				<height>1080</height>
 				<texture flipx="true" border="1">vignette.png</texture>
@@ -89,7 +89,7 @@
 			<include>HiddenList</include>
 			<content>
 				<include condition="Window.IsActive(pictures)">PicturesFallback</include>
-				<include condition="Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(musicplaylist)">MusicFallback</include>
+				<include condition="Window.IsActive(musiclibrary) | Window.IsActive(Music,Files,return) | Window.IsActive(musicplaylist)">MusicFallback</include>
 				<include condition="Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)">LiveTVFallback</include>
 				<include condition="Window.IsActive(programs)">AppsFallback</include>
 				<include condition="Window.IsActive(SettingsCategory.xml) | Window.IsActive(systeminfo) | Window.IsActive(skinsettings) | Window.IsActive(settings) | Window.IsActive(addonbrowser) | Window.IsActive(filemanager)">SystemFallback</include>

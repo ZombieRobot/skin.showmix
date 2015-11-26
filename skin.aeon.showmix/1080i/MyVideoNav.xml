@@ -61,7 +61,14 @@
 			<control type="group">
 				<visible>Control.IsVisible(52) | Control.IsVisible(53)</visible>
 				<animation effect="slide" tween="cubic" time="720" start="0,806" end="0,0">VisibleChange</animation>
-				
+				<control type="image">
+					<left>0</left>
+					<top>970</top>
+					<width>1920</width>
+					<height>140</height>
+					<texture border="1">gradient_floor.png</texture>
+					<animation effect="slide" start="0,0" end="0,15" time="720" tween="cubic" easing="inout" condition="Control.IsVisible(56)">Conditional</animation>
+				</control>
 				<control type="grouplist">
 <!--ZOMBIEROBOT-->	<left>300</left>
 					<top>1044</top>
@@ -75,7 +82,7 @@
 						<height>42</height>
 						<aligny>top</aligny>
 						<align>center</align>
-						<font>font16_title</font>
+						<font>Font_ProgressLabelMid</font>
 						<textcolor>white</textcolor>
 						<scroll>true</scroll>
 						<label>[B]$VAR[FloorLabelVar][/B]</label>
@@ -284,14 +291,7 @@
 					</control>
 				</control>
 			</control>
-			<control type="image">
-				<left>0</left>
-				<top>970</top>
-				<width>1920</width>
-				<height>140</height>
-				<texture border="1">gradient_floor.png</texture>
-				<animation effect="slide" start="0,0" end="0,15" time="720" tween="cubic" easing="inout" condition="Control.IsVisible(56)">Conditional</animation>
-			</control>
+			
 		</control>
 		<include>ScrollOffsetLabel</include>
 		<include>Topbar</include>
