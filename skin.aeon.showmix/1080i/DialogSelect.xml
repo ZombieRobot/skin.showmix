@@ -43,6 +43,13 @@
 				<label>$LOCALIZE[13406]</label>
 				<align>center</align>
 				<textcolor>dialogheader</textcolor>
+			</control>
+			<control type="label" id="4">
+				<description>No Settings Label</description>
+				<left>20</left>
+				<top>120</top>
+				<width>550</width>
+				<align>center</align>
 				<font>font15_title</font>
 			</control>
 			<control type="group">
