@@ -1261,7 +1261,7 @@
 					<top>560</top>
 					<left>47</left>
 					<width>476</width>
-					<height>458</height>
+					<height>288</height>
 					<font>font15_textbox</font>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll) + !Control.HasFocus(62)</autoscroll>
 					<include>ShowCaseInfoPanelButtonsValues</include>
@@ -1269,9 +1269,9 @@
 				</control>
 				<control type="scrollbar" id="62">
 					<left>538</left>
-					<top>560</top>
+					<top>572</top>
 					<width>14</width>
-					<height>460</height>
+					<height>290</height>
 					<onup>PageUp(70)</onup>
 					<ondown>PageUp(70)</ondown>
 					<onleft>50</onleft>

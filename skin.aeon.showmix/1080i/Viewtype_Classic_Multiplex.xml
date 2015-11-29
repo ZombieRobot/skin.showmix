@@ -24,7 +24,7 @@
 		<height>13</height>
 		<align>left</align>
 		<font>Droid16</font>	
-		<textcolor>ABFFFFFF</textcolor>
+		<textcolor>themecolor</textcolor>
 	</include>
 	<include name="Animation_MultiplexFocusZoom2">
 	    <animation effect="zoom" center="56,150" start="100" end="110" time="400" tween="cubic" easing="inout">Focus</animation> 
@@ -2868,6 +2868,7 @@
 				</control>
 			</control>	
 			<control type="group" id="600">
+				<top>-200</top>
 				<control type="button" id="601">
 					<onleft>599</onleft>
 					<onright>599</onright>

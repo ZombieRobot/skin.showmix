@@ -22,12 +22,12 @@
 			<control type="image">
 				<include>FullscreenDimensions</include>
 				<texture>black.png</texture>
-				<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)] | Control.IsVisible(502)</visible>
+				<visible>[Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)] | Control.IsVisible(502) + !Control.IsVisible(599)</visible>
 				<animation effect="fade" start="100" end="70" time="300" condition="Control.IsVisible(502)">conditional</animation>
 			</control>
 			<control type="videowindow">
 				<include>FullscreenDimensions</include>
-				<visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+				<visible>Player.HasVideo + !Skin.HasSetting(Disable.ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels) + !Control.IsVisible(599)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -43,7 +43,7 @@
 				<width>696</width>
 				<height>1080</height>
 				<texture border="1">vignette.png</texture>
-				<visible>![Control.IsVisible(59) | Control.IsVisible(56) | Control.IsVisible(57)]</visible>
+				<visible>![Control.IsVisible(59) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(599)]</visible>
 				<animation effect="slide" tween="cubic" time="720" start="-696" end="0,0">VisibleChange</animation>
 			</control>
 			<control type="image">
@@ -53,7 +53,7 @@
 				<height>1080</height>
 				<texture flipx="true" border="1">vignette.png</texture>
 				<animation effect="slide" tween="cubic" time="720" start="696" end="0,0">VisibleChange</animation>
-				<visible>![Control.IsVisible(59) | Control.IsVisible(56) | Control.IsVisible(57)]</visible>
+				<visible>![Control.IsVisible(59) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(599)]</visible>
 			</control>
 		
 		</control>
